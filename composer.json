@@ -1,4 +1,7 @@
 {
+    "name": "micks/listenbrainz-api",
+    "type": "library",
+    "version": "0.0.1",
     "description": "Listenbrainz api php lib.",
     "keywords": [
         "openapitools",
