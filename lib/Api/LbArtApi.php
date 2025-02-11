@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Listenbrainz\ApiException;
+use Listenbrainz\Configuration;
+use Listenbrainz\HeaderSelector;
+use Listenbrainz\ObjectSerializer;
 
 /**
  * LbArtApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -136,10 +136,10 @@ class LbArtApi
      *
      * Create a cover art grid SVG file from the POSTed JSON data to this endpoint.
      *
-     * @param  \OpenAPI\Client\Model\CreateCoverArtGrid $create_cover_art_grid create_cover_art_grid (required)
+     * @param  \Listenbrainz\Model\CreateCoverArtGrid $create_cover_art_grid create_cover_art_grid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCoverArtGrid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -154,10 +154,10 @@ class LbArtApi
      *
      * Create a cover art grid SVG file from the POSTed JSON data to this endpoint.
      *
-     * @param  \OpenAPI\Client\Model\CreateCoverArtGrid $create_cover_art_grid (required)
+     * @param  \Listenbrainz\Model\CreateCoverArtGrid $create_cover_art_grid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCoverArtGrid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -279,7 +279,7 @@ class LbArtApi
      *
      * Create a cover art grid SVG file from the POSTed JSON data to this endpoint.
      *
-     * @param  \OpenAPI\Client\Model\CreateCoverArtGrid $create_cover_art_grid (required)
+     * @param  \Listenbrainz\Model\CreateCoverArtGrid $create_cover_art_grid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCoverArtGrid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -300,7 +300,7 @@ class LbArtApi
      *
      * Create a cover art grid SVG file from the POSTed JSON data to this endpoint.
      *
-     * @param  \OpenAPI\Client\Model\CreateCoverArtGrid $create_cover_art_grid (required)
+     * @param  \Listenbrainz\Model\CreateCoverArtGrid $create_cover_art_grid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCoverArtGrid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -350,7 +350,7 @@ class LbArtApi
     /**
      * Create request for operation 'createCoverArtGrid'
      *
-     * @param  \OpenAPI\Client\Model\CreateCoverArtGrid $create_cover_art_grid (required)
+     * @param  \Listenbrainz\Model\CreateCoverArtGrid $create_cover_art_grid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCoverArtGrid'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -444,13 +444,13 @@ class LbArtApi
      * Create a cover art grid SVG file from the stats of a given user.
      *
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $dimension The dimension to use for this grid. A grid of dimension 3 has 3 images across and 3 images down, for a total of 9 images. (required)
      * @param  int $layout The layout to be used for this grid. Layout 0 is always a simple grid, but other layouts may have image images be of different sizes. See https://art.listenbrainz.org for examples of the available layouts. (required)
      * @param  int $image_size The size of the cover art image. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCoverArtGridForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -466,13 +466,13 @@ class LbArtApi
      * Create a cover art grid SVG file from the stats of a given user.
      *
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $dimension The dimension to use for this grid. A grid of dimension 3 has 3 images across and 3 images down, for a total of 9 images. (required)
      * @param  int $layout The layout to be used for this grid. Layout 0 is always a simple grid, but other layouts may have image images be of different sizes. See https://art.listenbrainz.org for examples of the available layouts. (required)
      * @param  int $image_size The size of the cover art image. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCoverArtGridForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -595,7 +595,7 @@ class LbArtApi
      * Create a cover art grid SVG file from the stats of a given user.
      *
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $dimension The dimension to use for this grid. A grid of dimension 3 has 3 images across and 3 images down, for a total of 9 images. (required)
      * @param  int $layout The layout to be used for this grid. Layout 0 is always a simple grid, but other layouts may have image images be of different sizes. See https://art.listenbrainz.org for examples of the available layouts. (required)
      * @param  int $image_size The size of the cover art image. (required)
@@ -620,7 +620,7 @@ class LbArtApi
      * Create a cover art grid SVG file from the stats of a given user.
      *
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $dimension The dimension to use for this grid. A grid of dimension 3 has 3 images across and 3 images down, for a total of 9 images. (required)
      * @param  int $layout The layout to be used for this grid. Layout 0 is always a simple grid, but other layouts may have image images be of different sizes. See https://art.listenbrainz.org for examples of the available layouts. (required)
      * @param  int $image_size The size of the cover art image. (required)
@@ -674,7 +674,7 @@ class LbArtApi
      * Create request for operation 'createCoverArtGridForUser'
      *
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $dimension The dimension to use for this grid. A grid of dimension 3 has 3 images across and 3 images down, for a total of 9 images. (required)
      * @param  int $layout The layout to be used for this grid. Layout 0 is always a simple grid, but other layouts may have image images be of different sizes. See https://art.listenbrainz.org for examples of the available layouts. (required)
      * @param  int $image_size The size of the cover art image. (required)
@@ -831,13 +831,13 @@ class LbArtApi
      *
      * Create a custom cover art SVG file from the stats of a given user.
      *
-     * @param  \OpenAPI\Client\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
+     * @param  \Listenbrainz\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $image_size The size of the cover art image. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCustomCoverArt'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -852,13 +852,13 @@ class LbArtApi
      *
      * Create a custom cover art SVG file from the stats of a given user.
      *
-     * @param  \OpenAPI\Client\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
+     * @param  \Listenbrainz\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $image_size The size of the cover art image. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCustomCoverArt'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -980,9 +980,9 @@ class LbArtApi
      *
      * Create a custom cover art SVG file from the stats of a given user.
      *
-     * @param  \OpenAPI\Client\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
+     * @param  \Listenbrainz\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $image_size The size of the cover art image. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCustomCoverArt'] to see the possible values for this operation
      *
@@ -1004,9 +1004,9 @@ class LbArtApi
      *
      * Create a custom cover art SVG file from the stats of a given user.
      *
-     * @param  \OpenAPI\Client\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
+     * @param  \Listenbrainz\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $image_size The size of the cover art image. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCustomCoverArt'] to see the possible values for this operation
      *
@@ -1057,9 +1057,9 @@ class LbArtApi
     /**
      * Create request for operation 'createCustomCoverArt'
      *
-     * @param  \OpenAPI\Client\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
+     * @param  \Listenbrainz\Model\CoverTypes $custom_name The name of cover art to be generated. (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
+     * @param  \Listenbrainz\Model\AllowedStatisticsRange $time_range Must be a statistics time range. (required)
      * @param  int $image_size The size of the cover art image. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createCustomCoverArt'] to see the possible values for this operation
      *
@@ -1201,10 +1201,10 @@ class LbArtApi
      *
      * @param  int $year year (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\YearInMusicImage $image image (required)
+     * @param  \Listenbrainz\Model\YearInMusicImage $image image (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['yearInMusic'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -1221,10 +1221,10 @@ class LbArtApi
      *
      * @param  int $year (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\YearInMusicImage $image (required)
+     * @param  \Listenbrainz\Model\YearInMusicImage $image (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['yearInMusic'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1348,7 +1348,7 @@ class LbArtApi
      *
      * @param  int $year (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\YearInMusicImage $image (required)
+     * @param  \Listenbrainz\Model\YearInMusicImage $image (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['yearInMusic'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1371,7 +1371,7 @@ class LbArtApi
      *
      * @param  int $year (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\YearInMusicImage $image (required)
+     * @param  \Listenbrainz\Model\YearInMusicImage $image (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['yearInMusic'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1423,7 +1423,7 @@ class LbArtApi
      *
      * @param  int $year (required)
      * @param  string $user_name The name of the user for whom to create the cover art. (required)
-     * @param  \OpenAPI\Client\Model\YearInMusicImage $image (required)
+     * @param  \Listenbrainz\Model\YearInMusicImage $image (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['yearInMusic'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

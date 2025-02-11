@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * RecordingRecommendationsPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class RecordingRecommendationsPayload implements ModelInterface, ArrayAccess, \J
         'count' => 'int',
         'entity' => 'string',
         'last_updated' => 'int',
-        'mbids' => '\OpenAPI\Client\Model\RecordingRecommendationsPayloadMbidsInner[]',
+        'mbids' => '\Listenbrainz\Model\RecordingRecommendationsPayloadMbidsInner[]',
         'model_id' => 'string',
         'model_url' => 'string',
         'offset' => 'int',
@@ -456,7 +456,7 @@ class RecordingRecommendationsPayload implements ModelInterface, ArrayAccess, \J
     /**
      * Gets mbids
      *
-     * @return \OpenAPI\Client\Model\RecordingRecommendationsPayloadMbidsInner[]
+     * @return \Listenbrainz\Model\RecordingRecommendationsPayloadMbidsInner[]
      */
     public function getMbids()
     {
@@ -466,7 +466,7 @@ class RecordingRecommendationsPayload implements ModelInterface, ArrayAccess, \J
     /**
      * Sets mbids
      *
-     * @param \OpenAPI\Client\Model\RecordingRecommendationsPayloadMbidsInner[] $mbids mbids
+     * @param \Listenbrainz\Model\RecordingRecommendationsPayloadMbidsInner[] $mbids mbids
      *
      * @return self
      */

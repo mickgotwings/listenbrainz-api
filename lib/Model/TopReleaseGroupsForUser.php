@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopReleaseGroupsForUser Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class TopReleaseGroupsForUser implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\OpenAPI\Client\Model\TopReleaseGroupsForUserPayload'
+        'payload' => '\Listenbrainz\Model\TopReleaseGroupsForUserPayload'
     ];
 
     /**
@@ -295,7 +295,7 @@ class TopReleaseGroupsForUser implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForUserPayload
+     * @return \Listenbrainz\Model\TopReleaseGroupsForUserPayload
      */
     public function getPayload()
     {
@@ -305,7 +305,7 @@ class TopReleaseGroupsForUser implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\TopReleaseGroupsForUserPayload $payload payload
+     * @param \Listenbrainz\Model\TopReleaseGroupsForUserPayload $payload payload
      *
      * @return self
      */

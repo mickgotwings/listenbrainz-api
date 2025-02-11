@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SitewideArtistMapPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class SitewideArtistMapPayload implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'artist_map' => '\OpenAPI\Client\Model\ArtistMapForUserPayloadArtistMapInner[]',
+        'artist_map' => '\Listenbrainz\Model\ArtistMapForUserPayloadArtistMapInner[]',
         'from_ts' => 'int',
         'last_updated' => 'int',
         'stats_range' => 'string',
@@ -332,7 +332,7 @@ class SitewideArtistMapPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets artist_map
      *
-     * @return \OpenAPI\Client\Model\ArtistMapForUserPayloadArtistMapInner[]
+     * @return \Listenbrainz\Model\ArtistMapForUserPayloadArtistMapInner[]
      */
     public function getArtistMap()
     {
@@ -342,7 +342,7 @@ class SitewideArtistMapPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets artist_map
      *
-     * @param \OpenAPI\Client\Model\ArtistMapForUserPayloadArtistMapInner[] $artist_map artist_map
+     * @param \Listenbrainz\Model\ArtistMapForUserPayloadArtistMapInner[] $artist_map artist_map
      *
      * @return self
      */

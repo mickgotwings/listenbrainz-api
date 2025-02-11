@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopReleaseGroupsForArtistInnerReleaseGroup Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class TopReleaseGroupsForArtistInnerReleaseGroup implements ModelInterface, Arra
         'date' => 'string',
         'name' => 'string',
         'type' => 'string',
-        'rels' => '\OpenAPI\Client\Model\Rels[]'
+        'rels' => '\Listenbrainz\Model\Rels[]'
     ];
 
     /**
@@ -462,7 +462,7 @@ class TopReleaseGroupsForArtistInnerReleaseGroup implements ModelInterface, Arra
     /**
      * Gets rels
      *
-     * @return \OpenAPI\Client\Model\Rels[]|null
+     * @return \Listenbrainz\Model\Rels[]|null
      */
     public function getRels()
     {
@@ -472,7 +472,7 @@ class TopReleaseGroupsForArtistInnerReleaseGroup implements ModelInterface, Arra
     /**
      * Sets rels
      *
-     * @param \OpenAPI\Client\Model\Rels[]|null $rels rels
+     * @param \Listenbrainz\Model\Rels[]|null $rels rels
      *
      * @return self
      */

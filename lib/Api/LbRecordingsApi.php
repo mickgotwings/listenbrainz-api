@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Listenbrainz\ApiException;
+use Listenbrainz\Configuration;
+use Listenbrainz\HeaderSelector;
+use Listenbrainz\ObjectSerializer;
 
 /**
  * LbRecordingsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -167,9 +167,9 @@ class LbRecordingsApi
      * @param  string|null $metadata metadata (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFeedback'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FeedbackResponse
+     * @return \Listenbrainz\Model\FeedbackResponse
      */
     public function getFeedback($user_name, $score = null, $count = 25, $offset = 0, $metadata = null, string $contentType = self::contentTypes['getFeedback'][0])
     {
@@ -189,9 +189,9 @@ class LbRecordingsApi
      * @param  string|null $metadata (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFeedback'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FeedbackResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\FeedbackResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedbackWithHttpInfo($user_name, $score = null, $count = 25, $offset = 0, $metadata = null, string $contentType = self::contentTypes['getFeedback'][0])
     {
@@ -222,11 +222,11 @@ class LbRecordingsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FeedbackResponse' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\FeedbackResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FeedbackResponse' !== 'string') {
+                        if ('\Listenbrainz\Model\FeedbackResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -244,7 +244,7 @@ class LbRecordingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FeedbackResponse', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\FeedbackResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -263,7 +263,7 @@ class LbRecordingsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FeedbackResponse';
+            $returnType = '\Listenbrainz\Model\FeedbackResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -296,7 +296,7 @@ class LbRecordingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FeedbackResponse',
+                        '\Listenbrainz\Model\FeedbackResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -348,7 +348,7 @@ class LbRecordingsApi
      */
     public function getFeedbackAsyncWithHttpInfo($user_name, $score = null, $count = 25, $offset = 0, $metadata = null, string $contentType = self::contentTypes['getFeedback'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FeedbackResponse';
+        $returnType = '\Listenbrainz\Model\FeedbackResponse';
         $request = $this->getFeedbackRequest($user_name, $score, $count, $offset, $metadata, $contentType);
 
         return $this->client
@@ -536,9 +536,9 @@ class LbRecordingsApi
      * @param  string[]|null $recording_mbids Comma separated list of recording_mbids for which feedback records are to be fetched. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFeedbackForRecordings'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FeedbackResponse
+     * @return \Listenbrainz\Model\FeedbackResponse
      */
     public function getFeedbackForRecordings($user_name, $recording_msids = null, $recording_mbids = null, string $contentType = self::contentTypes['getFeedbackForRecordings'][0])
     {
@@ -556,9 +556,9 @@ class LbRecordingsApi
      * @param  string[]|null $recording_mbids Comma separated list of recording_mbids for which feedback records are to be fetched. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFeedbackForRecordings'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FeedbackResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\FeedbackResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedbackForRecordingsWithHttpInfo($user_name, $recording_msids = null, $recording_mbids = null, string $contentType = self::contentTypes['getFeedbackForRecordings'][0])
     {
@@ -589,11 +589,11 @@ class LbRecordingsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FeedbackResponse' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\FeedbackResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FeedbackResponse' !== 'string') {
+                        if ('\Listenbrainz\Model\FeedbackResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -611,7 +611,7 @@ class LbRecordingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FeedbackResponse', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\FeedbackResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -630,7 +630,7 @@ class LbRecordingsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FeedbackResponse';
+            $returnType = '\Listenbrainz\Model\FeedbackResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -663,7 +663,7 @@ class LbRecordingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FeedbackResponse',
+                        '\Listenbrainz\Model\FeedbackResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -711,7 +711,7 @@ class LbRecordingsApi
      */
     public function getFeedbackForRecordingsAsyncWithHttpInfo($user_name, $recording_msids = null, $recording_mbids = null, string $contentType = self::contentTypes['getFeedbackForRecordings'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FeedbackResponse';
+        $returnType = '\Listenbrainz\Model\FeedbackResponse';
         $request = $this->getFeedbackForRecordingsRequest($user_name, $recording_msids, $recording_mbids, $contentType);
 
         return $this->client
@@ -875,9 +875,9 @@ class LbRecordingsApi
      * @param  int|null $offset offset (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFeedbackMbid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FeedbackResponse
+     * @return \Listenbrainz\Model\FeedbackResponse
      */
     public function getFeedbackMbid($recording_mbid, $score = null, $count = 25, $offset = 0, string $contentType = self::contentTypes['getFeedbackMbid'][0])
     {
@@ -896,9 +896,9 @@ class LbRecordingsApi
      * @param  int|null $offset (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFeedbackMbid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FeedbackResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\FeedbackResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedbackMbidWithHttpInfo($recording_mbid, $score = null, $count = 25, $offset = 0, string $contentType = self::contentTypes['getFeedbackMbid'][0])
     {
@@ -929,11 +929,11 @@ class LbRecordingsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FeedbackResponse' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\FeedbackResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FeedbackResponse' !== 'string') {
+                        if ('\Listenbrainz\Model\FeedbackResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -951,7 +951,7 @@ class LbRecordingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FeedbackResponse', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\FeedbackResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -970,7 +970,7 @@ class LbRecordingsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FeedbackResponse';
+            $returnType = '\Listenbrainz\Model\FeedbackResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1003,7 +1003,7 @@ class LbRecordingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FeedbackResponse',
+                        '\Listenbrainz\Model\FeedbackResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1053,7 +1053,7 @@ class LbRecordingsApi
      */
     public function getFeedbackMbidAsyncWithHttpInfo($recording_mbid, $score = null, $count = 25, $offset = 0, string $contentType = self::contentTypes['getFeedbackMbid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FeedbackResponse';
+        $returnType = '\Listenbrainz\Model\FeedbackResponse';
         $request = $this->getFeedbackMbidRequest($recording_mbid, $score, $count, $offset, $contentType);
 
         return $this->client
@@ -1231,9 +1231,9 @@ class LbRecordingsApi
      * @param  int|null $offset offset (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFeedbackMsid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FeedbackResponse
+     * @return \Listenbrainz\Model\FeedbackResponse
      */
     public function getFeedbackMsid($recording_msid, $score = null, $count = 25, $offset = 0, string $contentType = self::contentTypes['getFeedbackMsid'][0])
     {
@@ -1252,9 +1252,9 @@ class LbRecordingsApi
      * @param  int|null $offset (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFeedbackMsid'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FeedbackResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\FeedbackResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeedbackMsidWithHttpInfo($recording_msid, $score = null, $count = 25, $offset = 0, string $contentType = self::contentTypes['getFeedbackMsid'][0])
     {
@@ -1285,11 +1285,11 @@ class LbRecordingsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FeedbackResponse' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\FeedbackResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FeedbackResponse' !== 'string') {
+                        if ('\Listenbrainz\Model\FeedbackResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1307,7 +1307,7 @@ class LbRecordingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FeedbackResponse', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\FeedbackResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1326,7 +1326,7 @@ class LbRecordingsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FeedbackResponse';
+            $returnType = '\Listenbrainz\Model\FeedbackResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1359,7 +1359,7 @@ class LbRecordingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FeedbackResponse',
+                        '\Listenbrainz\Model\FeedbackResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1409,7 +1409,7 @@ class LbRecordingsApi
      */
     public function getFeedbackMsidAsyncWithHttpInfo($recording_msid, $score = null, $count = 25, $offset = 0, string $contentType = self::contentTypes['getFeedbackMsid'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FeedbackResponse';
+        $returnType = '\Listenbrainz\Model\FeedbackResponse';
         $request = $this->getFeedbackMsidRequest($recording_msid, $score, $count, $offset, $contentType);
 
         return $this->client
@@ -1586,9 +1586,9 @@ class LbRecordingsApi
      * @param  int|null $offset offset (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPins'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetPins
+     * @return \Listenbrainz\Model\GetPins
      */
     public function getPins($user_name, $count = 25, $offset = 0, string $contentType = self::contentTypes['getPins'][0])
     {
@@ -1606,9 +1606,9 @@ class LbRecordingsApi
      * @param  int|null $offset (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPins'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetPins, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\GetPins, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPinsWithHttpInfo($user_name, $count = 25, $offset = 0, string $contentType = self::contentTypes['getPins'][0])
     {
@@ -1639,11 +1639,11 @@ class LbRecordingsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetPins' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\GetPins' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetPins' !== 'string') {
+                        if ('\Listenbrainz\Model\GetPins' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1661,7 +1661,7 @@ class LbRecordingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetPins', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\GetPins', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1680,7 +1680,7 @@ class LbRecordingsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetPins';
+            $returnType = '\Listenbrainz\Model\GetPins';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1713,7 +1713,7 @@ class LbRecordingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetPins',
+                        '\Listenbrainz\Model\GetPins',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1761,7 +1761,7 @@ class LbRecordingsApi
      */
     public function getPinsAsyncWithHttpInfo($user_name, $count = 25, $offset = 0, string $contentType = self::contentTypes['getPins'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetPins';
+        $returnType = '\Listenbrainz\Model\GetPins';
         $request = $this->getPinsRequest($user_name, $count, $offset, $contentType);
 
         return $this->client
@@ -1925,9 +1925,9 @@ class LbRecordingsApi
      * @param  string $user_name user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPinsCurrent'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetPinsCurrent200Response
+     * @return \Listenbrainz\Model\GetPinsCurrent200Response
      */
     public function getPinsCurrent($user_name, string $contentType = self::contentTypes['getPinsCurrent'][0])
     {
@@ -1943,9 +1943,9 @@ class LbRecordingsApi
      * @param  string $user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPinsCurrent'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetPinsCurrent200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\GetPinsCurrent200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPinsCurrentWithHttpInfo($user_name, string $contentType = self::contentTypes['getPinsCurrent'][0])
     {
@@ -1976,11 +1976,11 @@ class LbRecordingsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetPinsCurrent200Response' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\GetPinsCurrent200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetPinsCurrent200Response' !== 'string') {
+                        if ('\Listenbrainz\Model\GetPinsCurrent200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1998,7 +1998,7 @@ class LbRecordingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetPinsCurrent200Response', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\GetPinsCurrent200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2017,7 +2017,7 @@ class LbRecordingsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetPinsCurrent200Response';
+            $returnType = '\Listenbrainz\Model\GetPinsCurrent200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2050,7 +2050,7 @@ class LbRecordingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetPinsCurrent200Response',
+                        '\Listenbrainz\Model\GetPinsCurrent200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2094,7 +2094,7 @@ class LbRecordingsApi
      */
     public function getPinsCurrentAsyncWithHttpInfo($user_name, string $contentType = self::contentTypes['getPinsCurrent'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetPinsCurrent200Response';
+        $returnType = '\Listenbrainz\Model\GetPinsCurrent200Response';
         $request = $this->getPinsCurrentRequest($user_name, $contentType);
 
         return $this->client
@@ -2235,9 +2235,9 @@ class LbRecordingsApi
      * @param  int|null $offset offset (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPinsFollowing'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetPins
+     * @return \Listenbrainz\Model\GetPins
      */
     public function getPinsFollowing($user_name, $count = 25, $offset = 0, string $contentType = self::contentTypes['getPinsFollowing'][0])
     {
@@ -2255,9 +2255,9 @@ class LbRecordingsApi
      * @param  int|null $offset (optional, default to 0)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPinsFollowing'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetPins, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\GetPins, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPinsFollowingWithHttpInfo($user_name, $count = 25, $offset = 0, string $contentType = self::contentTypes['getPinsFollowing'][0])
     {
@@ -2288,11 +2288,11 @@ class LbRecordingsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetPins' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\GetPins' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetPins' !== 'string') {
+                        if ('\Listenbrainz\Model\GetPins' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2310,7 +2310,7 @@ class LbRecordingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetPins', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\GetPins', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2329,7 +2329,7 @@ class LbRecordingsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetPins';
+            $returnType = '\Listenbrainz\Model\GetPins';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2362,7 +2362,7 @@ class LbRecordingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetPins',
+                        '\Listenbrainz\Model\GetPins',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2410,7 +2410,7 @@ class LbRecordingsApi
      */
     public function getPinsFollowingAsyncWithHttpInfo($user_name, $count = 25, $offset = 0, string $contentType = self::contentTypes['getPinsFollowing'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetPins';
+        $returnType = '\Listenbrainz\Model\GetPins';
         $request = $this->getPinsFollowingRequest($user_name, $count, $offset, $contentType);
 
         return $this->client
@@ -2571,12 +2571,12 @@ class LbRecordingsApi
      *
      * Pin a recording for user. A user token (found on https://listenbrainz.org/settings/) must be provided in the Authorization header! Each request should contain only one pinned recording item in the payload.
      *
-     * @param  \OpenAPI\Client\Model\PinRequest $pin_request pin_request (required)
+     * @param  \Listenbrainz\Model\PinRequest $pin_request pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['pin'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Pin200Response
+     * @return \Listenbrainz\Model\Pin200Response
      */
     public function pin($pin_request, string $contentType = self::contentTypes['pin'][0])
     {
@@ -2589,12 +2589,12 @@ class LbRecordingsApi
      *
      * Pin a recording for user. A user token (found on https://listenbrainz.org/settings/) must be provided in the Authorization header! Each request should contain only one pinned recording item in the payload.
      *
-     * @param  \OpenAPI\Client\Model\PinRequest $pin_request (required)
+     * @param  \Listenbrainz\Model\PinRequest $pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['pin'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Pin200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Pin200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function pinWithHttpInfo($pin_request, string $contentType = self::contentTypes['pin'][0])
     {
@@ -2625,11 +2625,11 @@ class LbRecordingsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Pin200Response' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Pin200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Pin200Response' !== 'string') {
+                        if ('\Listenbrainz\Model\Pin200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2647,7 +2647,7 @@ class LbRecordingsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Pin200Response', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Pin200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2666,7 +2666,7 @@ class LbRecordingsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Pin200Response';
+            $returnType = '\Listenbrainz\Model\Pin200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2699,7 +2699,7 @@ class LbRecordingsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Pin200Response',
+                        '\Listenbrainz\Model\Pin200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2714,7 +2714,7 @@ class LbRecordingsApi
      *
      * Pin a recording for user. A user token (found on https://listenbrainz.org/settings/) must be provided in the Authorization header! Each request should contain only one pinned recording item in the payload.
      *
-     * @param  \OpenAPI\Client\Model\PinRequest $pin_request (required)
+     * @param  \Listenbrainz\Model\PinRequest $pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['pin'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2735,7 +2735,7 @@ class LbRecordingsApi
      *
      * Pin a recording for user. A user token (found on https://listenbrainz.org/settings/) must be provided in the Authorization header! Each request should contain only one pinned recording item in the payload.
      *
-     * @param  \OpenAPI\Client\Model\PinRequest $pin_request (required)
+     * @param  \Listenbrainz\Model\PinRequest $pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['pin'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2743,7 +2743,7 @@ class LbRecordingsApi
      */
     public function pinAsyncWithHttpInfo($pin_request, string $contentType = self::contentTypes['pin'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Pin200Response';
+        $returnType = '\Listenbrainz\Model\Pin200Response';
         $request = $this->pinRequest($pin_request, $contentType);
 
         return $this->client
@@ -2785,7 +2785,7 @@ class LbRecordingsApi
     /**
      * Create request for operation 'pin'
      *
-     * @param  \OpenAPI\Client\Model\PinRequest $pin_request (required)
+     * @param  \Listenbrainz\Model\PinRequest $pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['pin'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2886,7 +2886,7 @@ class LbRecordingsApi
      * @param  int $row_id row_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['pinDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2903,7 +2903,7 @@ class LbRecordingsApi
      * @param  int $row_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['pinDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3105,10 +3105,10 @@ class LbRecordingsApi
      *
      * Submit recording feedback (love/hate) to the server. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
      *
-     * @param  \OpenAPI\Client\Model\RecordingFeedbackRequest $recording_feedback_request recording_feedback_request (required)
+     * @param  \Listenbrainz\Model\RecordingFeedbackRequest $recording_feedback_request recording_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingFeedback'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3122,10 +3122,10 @@ class LbRecordingsApi
      *
      * Submit recording feedback (love/hate) to the server. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
      *
-     * @param  \OpenAPI\Client\Model\RecordingFeedbackRequest $recording_feedback_request (required)
+     * @param  \Listenbrainz\Model\RecordingFeedbackRequest $recording_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingFeedback'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3170,7 +3170,7 @@ class LbRecordingsApi
      *
      * Submit recording feedback (love/hate) to the server. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
      *
-     * @param  \OpenAPI\Client\Model\RecordingFeedbackRequest $recording_feedback_request (required)
+     * @param  \Listenbrainz\Model\RecordingFeedbackRequest $recording_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingFeedback'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3191,7 +3191,7 @@ class LbRecordingsApi
      *
      * Submit recording feedback (love/hate) to the server. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
      *
-     * @param  \OpenAPI\Client\Model\RecordingFeedbackRequest $recording_feedback_request (required)
+     * @param  \Listenbrainz\Model\RecordingFeedbackRequest $recording_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingFeedback'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3228,7 +3228,7 @@ class LbRecordingsApi
     /**
      * Create request for operation 'recordingFeedback'
      *
-     * @param  \OpenAPI\Client\Model\RecordingFeedbackRequest $recording_feedback_request (required)
+     * @param  \Listenbrainz\Model\RecordingFeedbackRequest $recording_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingFeedback'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3328,7 +3328,7 @@ class LbRecordingsApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unpin'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3344,7 +3344,7 @@ class LbRecordingsApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unpin'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3529,10 +3529,10 @@ class LbRecordingsApi
      * Updates the blurb content of a pinned recording for the user. A user token (found on https://listenbrainz.org/settings/) must be provided in the Authorization header! Each request should contain only one pinned recording item in the payload.
      *
      * @param  int $row_id row_id (required)
-     * @param  \OpenAPI\Client\Model\UpdatePinRequest $update_pin_request update_pin_request (required)
+     * @param  \Listenbrainz\Model\UpdatePinRequest $update_pin_request update_pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePin'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3547,10 +3547,10 @@ class LbRecordingsApi
      * Updates the blurb content of a pinned recording for the user. A user token (found on https://listenbrainz.org/settings/) must be provided in the Authorization header! Each request should contain only one pinned recording item in the payload.
      *
      * @param  int $row_id (required)
-     * @param  \OpenAPI\Client\Model\UpdatePinRequest $update_pin_request (required)
+     * @param  \Listenbrainz\Model\UpdatePinRequest $update_pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePin'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3596,7 +3596,7 @@ class LbRecordingsApi
      * Updates the blurb content of a pinned recording for the user. A user token (found on https://listenbrainz.org/settings/) must be provided in the Authorization header! Each request should contain only one pinned recording item in the payload.
      *
      * @param  int $row_id (required)
-     * @param  \OpenAPI\Client\Model\UpdatePinRequest $update_pin_request (required)
+     * @param  \Listenbrainz\Model\UpdatePinRequest $update_pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePin'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3618,7 +3618,7 @@ class LbRecordingsApi
      * Updates the blurb content of a pinned recording for the user. A user token (found on https://listenbrainz.org/settings/) must be provided in the Authorization header! Each request should contain only one pinned recording item in the payload.
      *
      * @param  int $row_id (required)
-     * @param  \OpenAPI\Client\Model\UpdatePinRequest $update_pin_request (required)
+     * @param  \Listenbrainz\Model\UpdatePinRequest $update_pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePin'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3656,7 +3656,7 @@ class LbRecordingsApi
      * Create request for operation 'updatePin'
      *
      * @param  int $row_id (required)
-     * @param  \OpenAPI\Client\Model\UpdatePinRequest $update_pin_request (required)
+     * @param  \Listenbrainz\Model\UpdatePinRequest $update_pin_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updatePin'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * LbRadioPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class LbRadioPayload implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'feedback' => 'string[]',
-        'jspf' => '\OpenAPI\Client\Model\CreatePlaylistRequest'
+        'jspf' => '\Listenbrainz\Model\CreatePlaylistRequest'
     ];
 
     /**
@@ -332,7 +332,7 @@ class LbRadioPayload implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets jspf
      *
-     * @return \OpenAPI\Client\Model\CreatePlaylistRequest
+     * @return \Listenbrainz\Model\CreatePlaylistRequest
      */
     public function getJspf()
     {
@@ -342,7 +342,7 @@ class LbRadioPayload implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets jspf
      *
-     * @param \OpenAPI\Client\Model\CreatePlaylistRequest $jspf jspf
+     * @param \Listenbrainz\Model\CreatePlaylistRequest $jspf jspf
      *
      * @return self
      */

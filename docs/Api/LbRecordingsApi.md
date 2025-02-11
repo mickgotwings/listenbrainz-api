@@ -1,4 +1,4 @@
-# OpenAPI\Client\LbRecordingsApi
+# Listenbrainz\LbRecordingsApi
 
 All URIs are relative to https://api.listenbrainz.org, except if the operation defines another base path.
 
@@ -21,7 +21,7 @@ All URIs are relative to https://api.listenbrainz.org, except if the operation d
 ## `getFeedback()`
 
 ```php
-getFeedback($user_name, $score, $count, $offset, $metadata): \OpenAPI\Client\Model\FeedbackResponse
+getFeedback($user_name, $score, $count, $offset, $metadata): \Listenbrainz\Model\FeedbackResponse
 ```
 
 Get feedback given by user 'user_name'. The format for the JSON returned is defined in our Feedback JSON Documentation.  If the optional argument score is not given, this endpoint will return all the feedback submitted by the user. Otherwise filters the feedback to be returned by score.
@@ -34,7 +34,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -65,7 +65,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FeedbackResponse**](../Model/FeedbackResponse.md)
+[**\Listenbrainz\Model\FeedbackResponse**](../Model/FeedbackResponse.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ No authorization required
 ## `getFeedbackForRecordings()`
 
 ```php
-getFeedbackForRecordings($user_name, $recording_msids, $recording_mbids): \OpenAPI\Client\Model\FeedbackResponse
+getFeedbackForRecordings($user_name, $recording_msids, $recording_mbids): \Listenbrainz\Model\FeedbackResponse
 ```
 
 Get feedback given by user user_name for the list of recordings supplied.
@@ -96,7 +96,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -123,7 +123,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FeedbackResponse**](../Model/FeedbackResponse.md)
+[**\Listenbrainz\Model\FeedbackResponse**](../Model/FeedbackResponse.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ No authorization required
 ## `getFeedbackMbid()`
 
 ```php
-getFeedbackMbid($recording_mbid, $score, $count, $offset): \OpenAPI\Client\Model\FeedbackResponse
+getFeedbackMbid($recording_mbid, $score, $count, $offset): \Listenbrainz\Model\FeedbackResponse
 ```
 
 Get feedback for recording with given recording_mbid.
@@ -154,7 +154,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -183,7 +183,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FeedbackResponse**](../Model/FeedbackResponse.md)
+[**\Listenbrainz\Model\FeedbackResponse**](../Model/FeedbackResponse.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ No authorization required
 ## `getFeedbackMsid()`
 
 ```php
-getFeedbackMsid($recording_msid, $score, $count, $offset): \OpenAPI\Client\Model\FeedbackResponse
+getFeedbackMsid($recording_msid, $score, $count, $offset): \Listenbrainz\Model\FeedbackResponse
 ```
 
 Get feedback for recording with given recording_msid.
@@ -214,7 +214,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -243,7 +243,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FeedbackResponse**](../Model/FeedbackResponse.md)
+[**\Listenbrainz\Model\FeedbackResponse**](../Model/FeedbackResponse.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ No authorization required
 ## `getPins()`
 
 ```php
-getPins($user_name, $count, $offset): \OpenAPI\Client\Model\GetPins
+getPins($user_name, $count, $offset): \Listenbrainz\Model\GetPins
 ```
 
 Get a list of all recordings ever pinned by a user with given user_name in descending order of the time they were originally pinned.
@@ -274,7 +274,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -301,7 +301,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetPins**](../Model/GetPins.md)
+[**\Listenbrainz\Model\GetPins**](../Model/GetPins.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ No authorization required
 ## `getPinsCurrent()`
 
 ```php
-getPinsCurrent($user_name): \OpenAPI\Client\Model\GetPinsCurrent200Response
+getPinsCurrent($user_name): \Listenbrainz\Model\GetPinsCurrent200Response
 ```
 
 Get the currently pinned recording by a user with given user_name.
@@ -332,7 +332,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -355,7 +355,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetPinsCurrent200Response**](../Model/GetPinsCurrent200Response.md)
+[**\Listenbrainz\Model\GetPinsCurrent200Response**](../Model/GetPinsCurrent200Response.md)
 
 ### Authorization
 
@@ -373,7 +373,7 @@ No authorization required
 ## `getPinsFollowing()`
 
 ```php
-getPinsFollowing($user_name, $count, $offset): \OpenAPI\Client\Model\GetPins
+getPinsFollowing($user_name, $count, $offset): \Listenbrainz\Model\GetPins
 ```
 
 Get a list containing the active pinned recordings for all users in a user's user_name following list. The returned pinned recordings are sorted in descending order of the time they were pinned.
@@ -386,7 +386,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -413,7 +413,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetPins**](../Model/GetPins.md)
+[**\Listenbrainz\Model\GetPins**](../Model/GetPins.md)
 
 ### Authorization
 
@@ -431,7 +431,7 @@ No authorization required
 ## `pin()`
 
 ```php
-pin($pin_request): \OpenAPI\Client\Model\Pin200Response
+pin($pin_request): \Listenbrainz\Model\Pin200Response
 ```
 
 Pin a recording for user. A user token (found on https://listenbrainz.org/settings/) must be provided in the Authorization header! Each request should contain only one pinned recording item in the payload.
@@ -444,18 +444,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$pin_request = new \OpenAPI\Client\Model\PinRequest(); // \OpenAPI\Client\Model\PinRequest
+$pin_request = new \Listenbrainz\Model\PinRequest(); // \Listenbrainz\Model\PinRequest
 
 try {
     $result = $apiInstance->pin($pin_request);
@@ -469,11 +469,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **pin_request** | [**\OpenAPI\Client\Model\PinRequest**](../Model/PinRequest.md)|  | |
+| **pin_request** | [**\Listenbrainz\Model\PinRequest**](../Model/PinRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Pin200Response**](../Model/Pin200Response.md)
+[**\Listenbrainz\Model\Pin200Response**](../Model/Pin200Response.md)
 
 ### Authorization
 
@@ -504,12 +504,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -563,18 +563,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$recording_feedback_request = new \OpenAPI\Client\Model\RecordingFeedbackRequest(); // \OpenAPI\Client\Model\RecordingFeedbackRequest
+$recording_feedback_request = new \Listenbrainz\Model\RecordingFeedbackRequest(); // \Listenbrainz\Model\RecordingFeedbackRequest
 
 try {
     $apiInstance->recordingFeedback($recording_feedback_request);
@@ -587,7 +587,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **recording_feedback_request** | [**\OpenAPI\Client\Model\RecordingFeedbackRequest**](../Model/RecordingFeedbackRequest.md)|  | |
+| **recording_feedback_request** | [**\Listenbrainz\Model\RecordingFeedbackRequest**](../Model/RecordingFeedbackRequest.md)|  | |
 
 ### Return type
 
@@ -622,12 +622,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -678,19 +678,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecordingsApi(
+$apiInstance = new Listenbrainz\Api\LbRecordingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $row_id = 56; // int
-$update_pin_request = new \OpenAPI\Client\Model\UpdatePinRequest(); // \OpenAPI\Client\Model\UpdatePinRequest
+$update_pin_request = new \Listenbrainz\Model\UpdatePinRequest(); // \Listenbrainz\Model\UpdatePinRequest
 
 try {
     $apiInstance->updatePin($row_id, $update_pin_request);
@@ -704,7 +704,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **row_id** | **int**|  | |
-| **update_pin_request** | [**\OpenAPI\Client\Model\UpdatePinRequest**](../Model/UpdatePinRequest.md)|  | |
+| **update_pin_request** | [**\Listenbrainz\Model\UpdatePinRequest**](../Model/UpdatePinRequest.md)|  | |
 
 ### Return type
 

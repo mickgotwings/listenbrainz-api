@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Listenbrainz\ApiException;
+use Listenbrainz\Configuration;
+use Listenbrainz\HeaderSelector;
+use Listenbrainz\ObjectSerializer;
 
 /**
  * LbPopularityApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,12 +142,12 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given artist.  A JSON document with a list of artists and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ArtistRequest $artist_request artist_request (required)
+     * @param  \Listenbrainz\Model\ArtistRequest $artist_request artist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['artist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Artist200ResponseInner[]
+     * @return \Listenbrainz\Model\Artist200ResponseInner[]
      */
     public function artist($artist_request, string $contentType = self::contentTypes['artist'][0])
     {
@@ -160,12 +160,12 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given artist.  A JSON document with a list of artists and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ArtistRequest $artist_request (required)
+     * @param  \Listenbrainz\Model\ArtistRequest $artist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['artist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Artist200ResponseInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Artist200ResponseInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function artistWithHttpInfo($artist_request, string $contentType = self::contentTypes['artist'][0])
     {
@@ -196,11 +196,11 @@ class LbPopularityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Artist200ResponseInner[]' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Artist200ResponseInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Artist200ResponseInner[]' !== 'string') {
+                        if ('\Listenbrainz\Model\Artist200ResponseInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -218,7 +218,7 @@ class LbPopularityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Artist200ResponseInner[]', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Artist200ResponseInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -237,7 +237,7 @@ class LbPopularityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Artist200ResponseInner[]';
+            $returnType = '\Listenbrainz\Model\Artist200ResponseInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -270,7 +270,7 @@ class LbPopularityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Artist200ResponseInner[]',
+                        '\Listenbrainz\Model\Artist200ResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -285,7 +285,7 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given artist.  A JSON document with a list of artists and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ArtistRequest $artist_request (required)
+     * @param  \Listenbrainz\Model\ArtistRequest $artist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['artist'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -306,7 +306,7 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given artist.  A JSON document with a list of artists and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ArtistRequest $artist_request (required)
+     * @param  \Listenbrainz\Model\ArtistRequest $artist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['artist'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -314,7 +314,7 @@ class LbPopularityApi
      */
     public function artistAsyncWithHttpInfo($artist_request, string $contentType = self::contentTypes['artist'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Artist200ResponseInner[]';
+        $returnType = '\Listenbrainz\Model\Artist200ResponseInner[]';
         $request = $this->artistRequest($artist_request, $contentType);
 
         return $this->client
@@ -356,7 +356,7 @@ class LbPopularityApi
     /**
      * Create request for operation 'artist'
      *
-     * @param  \OpenAPI\Client\Model\ArtistRequest $artist_request (required)
+     * @param  \Listenbrainz\Model\ArtistRequest $artist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['artist'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -449,12 +449,12 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given recording.  A JSON document with a list of recording_mbids and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\RecordingRequest $recording_request recording_request (required)
+     * @param  \Listenbrainz\Model\RecordingRequest $recording_request recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recording'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Recording200ResponseInner[]
+     * @return \Listenbrainz\Model\Recording200ResponseInner[]
      */
     public function recording($recording_request, string $contentType = self::contentTypes['recording'][0])
     {
@@ -467,12 +467,12 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given recording.  A JSON document with a list of recording_mbids and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\RecordingRequest $recording_request (required)
+     * @param  \Listenbrainz\Model\RecordingRequest $recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recording'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Recording200ResponseInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Recording200ResponseInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function recordingWithHttpInfo($recording_request, string $contentType = self::contentTypes['recording'][0])
     {
@@ -503,11 +503,11 @@ class LbPopularityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Recording200ResponseInner[]' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Recording200ResponseInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Recording200ResponseInner[]' !== 'string') {
+                        if ('\Listenbrainz\Model\Recording200ResponseInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -525,7 +525,7 @@ class LbPopularityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Recording200ResponseInner[]', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Recording200ResponseInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -544,7 +544,7 @@ class LbPopularityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Recording200ResponseInner[]';
+            $returnType = '\Listenbrainz\Model\Recording200ResponseInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -577,7 +577,7 @@ class LbPopularityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Recording200ResponseInner[]',
+                        '\Listenbrainz\Model\Recording200ResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -592,7 +592,7 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given recording.  A JSON document with a list of recording_mbids and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\RecordingRequest $recording_request (required)
+     * @param  \Listenbrainz\Model\RecordingRequest $recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recording'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -613,7 +613,7 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given recording.  A JSON document with a list of recording_mbids and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\RecordingRequest $recording_request (required)
+     * @param  \Listenbrainz\Model\RecordingRequest $recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recording'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -621,7 +621,7 @@ class LbPopularityApi
      */
     public function recordingAsyncWithHttpInfo($recording_request, string $contentType = self::contentTypes['recording'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Recording200ResponseInner[]';
+        $returnType = '\Listenbrainz\Model\Recording200ResponseInner[]';
         $request = $this->recordingRequest($recording_request, $contentType);
 
         return $this->client
@@ -663,7 +663,7 @@ class LbPopularityApi
     /**
      * Create request for operation 'recording'
      *
-     * @param  \OpenAPI\Client\Model\RecordingRequest $recording_request (required)
+     * @param  \Listenbrainz\Model\RecordingRequest $recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recording'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -756,12 +756,12 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given release.  A JSON document with a list of releases and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ReleaseRequest $release_request release_request (required)
+     * @param  \Listenbrainz\Model\ReleaseRequest $release_request release_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['release'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Release200ResponseInner[]
+     * @return \Listenbrainz\Model\Release200ResponseInner[]
      */
     public function release($release_request, string $contentType = self::contentTypes['release'][0])
     {
@@ -774,12 +774,12 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given release.  A JSON document with a list of releases and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ReleaseRequest $release_request (required)
+     * @param  \Listenbrainz\Model\ReleaseRequest $release_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['release'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Release200ResponseInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Release200ResponseInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releaseWithHttpInfo($release_request, string $contentType = self::contentTypes['release'][0])
     {
@@ -810,11 +810,11 @@ class LbPopularityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Release200ResponseInner[]' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Release200ResponseInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Release200ResponseInner[]' !== 'string') {
+                        if ('\Listenbrainz\Model\Release200ResponseInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -832,7 +832,7 @@ class LbPopularityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Release200ResponseInner[]', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Release200ResponseInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -851,7 +851,7 @@ class LbPopularityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Release200ResponseInner[]';
+            $returnType = '\Listenbrainz\Model\Release200ResponseInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -884,7 +884,7 @@ class LbPopularityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Release200ResponseInner[]',
+                        '\Listenbrainz\Model\Release200ResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -899,7 +899,7 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given release.  A JSON document with a list of releases and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ReleaseRequest $release_request (required)
+     * @param  \Listenbrainz\Model\ReleaseRequest $release_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['release'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -920,7 +920,7 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given release.  A JSON document with a list of releases and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ReleaseRequest $release_request (required)
+     * @param  \Listenbrainz\Model\ReleaseRequest $release_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['release'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -928,7 +928,7 @@ class LbPopularityApi
      */
     public function releaseAsyncWithHttpInfo($release_request, string $contentType = self::contentTypes['release'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Release200ResponseInner[]';
+        $returnType = '\Listenbrainz\Model\Release200ResponseInner[]';
         $request = $this->releaseRequest($release_request, $contentType);
 
         return $this->client
@@ -970,7 +970,7 @@ class LbPopularityApi
     /**
      * Create request for operation 'release'
      *
-     * @param  \OpenAPI\Client\Model\ReleaseRequest $release_request (required)
+     * @param  \Listenbrainz\Model\ReleaseRequest $release_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['release'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1063,12 +1063,12 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given release group.  A JSON document with a list of release groups and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ReleaseGroupRequest $release_group_request release_group_request (required)
+     * @param  \Listenbrainz\Model\ReleaseGroupRequest $release_group_request release_group_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['releaseGroup'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ReleaseGroup200ResponseInner[]
+     * @return \Listenbrainz\Model\ReleaseGroup200ResponseInner[]
      */
     public function releaseGroup($release_group_request, string $contentType = self::contentTypes['releaseGroup'][0])
     {
@@ -1081,12 +1081,12 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given release group.  A JSON document with a list of release groups and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ReleaseGroupRequest $release_group_request (required)
+     * @param  \Listenbrainz\Model\ReleaseGroupRequest $release_group_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['releaseGroup'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ReleaseGroup200ResponseInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\ReleaseGroup200ResponseInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function releaseGroupWithHttpInfo($release_group_request, string $contentType = self::contentTypes['releaseGroup'][0])
     {
@@ -1117,11 +1117,11 @@ class LbPopularityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ReleaseGroup200ResponseInner[]' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\ReleaseGroup200ResponseInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ReleaseGroup200ResponseInner[]' !== 'string') {
+                        if ('\Listenbrainz\Model\ReleaseGroup200ResponseInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1139,7 +1139,7 @@ class LbPopularityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ReleaseGroup200ResponseInner[]', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\ReleaseGroup200ResponseInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1158,7 +1158,7 @@ class LbPopularityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ReleaseGroup200ResponseInner[]';
+            $returnType = '\Listenbrainz\Model\ReleaseGroup200ResponseInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1191,7 +1191,7 @@ class LbPopularityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ReleaseGroup200ResponseInner[]',
+                        '\Listenbrainz\Model\ReleaseGroup200ResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1206,7 +1206,7 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given release group.  A JSON document with a list of release groups and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ReleaseGroupRequest $release_group_request (required)
+     * @param  \Listenbrainz\Model\ReleaseGroupRequest $release_group_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['releaseGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1227,7 +1227,7 @@ class LbPopularityApi
      *
      * Get the total listen count and total unique listeners count for a given release group.  A JSON document with a list of release groups and inc string must be POSTed. Up to MAX_ITEMS_PER_GET items can be requested at once.
      *
-     * @param  \OpenAPI\Client\Model\ReleaseGroupRequest $release_group_request (required)
+     * @param  \Listenbrainz\Model\ReleaseGroupRequest $release_group_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['releaseGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1235,7 +1235,7 @@ class LbPopularityApi
      */
     public function releaseGroupAsyncWithHttpInfo($release_group_request, string $contentType = self::contentTypes['releaseGroup'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ReleaseGroup200ResponseInner[]';
+        $returnType = '\Listenbrainz\Model\ReleaseGroup200ResponseInner[]';
         $request = $this->releaseGroupRequest($release_group_request, $contentType);
 
         return $this->client
@@ -1277,7 +1277,7 @@ class LbPopularityApi
     /**
      * Create request for operation 'releaseGroup'
      *
-     * @param  \OpenAPI\Client\Model\ReleaseGroupRequest $release_group_request (required)
+     * @param  \Listenbrainz\Model\ReleaseGroupRequest $release_group_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['releaseGroup'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1373,9 +1373,9 @@ class LbPopularityApi
      * @param  string $artist_mbid artist_mbid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['topRecordingsForArtist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TopRecordingsForArtistInner[]
+     * @return \Listenbrainz\Model\TopRecordingsForArtistInner[]
      */
     public function topRecordingsForArtist($artist_mbid, string $contentType = self::contentTypes['topRecordingsForArtist'][0])
     {
@@ -1391,9 +1391,9 @@ class LbPopularityApi
      * @param  string $artist_mbid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['topRecordingsForArtist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TopRecordingsForArtistInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\TopRecordingsForArtistInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function topRecordingsForArtistWithHttpInfo($artist_mbid, string $contentType = self::contentTypes['topRecordingsForArtist'][0])
     {
@@ -1424,11 +1424,11 @@ class LbPopularityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TopRecordingsForArtistInner[]' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\TopRecordingsForArtistInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TopRecordingsForArtistInner[]' !== 'string') {
+                        if ('\Listenbrainz\Model\TopRecordingsForArtistInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1446,7 +1446,7 @@ class LbPopularityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TopRecordingsForArtistInner[]', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\TopRecordingsForArtistInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1465,7 +1465,7 @@ class LbPopularityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TopRecordingsForArtistInner[]';
+            $returnType = '\Listenbrainz\Model\TopRecordingsForArtistInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1498,7 +1498,7 @@ class LbPopularityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TopRecordingsForArtistInner[]',
+                        '\Listenbrainz\Model\TopRecordingsForArtistInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1542,7 +1542,7 @@ class LbPopularityApi
      */
     public function topRecordingsForArtistAsyncWithHttpInfo($artist_mbid, string $contentType = self::contentTypes['topRecordingsForArtist'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TopRecordingsForArtistInner[]';
+        $returnType = '\Listenbrainz\Model\TopRecordingsForArtistInner[]';
         $request = $this->topRecordingsForArtistRequest($artist_mbid, $contentType);
 
         return $this->client
@@ -1681,9 +1681,9 @@ class LbPopularityApi
      * @param  string $artist_mbid artist_mbid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['topReleaseGroupForArtist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForArtistInner[]
+     * @return \Listenbrainz\Model\TopReleaseGroupsForArtistInner[]
      */
     public function topReleaseGroupForArtist($artist_mbid, string $contentType = self::contentTypes['topReleaseGroupForArtist'][0])
     {
@@ -1699,9 +1699,9 @@ class LbPopularityApi
      * @param  string $artist_mbid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['topReleaseGroupForArtist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TopReleaseGroupsForArtistInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\TopReleaseGroupsForArtistInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function topReleaseGroupForArtistWithHttpInfo($artist_mbid, string $contentType = self::contentTypes['topReleaseGroupForArtist'][0])
     {
@@ -1732,11 +1732,11 @@ class LbPopularityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TopReleaseGroupsForArtistInner[]' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\TopReleaseGroupsForArtistInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TopReleaseGroupsForArtistInner[]' !== 'string') {
+                        if ('\Listenbrainz\Model\TopReleaseGroupsForArtistInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1754,7 +1754,7 @@ class LbPopularityApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInner[]', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\TopReleaseGroupsForArtistInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1773,7 +1773,7 @@ class LbPopularityApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInner[]';
+            $returnType = '\Listenbrainz\Model\TopReleaseGroupsForArtistInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1806,7 +1806,7 @@ class LbPopularityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInner[]',
+                        '\Listenbrainz\Model\TopReleaseGroupsForArtistInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1850,7 +1850,7 @@ class LbPopularityApi
      */
     public function topReleaseGroupForArtistAsyncWithHttpInfo($artist_mbid, string $contentType = self::contentTypes['topReleaseGroupForArtist'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInner[]';
+        $returnType = '\Listenbrainz\Model\TopReleaseGroupsForArtistInner[]';
         $request = $this->topReleaseGroupForArtistRequest($artist_mbid, $contentType);
 
         return $this->client

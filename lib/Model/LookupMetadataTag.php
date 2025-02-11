@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * LookupMetadataTag Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class LookupMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'artist' => '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]',
-        'recording' => '\OpenAPI\Client\Model\LookupMetadataTagRecordingInner[]',
-        'release_group' => '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagReleaseGroupInner[]'
+        'artist' => '\Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]',
+        'recording' => '\Listenbrainz\Model\LookupMetadataTagRecordingInner[]',
+        'release_group' => '\Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagReleaseGroupInner[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class LookupMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets artist
      *
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]|null
+     * @return \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]|null
      */
     public function getArtist()
     {
@@ -316,7 +316,7 @@ class LookupMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets artist
      *
-     * @param \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]|null $artist artist
+     * @param \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]|null $artist artist
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class LookupMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets recording
      *
-     * @return \OpenAPI\Client\Model\LookupMetadataTagRecordingInner[]|null
+     * @return \Listenbrainz\Model\LookupMetadataTagRecordingInner[]|null
      */
     public function getRecording()
     {
@@ -343,7 +343,7 @@ class LookupMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets recording
      *
-     * @param \OpenAPI\Client\Model\LookupMetadataTagRecordingInner[]|null $recording recording
+     * @param \Listenbrainz\Model\LookupMetadataTagRecordingInner[]|null $recording recording
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class LookupMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets release_group
      *
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagReleaseGroupInner[]|null
+     * @return \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagReleaseGroupInner[]|null
      */
     public function getReleaseGroup()
     {
@@ -370,7 +370,7 @@ class LookupMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets release_group
      *
-     * @param \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagReleaseGroupInner[]|null $release_group release_group
+     * @param \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagReleaseGroupInner[]|null $release_group release_group
      *
      * @return self
      */

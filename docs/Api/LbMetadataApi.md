@@ -1,4 +1,4 @@
-# OpenAPI\Client\LbMetadataApi
+# Listenbrainz\LbMetadataApi
 
 All URIs are relative to https://api.listenbrainz.org, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://api.listenbrainz.org, except if the operation d
 ## `artistMetadata()`
 
 ```php
-artistMetadata($artist_mbids, $inc): \OpenAPI\Client\Model\ArtistMetadata[]
+artistMetadata($artist_mbids, $inc): \Listenbrainz\Model\ArtistMetadata[]
 ```
 
 This endpoint takes in a list of artist_mbids and returns an array of dicts that contain recording metadata suitable for showing in a context that requires as much detail about a recording and the artist. Using the inc parameter, you can control which portions of metadata to fetch.
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMetadataApi(
+$apiInstance = new Listenbrainz\Api\LbMetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ArtistMetadata[]**](../Model/ArtistMetadata.md)
+[**\Listenbrainz\Model\ArtistMetadata[]**](../Model/ArtistMetadata.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `getManualMapping()`
 
 ```php
-getManualMapping($recording_msid): \OpenAPI\Client\Model\GetManualMapping
+getManualMapping($recording_msid): \Listenbrainz\Model\GetManualMapping
 ```
 
 Get the manual mapping of a recording messybrainz ID that a user added.
@@ -84,12 +84,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMetadataApi(
+$apiInstance = new Listenbrainz\Api\LbMetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -113,7 +113,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetManualMapping**](../Model/GetManualMapping.md)
+[**\Listenbrainz\Model\GetManualMapping**](../Model/GetManualMapping.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ try {
 ## `lookup()`
 
 ```php
-lookup($artist_name, $recording_name, $metadata, $inc, $release_name): \OpenAPI\Client\Model\Lookup
+lookup($artist_name, $recording_name, $metadata, $inc, $release_name): \Listenbrainz\Model\Lookup
 ```
 
 This endpoint looks up mbid metadata for the given artist, recording and optionally a release name. The total number of characters in the artist name, recording name and release name query arguments should be less than or equal to MAX_MAPPING_QUERY_LENGTH.
@@ -144,7 +144,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMetadataApi(
+$apiInstance = new Listenbrainz\Api\LbMetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -175,7 +175,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Lookup**](../Model/Lookup.md)
+[**\Listenbrainz\Model\Lookup**](../Model/Lookup.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ No authorization required
 ## `recordingMetadata()`
 
 ```php
-recordingMetadata($recording_mbids, $inc): array<string,\OpenAPI\Client\Model\RecordingMetadata>
+recordingMetadata($recording_mbids, $inc): array<string,\Listenbrainz\Model\RecordingMetadata>
 ```
 
 This endpoint takes in a list of recording_mbids and returns an array of dicts that contain recording metadata suitable for showing in a context that requires as much detail about a recording and the artist. Using the inc parameter, you can control which portions of metadata to fetch.
@@ -206,7 +206,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMetadataApi(
+$apiInstance = new Listenbrainz\Api\LbMetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -231,7 +231,7 @@ try {
 
 ### Return type
 
-[**array<string,\OpenAPI\Client\Model\RecordingMetadata>**](../Model/RecordingMetadata.md)
+[**array<string,\Listenbrainz\Model\RecordingMetadata>**](../Model/RecordingMetadata.md)
 
 ### Authorization
 
@@ -249,7 +249,7 @@ No authorization required
 ## `releaseGroupMetadata()`
 
 ```php
-releaseGroupMetadata($release_group_mbids, $inc): array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>
+releaseGroupMetadata($release_group_mbids, $inc): array<string,\Listenbrainz\Model\ReleaseGroupMetadata>
 ```
 
 This endpoint takes in a list of release_group_mbids and returns an array of dicts that contain release_group metadata suitable for showing in a context that requires as much detail about a release_group and the artist. Using the inc parameter, you can control which portions of metadata to fetch.
@@ -262,7 +262,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMetadataApi(
+$apiInstance = new Listenbrainz\Api\LbMetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -287,7 +287,7 @@ try {
 
 ### Return type
 
-[**array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>**](../Model/ReleaseGroupMetadata.md)
+[**array<string,\Listenbrainz\Model\ReleaseGroupMetadata>**](../Model/ReleaseGroupMetadata.md)
 
 ### Authorization
 
@@ -318,18 +318,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMetadataApi(
+$apiInstance = new Listenbrainz\Api\LbMetadataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$submit_manual_mapping = new \OpenAPI\Client\Model\SubmitManualMapping(); // \OpenAPI\Client\Model\SubmitManualMapping
+$submit_manual_mapping = new \Listenbrainz\Model\SubmitManualMapping(); // \Listenbrainz\Model\SubmitManualMapping
 
 try {
     $apiInstance->submitManualMapping($submit_manual_mapping);
@@ -342,7 +342,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **submit_manual_mapping** | [**\OpenAPI\Client\Model\SubmitManualMapping**](../Model/SubmitManualMapping.md)|  | |
+| **submit_manual_mapping** | [**\Listenbrainz\Model\SubmitManualMapping**](../Model/SubmitManualMapping.md)|  | |
 
 ### Return type
 

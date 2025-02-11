@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopReleaseGroupsForArtistInnerArtist Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class TopReleaseGroupsForArtistInnerArtist implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'artist_credit_id' => 'int',
-        'artists' => '\OpenAPI\Client\Model\MusicBrainzArtist[]',
+        'artists' => '\Listenbrainz\Model\MusicBrainzArtist[]',
         'name' => 'string'
     ];
 
@@ -333,7 +333,7 @@ class TopReleaseGroupsForArtistInnerArtist implements ModelInterface, ArrayAcces
     /**
      * Gets artists
      *
-     * @return \OpenAPI\Client\Model\MusicBrainzArtist[]|null
+     * @return \Listenbrainz\Model\MusicBrainzArtist[]|null
      */
     public function getArtists()
     {
@@ -343,7 +343,7 @@ class TopReleaseGroupsForArtistInnerArtist implements ModelInterface, ArrayAcces
     /**
      * Sets artists
      *
-     * @param \OpenAPI\Client\Model\MusicBrainzArtist[]|null $artists artists
+     * @param \Listenbrainz\Model\MusicBrainzArtist[]|null $artists artists
      *
      * @return self
      */

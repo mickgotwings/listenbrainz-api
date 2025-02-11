@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * GetPinsCurrent200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetPinsCurrent200Response implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pinned_recording' => '\OpenAPI\Client\Model\GetPinsCurrent200ResponsePinnedRecording',
+        'pinned_recording' => '\Listenbrainz\Model\GetPinsCurrent200ResponsePinnedRecording',
         'user_name' => 'string'
     ];
 
@@ -299,7 +299,7 @@ class GetPinsCurrent200Response implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets pinned_recording
      *
-     * @return \OpenAPI\Client\Model\GetPinsCurrent200ResponsePinnedRecording|null
+     * @return \Listenbrainz\Model\GetPinsCurrent200ResponsePinnedRecording|null
      */
     public function getPinnedRecording()
     {
@@ -309,7 +309,7 @@ class GetPinsCurrent200Response implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets pinned_recording
      *
-     * @param \OpenAPI\Client\Model\GetPinsCurrent200ResponsePinnedRecording|null $pinned_recording pinned_recording
+     * @param \Listenbrainz\Model\GetPinsCurrent200ResponsePinnedRecording|null $pinned_recording pinned_recording
      *
      * @return self
      */

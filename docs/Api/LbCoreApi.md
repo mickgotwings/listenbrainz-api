@@ -1,4 +1,4 @@
-# OpenAPI\Client\LbCoreApi
+# Listenbrainz\LbCoreApi
 
 All URIs are relative to https://api.listenbrainz.org, except if the operation defines another base path.
 
@@ -37,18 +37,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$delete_listen = new \OpenAPI\Client\Model\DeleteListen(); // \OpenAPI\Client\Model\DeleteListen
+$delete_listen = new \Listenbrainz\Model\DeleteListen(); // \Listenbrainz\Model\DeleteListen
 
 try {
     $apiInstance->deleteListen($delete_listen);
@@ -61,7 +61,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **delete_listen** | [**\OpenAPI\Client\Model\DeleteListen**](../Model/DeleteListen.md)|  | |
+| **delete_listen** | [**\Listenbrainz\Model\DeleteListen**](../Model/DeleteListen.md)|  | |
 
 ### Return type
 
@@ -83,7 +83,7 @@ void (empty response body)
 ## `latestImport()`
 
 ```php
-latestImport($user_name): \OpenAPI\Client\Model\LatestImport
+latestImport($user_name): \Listenbrainz\Model\LatestImport
 ```
 
 Get the timestamp of the newest listen submitted by a user in previous imports to ListenBrainz.
@@ -96,12 +96,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\LatestImport**](../Model/LatestImport.md)
+[**\Listenbrainz\Model\LatestImport**](../Model/LatestImport.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ try {
 ## `lbRadioRecordingsForArtist()`
 
 ```php
-lbRadioRecordingsForArtist($seed_artist_mbid, $mode, $max_similar_artists, $max_recordings_per_artist, $pop_begin, $pop_end): array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>
+lbRadioRecordingsForArtist($seed_artist_mbid, $mode, $max_similar_artists, $max_recordings_per_artist, $pop_begin, $pop_end): array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>
 ```
 
 Get recordings for use in LB radio with the given seed artist. The endpoint returns a dict of all the similar artists, including the seed artist. For each artists, there will be a list of dicts that contain recording_mbid, similar_artist_mbid and total_listen_count.
@@ -156,13 +156,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $seed_artist_mbid = 'seed_artist_mbid_example'; // string
-$mode = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\Mode(); // \OpenAPI\Client\Model\Mode | The mode that LB radio should use. Must be easy, medium or hard.
+$mode = new \Listenbrainz\Model\\Listenbrainz\Model\Mode(); // \Listenbrainz\Model\Mode | The mode that LB radio should use. Must be easy, medium or hard.
 $max_similar_artists = 56; // int | The maximum number of similar artists to return recordings for.
 $max_recordings_per_artist = 56; // int | The maximum number of recordings to return for each artist. If there are aren’t enough recordings, all available recordings will be returned.
 $pop_begin = 56; // int | Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes.
@@ -181,7 +181,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **seed_artist_mbid** | **string**|  | |
-| **mode** | [**\OpenAPI\Client\Model\Mode**](../Model/.md)| The mode that LB radio should use. Must be easy, medium or hard. | |
+| **mode** | [**\Listenbrainz\Model\Mode**](../Model/.md)| The mode that LB radio should use. Must be easy, medium or hard. | |
 | **max_similar_artists** | **int**| The maximum number of similar artists to return recordings for. | |
 | **max_recordings_per_artist** | **int**| The maximum number of recordings to return for each artist. If there are aren’t enough recordings, all available recordings will be returned. | |
 | **pop_begin** | **int**| Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. | |
@@ -189,7 +189,7 @@ try {
 
 ### Return type
 
-**array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>**
+**array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>**
 
 ### Authorization
 
@@ -207,7 +207,7 @@ No authorization required
 ## `lbRadioTags()`
 
 ```php
-lbRadioTags($tag, $pop_begin, $pop_end, $count, $operator): \OpenAPI\Client\Model\LbRadioTagsInner[]
+lbRadioTags($tag, $pop_begin, $pop_end, $count, $operator): \Listenbrainz\Model\LbRadioTagsInner[]
 ```
 
 Get recordings for use in LB radio with the specified tags that match the requested criteria.
@@ -220,7 +220,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -229,7 +229,7 @@ $tag = 'tag_example'; // string | The MusicBrainz tag to fetch recordings for, t
 $pop_begin = 56; // int | Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes.
 $pop_end = 56; // int | Popularity range percentage upper bound.
 $count = 25; // int | Optional, number of listens to return.
-$operator = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\Operator(); // \OpenAPI\Client\Model\Operator | Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags.
+$operator = new \Listenbrainz\Model\\Listenbrainz\Model\Operator(); // \Listenbrainz\Model\Operator | Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags.
 
 try {
     $result = $apiInstance->lbRadioTags($tag, $pop_begin, $pop_end, $count, $operator);
@@ -247,11 +247,11 @@ try {
 | **pop_begin** | **int**| Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. | |
 | **pop_end** | **int**| Popularity range percentage upper bound. | |
 | **count** | **int**| Optional, number of listens to return. | [default to 25] |
-| **operator** | [**\OpenAPI\Client\Model\Operator**](../Model/.md)| Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. | [optional] |
+| **operator** | [**\Listenbrainz\Model\Operator**](../Model/.md)| Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\LbRadioTagsInner[]**](../Model/LbRadioTagsInner.md)
+[**\Listenbrainz\Model\LbRadioTagsInner[]**](../Model/LbRadioTagsInner.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ No authorization required
 ## `listenCountForUser()`
 
 ```php
-listenCountForUser($user_name): \OpenAPI\Client\Model\ListenCountForUser
+listenCountForUser($user_name): \Listenbrainz\Model\ListenCountForUser
 ```
 
 Get the number of listens for a user 'user_name'.
@@ -282,7 +282,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -305,7 +305,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListenCountForUser**](../Model/ListenCountForUser.md)
+[**\Listenbrainz\Model\ListenCountForUser**](../Model/ListenCountForUser.md)
 
 ### Authorization
 
@@ -323,7 +323,7 @@ No authorization required
 ## `listensForUser()`
 
 ```php
-listensForUser($user_name, $max_ts, $min_ts, $count): \OpenAPI\Client\Model\ListensForUser
+listensForUser($user_name, $max_ts, $min_ts, $count): \Listenbrainz\Model\ListensForUser
 ```
 
 Get listens for user 'user_name'.
@@ -336,7 +336,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -365,7 +365,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListensForUser**](../Model/ListensForUser.md)
+[**\Listenbrainz\Model\ListensForUser**](../Model/ListensForUser.md)
 
 ### Authorization
 
@@ -383,7 +383,7 @@ No authorization required
 ## `playingNowForUser()`
 
 ```php
-playingNowForUser($user_name): \OpenAPI\Client\Model\PlayingNowForUser
+playingNowForUser($user_name): \Listenbrainz\Model\PlayingNowForUser
 ```
 
 Get the listen being played right now for user 'user_name'
@@ -396,7 +396,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -419,7 +419,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PlayingNowForUser**](../Model/PlayingNowForUser.md)
+[**\Listenbrainz\Model\PlayingNowForUser**](../Model/PlayingNowForUser.md)
 
 ### Authorization
 
@@ -437,7 +437,7 @@ No authorization required
 ## `recommendationPlaylistsForUser()`
 
 ```php
-recommendationPlaylistsForUser($playlist_user_name): \OpenAPI\Client\Model\Playlists
+recommendationPlaylistsForUser($playlist_user_name): \Listenbrainz\Model\Playlists
 ```
 
 Fetch recommendation playlist metadata in JSPF format without recordings for 'playlist_user_name'. This endpoint only lists playlists that are to be shown on the listenbrainz.org recommendations pages.
@@ -450,7 +450,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -473,7 +473,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Playlists**](../Model/Playlists.md)
+[**\Listenbrainz\Model\Playlists**](../Model/Playlists.md)
 
 ### Authorization
 
@@ -491,7 +491,7 @@ No authorization required
 ## `searchPlaylistForUser()`
 
 ```php
-searchPlaylistForUser($playlist_user_name, $query, $count, $offset): \OpenAPI\Client\Model\Playlists
+searchPlaylistForUser($playlist_user_name, $query, $count, $offset): \Listenbrainz\Model\Playlists
 ```
 
 Search for a playlist by name for a user.
@@ -504,7 +504,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -533,7 +533,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Playlists**](../Model/Playlists.md)
+[**\Listenbrainz\Model\Playlists**](../Model/Playlists.md)
 
 ### Authorization
 
@@ -551,7 +551,7 @@ No authorization required
 ## `searchUsers()`
 
 ```php
-searchUsers($search_term): \OpenAPI\Client\Model\SearchUsers
+searchUsers($search_term): \Listenbrainz\Model\SearchUsers
 ```
 
 Search a ListenBrainz-registered user.
@@ -564,7 +564,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -587,7 +587,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SearchUsers**](../Model/SearchUsers.md)
+[**\Listenbrainz\Model\SearchUsers**](../Model/SearchUsers.md)
 
 ### Authorization
 
@@ -605,7 +605,7 @@ No authorization required
 ## `servicesForUser()`
 
 ```php
-servicesForUser($user_name): \OpenAPI\Client\Model\ServicesForUser
+servicesForUser($user_name): \Listenbrainz\Model\ServicesForUser
 ```
 
 Get list of services which are connected to a given user's account.
@@ -618,12 +618,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -647,7 +647,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ServicesForUser**](../Model/ServicesForUser.md)
+[**\Listenbrainz\Model\ServicesForUser**](../Model/ServicesForUser.md)
 
 ### Authorization
 
@@ -665,7 +665,7 @@ try {
 ## `similarUsersForUser()`
 
 ```php
-similarUsersForUser($user_name): \OpenAPI\Client\Model\SimilarUsersForUser
+similarUsersForUser($user_name): \Listenbrainz\Model\SimilarUsersForUser
 ```
 
 Get the listen being played right now for user 'user_name'.
@@ -678,7 +678,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -701,7 +701,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SimilarUsersForUser**](../Model/SimilarUsersForUser.md)
+[**\Listenbrainz\Model\SimilarUsersForUser**](../Model/SimilarUsersForUser.md)
 
 ### Authorization
 
@@ -719,7 +719,7 @@ No authorization required
 ## `similarityOfUserForUser()`
 
 ```php
-similarityOfUserForUser($user_name, $other_user_name): \OpenAPI\Client\Model\SimilarityOfUserForUser
+similarityOfUserForUser($user_name, $other_user_name): \Listenbrainz\Model\SimilarityOfUserForUser
 ```
 
 Get the similarity of 'user_name' and 'other_user_name', based on their listening history.
@@ -732,7 +732,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -757,7 +757,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SimilarityOfUserForUser**](../Model/SimilarityOfUserForUser.md)
+[**\Listenbrainz\Model\SimilarityOfUserForUser**](../Model/SimilarityOfUserForUser.md)
 
 ### Authorization
 
@@ -788,18 +788,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$submit_listens = new \OpenAPI\Client\Model\SubmitListens(); // \OpenAPI\Client\Model\SubmitListens
+$submit_listens = new \Listenbrainz\Model\SubmitListens(); // \Listenbrainz\Model\SubmitListens
 
 try {
     $apiInstance->submitListens($submit_listens);
@@ -812,7 +812,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **submit_listens** | [**\OpenAPI\Client\Model\SubmitListens**](../Model/SubmitListens.md)|  | |
+| **submit_listens** | [**\Listenbrainz\Model\SubmitListens**](../Model/SubmitListens.md)|  | |
 
 ### Return type
 
@@ -834,7 +834,7 @@ void (empty response body)
 ## `validateToken()`
 
 ```php
-validateToken(): \OpenAPI\Client\Model\ValidateToken
+validateToken(): \Listenbrainz\Model\ValidateToken
 ```
 
 Check whether a User Token is a valid entry in the database.
@@ -847,12 +847,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbCoreApi(
+$apiInstance = new Listenbrainz\Api\LbCoreApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -873,7 +873,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ValidateToken**](../Model/ValidateToken.md)
+[**\Listenbrainz\Model\ValidateToken**](../Model/ValidateToken.md)
 
 ### Authorization
 

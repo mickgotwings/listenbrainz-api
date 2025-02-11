@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ArtistMetadataTag Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ArtistMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'artist' => '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]'
+        'artist' => '\Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class ArtistMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets artist
      *
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]
+     * @return \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]
      */
     public function getArtist()
     {
@@ -305,7 +305,7 @@ class ArtistMetadataTag implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets artist
      *
-     * @param \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagArtistInner[] $artist artist
+     * @param \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagArtistInner[] $artist artist
      *
      * @return self
      */

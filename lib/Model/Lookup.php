@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * Lookup Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class Lookup implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'artist_credit_name' => 'string',
         'artist_mbids' => 'string[]',
-        'metadata' => '\OpenAPI\Client\Model\LookupMetadata',
+        'metadata' => '\Listenbrainz\Model\LookupMetadata',
         'recording_mbid' => 'string',
         'recording_name' => 'string',
         'release_mbid' => 'string',
@@ -388,7 +388,7 @@ class Lookup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets metadata
      *
-     * @return \OpenAPI\Client\Model\LookupMetadata|null
+     * @return \Listenbrainz\Model\LookupMetadata|null
      */
     public function getMetadata()
     {
@@ -398,7 +398,7 @@ class Lookup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets metadata
      *
-     * @param \OpenAPI\Client\Model\LookupMetadata|null $metadata metadata
+     * @param \Listenbrainz\Model\LookupMetadata|null $metadata metadata
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\LbRecommendationsApi
+# Listenbrainz\LbRecommendationsApi
 
 All URIs are relative to https://api.listenbrainz.org, except if the operation defines another base path.
 
@@ -27,18 +27,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecommendationsApi(
+$apiInstance = new Listenbrainz\Api\LbRecommendationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$delete_feedback_request = new \OpenAPI\Client\Model\DeleteFeedbackRequest(); // \OpenAPI\Client\Model\DeleteFeedbackRequest
+$delete_feedback_request = new \Listenbrainz\Model\DeleteFeedbackRequest(); // \Listenbrainz\Model\DeleteFeedbackRequest
 
 try {
     $apiInstance->deleteFeedback($delete_feedback_request);
@@ -51,7 +51,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **delete_feedback_request** | [**\OpenAPI\Client\Model\DeleteFeedbackRequest**](../Model/DeleteFeedbackRequest.md)|  | |
+| **delete_feedback_request** | [**\Listenbrainz\Model\DeleteFeedbackRequest**](../Model/DeleteFeedbackRequest.md)|  | |
 
 ### Return type
 
@@ -73,7 +73,7 @@ void (empty response body)
 ## `feedbackGivenBy()`
 
 ```php
-feedbackGivenBy($user_name, $rating, $count, $offset): \OpenAPI\Client\Model\FeedbackGivenBy
+feedbackGivenBy($user_name, $rating, $count, $offset): \Listenbrainz\Model\FeedbackGivenBy
 ```
 
 Get feedback given by user 'user_name'.
@@ -86,7 +86,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecommendationsApi(
+$apiInstance = new Listenbrainz\Api\LbRecommendationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -115,7 +115,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FeedbackGivenBy**](../Model/FeedbackGivenBy.md)
+[**\Listenbrainz\Model\FeedbackGivenBy**](../Model/FeedbackGivenBy.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ No authorization required
 ## `recordingRecommendations()`
 
 ```php
-recordingRecommendations($user_name, $count, $offset): \OpenAPI\Client\Model\RecordingRecommendations
+recordingRecommendations($user_name, $count, $offset): \Listenbrainz\Model\RecordingRecommendations
 ```
 
 Get recommendations sorted on rating and ratings for user 'user_name'.
@@ -146,7 +146,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecommendationsApi(
+$apiInstance = new Listenbrainz\Api\LbRecommendationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -173,7 +173,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RecordingRecommendations**](../Model/RecordingRecommendations.md)
+[**\Listenbrainz\Model\RecordingRecommendations**](../Model/RecordingRecommendations.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ No authorization required
 ## `recordingsFeedbackGivenBy()`
 
 ```php
-recordingsFeedbackGivenBy($user_name, $mbids): \OpenAPI\Client\Model\RecordingsFeedbackGivenBy
+recordingsFeedbackGivenBy($user_name, $mbids): \Listenbrainz\Model\RecordingsFeedbackGivenBy
 ```
 
 Get feedback given by user 'user_name' for the list of recordings supplied.
@@ -204,7 +204,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecommendationsApi(
+$apiInstance = new Listenbrainz\Api\LbRecommendationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -229,7 +229,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RecordingsFeedbackGivenBy**](../Model/RecordingsFeedbackGivenBy.md)
+[**\Listenbrainz\Model\RecordingsFeedbackGivenBy**](../Model/RecordingsFeedbackGivenBy.md)
 
 ### Authorization
 
@@ -260,18 +260,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbRecommendationsApi(
+$apiInstance = new Listenbrainz\Api\LbRecommendationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$submit_feedback_request = new \OpenAPI\Client\Model\SubmitFeedbackRequest(); // \OpenAPI\Client\Model\SubmitFeedbackRequest
+$submit_feedback_request = new \Listenbrainz\Model\SubmitFeedbackRequest(); // \Listenbrainz\Model\SubmitFeedbackRequest
 
 try {
     $apiInstance->submitFeedback($submit_feedback_request);
@@ -284,7 +284,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **submit_feedback_request** | [**\OpenAPI\Client\Model\SubmitFeedbackRequest**](../Model/SubmitFeedbackRequest.md)|  | |
+| **submit_feedback_request** | [**\Listenbrainz\Model\SubmitFeedbackRequest**](../Model/SubmitFeedbackRequest.md)|  | |
 
 ### Return type
 

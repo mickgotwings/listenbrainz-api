@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Listenbrainz\ApiException;
+use Listenbrainz\Configuration;
+use Listenbrainz\HeaderSelector;
+use Listenbrainz\ObjectSerializer;
 
 /**
  * LbRecommendationsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,10 +139,10 @@ class LbRecommendationsApi
      *
      * Delete feedback for a user. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one recording mbid in the payload.
      *
-     * @param  \OpenAPI\Client\Model\DeleteFeedbackRequest $delete_feedback_request delete_feedback_request (required)
+     * @param  \Listenbrainz\Model\DeleteFeedbackRequest $delete_feedback_request delete_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteFeedback'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -156,10 +156,10 @@ class LbRecommendationsApi
      *
      * Delete feedback for a user. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one recording mbid in the payload.
      *
-     * @param  \OpenAPI\Client\Model\DeleteFeedbackRequest $delete_feedback_request (required)
+     * @param  \Listenbrainz\Model\DeleteFeedbackRequest $delete_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteFeedback'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -204,7 +204,7 @@ class LbRecommendationsApi
      *
      * Delete feedback for a user. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one recording mbid in the payload.
      *
-     * @param  \OpenAPI\Client\Model\DeleteFeedbackRequest $delete_feedback_request (required)
+     * @param  \Listenbrainz\Model\DeleteFeedbackRequest $delete_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteFeedback'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -225,7 +225,7 @@ class LbRecommendationsApi
      *
      * Delete feedback for a user. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one recording mbid in the payload.
      *
-     * @param  \OpenAPI\Client\Model\DeleteFeedbackRequest $delete_feedback_request (required)
+     * @param  \Listenbrainz\Model\DeleteFeedbackRequest $delete_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteFeedback'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -262,7 +262,7 @@ class LbRecommendationsApi
     /**
      * Create request for operation 'deleteFeedback'
      *
-     * @param  \OpenAPI\Client\Model\DeleteFeedbackRequest $delete_feedback_request (required)
+     * @param  \Listenbrainz\Model\DeleteFeedbackRequest $delete_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteFeedback'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -366,9 +366,9 @@ class LbRecommendationsApi
      * @param  int|null $offset Optional, number of mbids to skip from the beginning, for pagination. Ex. An offset of 5 means the 5 mbids will be skipped. (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedbackGivenBy'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FeedbackGivenBy
+     * @return \Listenbrainz\Model\FeedbackGivenBy
      */
     public function feedbackGivenBy($user_name, $rating = null, $count = 25, $offset = 25, string $contentType = self::contentTypes['feedbackGivenBy'][0])
     {
@@ -387,9 +387,9 @@ class LbRecommendationsApi
      * @param  int|null $offset Optional, number of mbids to skip from the beginning, for pagination. Ex. An offset of 5 means the 5 mbids will be skipped. (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedbackGivenBy'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FeedbackGivenBy, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\FeedbackGivenBy, HTTP status code, HTTP response headers (array of strings)
      */
     public function feedbackGivenByWithHttpInfo($user_name, $rating = null, $count = 25, $offset = 25, string $contentType = self::contentTypes['feedbackGivenBy'][0])
     {
@@ -420,11 +420,11 @@ class LbRecommendationsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FeedbackGivenBy' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\FeedbackGivenBy' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FeedbackGivenBy' !== 'string') {
+                        if ('\Listenbrainz\Model\FeedbackGivenBy' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -442,7 +442,7 @@ class LbRecommendationsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FeedbackGivenBy', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\FeedbackGivenBy', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -461,7 +461,7 @@ class LbRecommendationsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FeedbackGivenBy';
+            $returnType = '\Listenbrainz\Model\FeedbackGivenBy';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -494,7 +494,7 @@ class LbRecommendationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FeedbackGivenBy',
+                        '\Listenbrainz\Model\FeedbackGivenBy',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -544,7 +544,7 @@ class LbRecommendationsApi
      */
     public function feedbackGivenByAsyncWithHttpInfo($user_name, $rating = null, $count = 25, $offset = 25, string $contentType = self::contentTypes['feedbackGivenBy'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FeedbackGivenBy';
+        $returnType = '\Listenbrainz\Model\FeedbackGivenBy';
         $request = $this->feedbackGivenByRequest($user_name, $rating, $count, $offset, $contentType);
 
         return $this->client
@@ -718,9 +718,9 @@ class LbRecommendationsApi
      * @param  int|null $offset Optional, number of mbids to skip from the beginning, for pagination. Ex. An offset of 5 means the 5 mbids will be skipped. (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingRecommendations'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\RecordingRecommendations
+     * @return \Listenbrainz\Model\RecordingRecommendations
      */
     public function recordingRecommendations($user_name, $count = 25, $offset = 25, string $contentType = self::contentTypes['recordingRecommendations'][0])
     {
@@ -738,9 +738,9 @@ class LbRecommendationsApi
      * @param  int|null $offset Optional, number of mbids to skip from the beginning, for pagination. Ex. An offset of 5 means the 5 mbids will be skipped. (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingRecommendations'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\RecordingRecommendations, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\RecordingRecommendations, HTTP status code, HTTP response headers (array of strings)
      */
     public function recordingRecommendationsWithHttpInfo($user_name, $count = 25, $offset = 25, string $contentType = self::contentTypes['recordingRecommendations'][0])
     {
@@ -771,11 +771,11 @@ class LbRecommendationsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\RecordingRecommendations' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\RecordingRecommendations' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RecordingRecommendations' !== 'string') {
+                        if ('\Listenbrainz\Model\RecordingRecommendations' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -793,7 +793,7 @@ class LbRecommendationsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RecordingRecommendations', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\RecordingRecommendations', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -812,7 +812,7 @@ class LbRecommendationsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\RecordingRecommendations';
+            $returnType = '\Listenbrainz\Model\RecordingRecommendations';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -845,7 +845,7 @@ class LbRecommendationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RecordingRecommendations',
+                        '\Listenbrainz\Model\RecordingRecommendations',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -893,7 +893,7 @@ class LbRecommendationsApi
      */
     public function recordingRecommendationsAsyncWithHttpInfo($user_name, $count = 25, $offset = 25, string $contentType = self::contentTypes['recordingRecommendations'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\RecordingRecommendations';
+        $returnType = '\Listenbrainz\Model\RecordingRecommendations';
         $request = $this->recordingRecommendationsRequest($user_name, $count, $offset, $contentType);
 
         return $this->client
@@ -1055,9 +1055,9 @@ class LbRecommendationsApi
      * @param  string[] $mbids Comma separated list of recording_mbids for which feedback records are to be fetched. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingsFeedbackGivenBy'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\RecordingsFeedbackGivenBy
+     * @return \Listenbrainz\Model\RecordingsFeedbackGivenBy
      */
     public function recordingsFeedbackGivenBy($user_name, $mbids, string $contentType = self::contentTypes['recordingsFeedbackGivenBy'][0])
     {
@@ -1074,9 +1074,9 @@ class LbRecommendationsApi
      * @param  string[] $mbids Comma separated list of recording_mbids for which feedback records are to be fetched. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingsFeedbackGivenBy'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\RecordingsFeedbackGivenBy, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\RecordingsFeedbackGivenBy, HTTP status code, HTTP response headers (array of strings)
      */
     public function recordingsFeedbackGivenByWithHttpInfo($user_name, $mbids, string $contentType = self::contentTypes['recordingsFeedbackGivenBy'][0])
     {
@@ -1107,11 +1107,11 @@ class LbRecommendationsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\RecordingsFeedbackGivenBy' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\RecordingsFeedbackGivenBy' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\RecordingsFeedbackGivenBy' !== 'string') {
+                        if ('\Listenbrainz\Model\RecordingsFeedbackGivenBy' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1129,7 +1129,7 @@ class LbRecommendationsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\RecordingsFeedbackGivenBy', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\RecordingsFeedbackGivenBy', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1148,7 +1148,7 @@ class LbRecommendationsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\RecordingsFeedbackGivenBy';
+            $returnType = '\Listenbrainz\Model\RecordingsFeedbackGivenBy';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1181,7 +1181,7 @@ class LbRecommendationsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\RecordingsFeedbackGivenBy',
+                        '\Listenbrainz\Model\RecordingsFeedbackGivenBy',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1227,7 +1227,7 @@ class LbRecommendationsApi
      */
     public function recordingsFeedbackGivenByAsyncWithHttpInfo($user_name, $mbids, string $contentType = self::contentTypes['recordingsFeedbackGivenBy'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\RecordingsFeedbackGivenBy';
+        $returnType = '\Listenbrainz\Model\RecordingsFeedbackGivenBy';
         $request = $this->recordingsFeedbackGivenByRequest($user_name, $mbids, $contentType);
 
         return $this->client
@@ -1380,10 +1380,10 @@ class LbRecommendationsApi
      *
      * Submit recommendation feedback. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
      *
-     * @param  \OpenAPI\Client\Model\SubmitFeedbackRequest $submit_feedback_request submit_feedback_request (required)
+     * @param  \Listenbrainz\Model\SubmitFeedbackRequest $submit_feedback_request submit_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitFeedback'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1397,10 +1397,10 @@ class LbRecommendationsApi
      *
      * Submit recommendation feedback. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
      *
-     * @param  \OpenAPI\Client\Model\SubmitFeedbackRequest $submit_feedback_request (required)
+     * @param  \Listenbrainz\Model\SubmitFeedbackRequest $submit_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitFeedback'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1445,7 +1445,7 @@ class LbRecommendationsApi
      *
      * Submit recommendation feedback. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
      *
-     * @param  \OpenAPI\Client\Model\SubmitFeedbackRequest $submit_feedback_request (required)
+     * @param  \Listenbrainz\Model\SubmitFeedbackRequest $submit_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitFeedback'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1466,7 +1466,7 @@ class LbRecommendationsApi
      *
      * Submit recommendation feedback. A user token (found on https://listenbrainz.org/settings/ ) must be provided in the Authorization header! Each request should contain only one feedback in the payload.
      *
-     * @param  \OpenAPI\Client\Model\SubmitFeedbackRequest $submit_feedback_request (required)
+     * @param  \Listenbrainz\Model\SubmitFeedbackRequest $submit_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitFeedback'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1503,7 +1503,7 @@ class LbRecommendationsApi
     /**
      * Create request for operation 'submitFeedback'
      *
-     * @param  \OpenAPI\Client\Model\SubmitFeedbackRequest $submit_feedback_request (required)
+     * @param  \Listenbrainz\Model\SubmitFeedbackRequest $submit_feedback_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitFeedback'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * FreshReleases Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class FreshReleases implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\OpenAPI\Client\Model\FreshReleasesPayload'
+        'payload' => '\Listenbrainz\Model\FreshReleasesPayload'
     ];
 
     /**
@@ -295,7 +295,7 @@ class FreshReleases implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\FreshReleasesPayload
+     * @return \Listenbrainz\Model\FreshReleasesPayload
      */
     public function getPayload()
     {
@@ -305,7 +305,7 @@ class FreshReleases implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\FreshReleasesPayload $payload payload
+     * @param \Listenbrainz\Model\FreshReleasesPayload $payload payload
      *
      * @return self
      */

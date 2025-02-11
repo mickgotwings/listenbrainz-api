@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **last_updated** | **int** |  |
 **offset** | **int** |  |
 **range** | **string** |  |
-**releases** | [**\OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInner[]**](TopReleasesForUserPayloadReleasesInner.md) |  |
+**releases** | [**\Listenbrainz\Model\TopReleasesForUserPayloadReleasesInner[]**](TopReleasesForUserPayloadReleasesInner.md) |  |
 **to_ts** | **int** |  |
 **total_release_count** | **int** |  |
 **user_id** | **string** |  |

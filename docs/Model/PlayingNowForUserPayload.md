@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **int** |  |
-**listens** | [**\OpenAPI\Client\Model\PlayingNowForUserPayloadListensInner[]**](PlayingNowForUserPayloadListensInner.md) |  |
+**listens** | [**\Listenbrainz\Model\PlayingNowForUserPayloadListensInner[]**](PlayingNowForUserPayloadListensInner.md) |  |
 **playing_now** | **bool** |  |
 **user_id** | **string** |  |
 

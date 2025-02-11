@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ReleaseGroupMetadata Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class ReleaseGroupMetadata implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'release_group' => '\OpenAPI\Client\Model\ReleaseGroupMetadataReleaseGroup',
-        'tag' => '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTag',
-        'artist' => '\OpenAPI\Client\Model\ReleaseGroupMetadataArtist',
-        'release' => '\OpenAPI\Client\Model\ReleaseGroupMetadataReleaseGroup'
+        'release_group' => '\Listenbrainz\Model\ReleaseGroupMetadataReleaseGroup',
+        'tag' => '\Listenbrainz\Model\TopReleaseGroupsForArtistInnerTag',
+        'artist' => '\Listenbrainz\Model\ReleaseGroupMetadataArtist',
+        'release' => '\Listenbrainz\Model\ReleaseGroupMetadataReleaseGroup'
     ];
 
     /**
@@ -313,7 +313,7 @@ class ReleaseGroupMetadata implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets release_group
      *
-     * @return \OpenAPI\Client\Model\ReleaseGroupMetadataReleaseGroup|null
+     * @return \Listenbrainz\Model\ReleaseGroupMetadataReleaseGroup|null
      */
     public function getReleaseGroup()
     {
@@ -323,7 +323,7 @@ class ReleaseGroupMetadata implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets release_group
      *
-     * @param \OpenAPI\Client\Model\ReleaseGroupMetadataReleaseGroup|null $release_group release_group
+     * @param \Listenbrainz\Model\ReleaseGroupMetadataReleaseGroup|null $release_group release_group
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class ReleaseGroupMetadata implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets tag
      *
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTag|null
+     * @return \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTag|null
      */
     public function getTag()
     {
@@ -350,7 +350,7 @@ class ReleaseGroupMetadata implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets tag
      *
-     * @param \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTag|null $tag tag
+     * @param \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTag|null $tag tag
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class ReleaseGroupMetadata implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets artist
      *
-     * @return \OpenAPI\Client\Model\ReleaseGroupMetadataArtist|null
+     * @return \Listenbrainz\Model\ReleaseGroupMetadataArtist|null
      */
     public function getArtist()
     {
@@ -377,7 +377,7 @@ class ReleaseGroupMetadata implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets artist
      *
-     * @param \OpenAPI\Client\Model\ReleaseGroupMetadataArtist|null $artist artist
+     * @param \Listenbrainz\Model\ReleaseGroupMetadataArtist|null $artist artist
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class ReleaseGroupMetadata implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets release
      *
-     * @return \OpenAPI\Client\Model\ReleaseGroupMetadataReleaseGroup|null
+     * @return \Listenbrainz\Model\ReleaseGroupMetadataReleaseGroup|null
      */
     public function getRelease()
     {
@@ -404,7 +404,7 @@ class ReleaseGroupMetadata implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets release
      *
-     * @param \OpenAPI\Client\Model\ReleaseGroupMetadataReleaseGroup|null $release release
+     * @param \Listenbrainz\Model\ReleaseGroupMetadataReleaseGroup|null $release release
      *
      * @return self
      */

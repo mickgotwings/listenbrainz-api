@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **last_updated** | **int** |  |
 **offset** | **int** |  |
 **range** | **string** |  |
-**recordings** | [**\OpenAPI\Client\Model\TopRecordingsForUserPayloadRecordingsInner[]**](TopRecordingsForUserPayloadRecordingsInner.md) |  |
+**recordings** | [**\Listenbrainz\Model\TopRecordingsForUserPayloadRecordingsInner[]**](TopRecordingsForUserPayloadRecordingsInner.md) |  |
 **to_ts** | **int** |  |
 **total_recording_count** | **int** |  |
 **user_id** | **string** |  |

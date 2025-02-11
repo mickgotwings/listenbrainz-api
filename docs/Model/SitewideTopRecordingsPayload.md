@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **last_updated** | **int** |  |
 **offset** | **int** |  |
 **range** | **string** |  |
-**recordings** | [**\OpenAPI\Client\Model\SitewideTopRecordingsPayloadRecordingsInner[]**](SitewideTopRecordingsPayloadRecordingsInner.md) |  |
+**recordings** | [**\Listenbrainz\Model\SitewideTopRecordingsPayloadRecordingsInner[]**](SitewideTopRecordingsPayloadRecordingsInner.md) |  |
 **to_ts** | **int** |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

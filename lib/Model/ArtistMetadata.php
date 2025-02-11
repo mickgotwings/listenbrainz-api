@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ArtistMetadata Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,8 +63,8 @@ class ArtistMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
         'gender' => 'string',
         'mbid' => 'string',
         'name' => 'string',
-        'rels' => '\OpenAPI\Client\Model\Rels1',
-        'tag' => '\OpenAPI\Client\Model\ArtistMetadataTag',
+        'rels' => '\Listenbrainz\Model\Rels1',
+        'tag' => '\Listenbrainz\Model\ArtistMetadataTag',
         'type' => 'string'
     ];
 
@@ -510,7 +510,7 @@ class ArtistMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets rels
      *
-     * @return \OpenAPI\Client\Model\Rels1|null
+     * @return \Listenbrainz\Model\Rels1|null
      */
     public function getRels()
     {
@@ -520,7 +520,7 @@ class ArtistMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets rels
      *
-     * @param \OpenAPI\Client\Model\Rels1|null $rels rels
+     * @param \Listenbrainz\Model\Rels1|null $rels rels
      *
      * @return self
      */
@@ -537,7 +537,7 @@ class ArtistMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tag
      *
-     * @return \OpenAPI\Client\Model\ArtistMetadataTag|null
+     * @return \Listenbrainz\Model\ArtistMetadataTag|null
      */
     public function getTag()
     {
@@ -547,7 +547,7 @@ class ArtistMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tag
      *
-     * @param \OpenAPI\Client\Model\ArtistMetadataTag|null $tag tag
+     * @param \Listenbrainz\Model\ArtistMetadataTag|null $tag tag
      *
      * @return self
      */

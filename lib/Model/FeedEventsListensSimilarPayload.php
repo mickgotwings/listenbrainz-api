@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * FeedEventsListensSimilarPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class FeedEventsListensSimilarPayload implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'count' => 'int',
-        'events' => '\OpenAPI\Client\Model\FeedEventsListensSimilarPayloadEventsInner[]',
+        'events' => '\Listenbrainz\Model\FeedEventsListensSimilarPayloadEventsInner[]',
         'user_id' => 'string'
     ];
 
@@ -342,7 +342,7 @@ class FeedEventsListensSimilarPayload implements ModelInterface, ArrayAccess, \J
     /**
      * Gets events
      *
-     * @return \OpenAPI\Client\Model\FeedEventsListensSimilarPayloadEventsInner[]
+     * @return \Listenbrainz\Model\FeedEventsListensSimilarPayloadEventsInner[]
      */
     public function getEvents()
     {
@@ -352,7 +352,7 @@ class FeedEventsListensSimilarPayload implements ModelInterface, ArrayAccess, \J
     /**
      * Sets events
      *
-     * @param \OpenAPI\Client\Model\FeedEventsListensSimilarPayloadEventsInner[] $events events
+     * @param \Listenbrainz\Model\FeedEventsListensSimilarPayloadEventsInner[] $events events
      *
      * @return self
      */

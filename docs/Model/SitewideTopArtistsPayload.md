@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**artists** | [**\OpenAPI\Client\Model\TopArtistsForUserPayloadArtistsInner[]**](TopArtistsForUserPayloadArtistsInner.md) |  |
+**artists** | [**\Listenbrainz\Model\TopArtistsForUserPayloadArtistsInner[]**](TopArtistsForUserPayloadArtistsInner.md) |  |
 **count** | **int** |  |
 **from_ts** | **int** |  |
 **last_updated** | **int** |  |

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner implements Model
     protected static $openAPITypes = [
         'artist_credit_mbids' => 'string[]',
         'artist_credit_name' => 'string',
-        'artists' => '\OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]',
+        'artists' => '\Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]',
         'caa_id' => 'int',
         'caa_release_mbid' => 'string',
         'release_group_mbid' => 'string',
@@ -388,7 +388,7 @@ class YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner implements Model
     /**
      * Gets artists
      *
-     * @return \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null
+     * @return \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null
      */
     public function getArtists()
     {
@@ -398,7 +398,7 @@ class YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner implements Model
     /**
      * Sets artists
      *
-     * @param \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null $artists artists
+     * @param \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null $artists artists
      *
      * @return self
      */

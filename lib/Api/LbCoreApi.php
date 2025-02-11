@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Listenbrainz\ApiException;
+use Listenbrainz\Configuration;
+use Listenbrainz\HeaderSelector;
+use Listenbrainz\ObjectSerializer;
 
 /**
  * LbCoreApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -169,10 +169,10 @@ class LbCoreApi
      *
      * Delete a particular listen from a user&#39;s listen history.
      *
-     * @param  \OpenAPI\Client\Model\DeleteListen $delete_listen delete_listen (required)
+     * @param  \Listenbrainz\Model\DeleteListen $delete_listen delete_listen (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteListen'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -186,10 +186,10 @@ class LbCoreApi
      *
      * Delete a particular listen from a user&#39;s listen history.
      *
-     * @param  \OpenAPI\Client\Model\DeleteListen $delete_listen (required)
+     * @param  \Listenbrainz\Model\DeleteListen $delete_listen (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteListen'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -234,7 +234,7 @@ class LbCoreApi
      *
      * Delete a particular listen from a user&#39;s listen history.
      *
-     * @param  \OpenAPI\Client\Model\DeleteListen $delete_listen (required)
+     * @param  \Listenbrainz\Model\DeleteListen $delete_listen (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteListen'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -255,7 +255,7 @@ class LbCoreApi
      *
      * Delete a particular listen from a user&#39;s listen history.
      *
-     * @param  \OpenAPI\Client\Model\DeleteListen $delete_listen (required)
+     * @param  \Listenbrainz\Model\DeleteListen $delete_listen (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteListen'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -292,7 +292,7 @@ class LbCoreApi
     /**
      * Create request for operation 'deleteListen'
      *
-     * @param  \OpenAPI\Client\Model\DeleteListen $delete_listen (required)
+     * @param  \Listenbrainz\Model\DeleteListen $delete_listen (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteListen'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -393,9 +393,9 @@ class LbCoreApi
      * @param  string $user_name The MusicBrainz ID of the user whose data is needed. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['latestImport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\LatestImport
+     * @return \Listenbrainz\Model\LatestImport
      */
     public function latestImport($user_name, string $contentType = self::contentTypes['latestImport'][0])
     {
@@ -411,9 +411,9 @@ class LbCoreApi
      * @param  string $user_name The MusicBrainz ID of the user whose data is needed. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['latestImport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\LatestImport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\LatestImport, HTTP status code, HTTP response headers (array of strings)
      */
     public function latestImportWithHttpInfo($user_name, string $contentType = self::contentTypes['latestImport'][0])
     {
@@ -444,11 +444,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\LatestImport' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\LatestImport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\LatestImport' !== 'string') {
+                        if ('\Listenbrainz\Model\LatestImport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -466,7 +466,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\LatestImport', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\LatestImport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -485,7 +485,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\LatestImport';
+            $returnType = '\Listenbrainz\Model\LatestImport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -518,7 +518,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\LatestImport',
+                        '\Listenbrainz\Model\LatestImport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -562,7 +562,7 @@ class LbCoreApi
      */
     public function latestImportAsyncWithHttpInfo($user_name, string $contentType = self::contentTypes['latestImport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\LatestImport';
+        $returnType = '\Listenbrainz\Model\LatestImport';
         $request = $this->latestImportRequest($user_name, $contentType);
 
         return $this->client
@@ -705,16 +705,16 @@ class LbCoreApi
      * Get recordings for use in LB radio with the given seed artist. The endpoint returns a dict of all the similar artists, including the seed artist. For each artists, there will be a list of dicts that contain recording_mbid, similar_artist_mbid and total_listen_count.
      *
      * @param  string $seed_artist_mbid seed_artist_mbid (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  int $max_similar_artists The maximum number of similar artists to return recordings for. (required)
      * @param  int $max_recordings_per_artist The maximum number of recordings to return for each artist. If there are aren’t enough recordings, all available recordings will be returned. (required)
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
      * @param  int $pop_end Popularity range percentage upper bound. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadioRecordingsForArtist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>
+     * @return array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>
      */
     public function lbRadioRecordingsForArtist($seed_artist_mbid, $mode, $max_similar_artists, $max_recordings_per_artist, $pop_begin, $pop_end, string $contentType = self::contentTypes['lbRadioRecordingsForArtist'][0])
     {
@@ -728,16 +728,16 @@ class LbCoreApi
      * Get recordings for use in LB radio with the given seed artist. The endpoint returns a dict of all the similar artists, including the seed artist. For each artists, there will be a list of dicts that contain recording_mbid, similar_artist_mbid and total_listen_count.
      *
      * @param  string $seed_artist_mbid (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  int $max_similar_artists The maximum number of similar artists to return recordings for. (required)
      * @param  int $max_recordings_per_artist The maximum number of recordings to return for each artist. If there are aren’t enough recordings, all available recordings will be returned. (required)
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
      * @param  int $pop_end Popularity range percentage upper bound. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadioRecordingsForArtist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>, HTTP status code, HTTP response headers (array of strings)
      */
     public function lbRadioRecordingsForArtistWithHttpInfo($seed_artist_mbid, $mode, $max_similar_artists, $max_recordings_per_artist, $pop_begin, $pop_end, string $contentType = self::contentTypes['lbRadioRecordingsForArtist'][0])
     {
@@ -768,11 +768,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>' === '\SplFileObject') {
+                    if ('array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>' !== 'string') {
+                        if ('array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -790,7 +790,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, 'array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>', []),
+                        ObjectSerializer::deserialize($content, 'array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -809,7 +809,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = 'array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>';
+            $returnType = 'array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -842,7 +842,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        'array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>',
+                        'array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -858,7 +858,7 @@ class LbCoreApi
      * Get recordings for use in LB radio with the given seed artist. The endpoint returns a dict of all the similar artists, including the seed artist. For each artists, there will be a list of dicts that contain recording_mbid, similar_artist_mbid and total_listen_count.
      *
      * @param  string $seed_artist_mbid (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  int $max_similar_artists The maximum number of similar artists to return recordings for. (required)
      * @param  int $max_recordings_per_artist The maximum number of recordings to return for each artist. If there are aren’t enough recordings, all available recordings will be returned. (required)
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
@@ -884,7 +884,7 @@ class LbCoreApi
      * Get recordings for use in LB radio with the given seed artist. The endpoint returns a dict of all the similar artists, including the seed artist. For each artists, there will be a list of dicts that contain recording_mbid, similar_artist_mbid and total_listen_count.
      *
      * @param  string $seed_artist_mbid (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  int $max_similar_artists The maximum number of similar artists to return recordings for. (required)
      * @param  int $max_recordings_per_artist The maximum number of recordings to return for each artist. If there are aren’t enough recordings, all available recordings will be returned. (required)
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
@@ -896,7 +896,7 @@ class LbCoreApi
      */
     public function lbRadioRecordingsForArtistAsyncWithHttpInfo($seed_artist_mbid, $mode, $max_similar_artists, $max_recordings_per_artist, $pop_begin, $pop_end, string $contentType = self::contentTypes['lbRadioRecordingsForArtist'][0])
     {
-        $returnType = 'array<string,\OpenAPI\Client\Model\LbRadioRecordingsForArtistValueInner[]>';
+        $returnType = 'array<string,\Listenbrainz\Model\LbRadioRecordingsForArtistValueInner[]>';
         $request = $this->lbRadioRecordingsForArtistRequest($seed_artist_mbid, $mode, $max_similar_artists, $max_recordings_per_artist, $pop_begin, $pop_end, $contentType);
 
         return $this->client
@@ -939,7 +939,7 @@ class LbCoreApi
      * Create request for operation 'lbRadioRecordingsForArtist'
      *
      * @param  string $seed_artist_mbid (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  int $max_similar_artists The maximum number of similar artists to return recordings for. (required)
      * @param  int $max_recordings_per_artist The maximum number of recordings to return for each artist. If there are aren’t enough recordings, all available recordings will be returned. (required)
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
@@ -1121,12 +1121,12 @@ class LbCoreApi
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
      * @param  int $pop_end Popularity range percentage upper bound. (required)
      * @param  int $count Optional, number of listens to return. (required)
-     * @param  \OpenAPI\Client\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
+     * @param  \Listenbrainz\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadioTags'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\LbRadioTagsInner[]
+     * @return \Listenbrainz\Model\LbRadioTagsInner[]
      */
     public function lbRadioTags($tag, $pop_begin, $pop_end, $count, $operator = null, string $contentType = self::contentTypes['lbRadioTags'][0])
     {
@@ -1143,12 +1143,12 @@ class LbCoreApi
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
      * @param  int $pop_end Popularity range percentage upper bound. (required)
      * @param  int $count Optional, number of listens to return. (required)
-     * @param  \OpenAPI\Client\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
+     * @param  \Listenbrainz\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadioTags'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\LbRadioTagsInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\LbRadioTagsInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function lbRadioTagsWithHttpInfo($tag, $pop_begin, $pop_end, $count, $operator = null, string $contentType = self::contentTypes['lbRadioTags'][0])
     {
@@ -1179,11 +1179,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\LbRadioTagsInner[]' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\LbRadioTagsInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\LbRadioTagsInner[]' !== 'string') {
+                        if ('\Listenbrainz\Model\LbRadioTagsInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1201,7 +1201,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\LbRadioTagsInner[]', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\LbRadioTagsInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1220,7 +1220,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\LbRadioTagsInner[]';
+            $returnType = '\Listenbrainz\Model\LbRadioTagsInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1253,7 +1253,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\LbRadioTagsInner[]',
+                        '\Listenbrainz\Model\LbRadioTagsInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1272,7 +1272,7 @@ class LbCoreApi
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
      * @param  int $pop_end Popularity range percentage upper bound. (required)
      * @param  int $count Optional, number of listens to return. (required)
-     * @param  \OpenAPI\Client\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
+     * @param  \Listenbrainz\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadioTags'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1297,7 +1297,7 @@ class LbCoreApi
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
      * @param  int $pop_end Popularity range percentage upper bound. (required)
      * @param  int $count Optional, number of listens to return. (required)
-     * @param  \OpenAPI\Client\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
+     * @param  \Listenbrainz\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadioTags'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1305,7 +1305,7 @@ class LbCoreApi
      */
     public function lbRadioTagsAsyncWithHttpInfo($tag, $pop_begin, $pop_end, $count, $operator = null, string $contentType = self::contentTypes['lbRadioTags'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\LbRadioTagsInner[]';
+        $returnType = '\Listenbrainz\Model\LbRadioTagsInner[]';
         $request = $this->lbRadioTagsRequest($tag, $pop_begin, $pop_end, $count, $operator, $contentType);
 
         return $this->client
@@ -1351,7 +1351,7 @@ class LbCoreApi
      * @param  int $pop_begin Popularity range percentage lower bound. A popularity range is given to narrow down the recordings into a smaller target group. The most popular recording(s) on LB have a pop percent of 100. The least popular recordings have a score of 0. This range is not coupled to the specified mode, but the mode would often determine the popularity range, so that less popular recordings can be returned on the medium and harder modes. (required)
      * @param  int $pop_end Popularity range percentage upper bound. (required)
      * @param  int $count Optional, number of listens to return. (required)
-     * @param  \OpenAPI\Client\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
+     * @param  \Listenbrainz\Model\Operator|null $operator Specify AND to retrieve recordings that have all the tags, otherwise specify OR to retrieve recordings that have any one of the tags. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadioTags'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1507,9 +1507,9 @@ class LbCoreApi
      * @param  string $user_name user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listenCountForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ListenCountForUser
+     * @return \Listenbrainz\Model\ListenCountForUser
      */
     public function listenCountForUser($user_name, string $contentType = self::contentTypes['listenCountForUser'][0])
     {
@@ -1525,9 +1525,9 @@ class LbCoreApi
      * @param  string $user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listenCountForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ListenCountForUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\ListenCountForUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function listenCountForUserWithHttpInfo($user_name, string $contentType = self::contentTypes['listenCountForUser'][0])
     {
@@ -1558,11 +1558,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ListenCountForUser' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\ListenCountForUser' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ListenCountForUser' !== 'string') {
+                        if ('\Listenbrainz\Model\ListenCountForUser' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1580,7 +1580,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ListenCountForUser', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\ListenCountForUser', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1599,7 +1599,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ListenCountForUser';
+            $returnType = '\Listenbrainz\Model\ListenCountForUser';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1632,7 +1632,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ListenCountForUser',
+                        '\Listenbrainz\Model\ListenCountForUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1676,7 +1676,7 @@ class LbCoreApi
      */
     public function listenCountForUserAsyncWithHttpInfo($user_name, string $contentType = self::contentTypes['listenCountForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ListenCountForUser';
+        $returnType = '\Listenbrainz\Model\ListenCountForUser';
         $request = $this->listenCountForUserRequest($user_name, $contentType);
 
         return $this->client
@@ -1818,9 +1818,9 @@ class LbCoreApi
      * @param  int|null $count Optional, number of listens to return. (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listensForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ListensForUser
+     * @return \Listenbrainz\Model\ListensForUser
      */
     public function listensForUser($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['listensForUser'][0])
     {
@@ -1839,9 +1839,9 @@ class LbCoreApi
      * @param  int|null $count Optional, number of listens to return. (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listensForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ListensForUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\ListensForUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function listensForUserWithHttpInfo($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['listensForUser'][0])
     {
@@ -1872,11 +1872,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ListensForUser' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\ListensForUser' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ListensForUser' !== 'string') {
+                        if ('\Listenbrainz\Model\ListensForUser' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1894,7 +1894,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ListensForUser', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\ListensForUser', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1913,7 +1913,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ListensForUser';
+            $returnType = '\Listenbrainz\Model\ListensForUser';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1946,7 +1946,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ListensForUser',
+                        '\Listenbrainz\Model\ListensForUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1996,7 +1996,7 @@ class LbCoreApi
      */
     public function listensForUserAsyncWithHttpInfo($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['listensForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ListensForUser';
+        $returnType = '\Listenbrainz\Model\ListensForUser';
         $request = $this->listensForUserRequest($user_name, $max_ts, $min_ts, $count, $contentType);
 
         return $this->client
@@ -2168,9 +2168,9 @@ class LbCoreApi
      * @param  string $user_name user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['playingNowForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PlayingNowForUser
+     * @return \Listenbrainz\Model\PlayingNowForUser
      */
     public function playingNowForUser($user_name, string $contentType = self::contentTypes['playingNowForUser'][0])
     {
@@ -2186,9 +2186,9 @@ class LbCoreApi
      * @param  string $user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['playingNowForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PlayingNowForUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\PlayingNowForUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function playingNowForUserWithHttpInfo($user_name, string $contentType = self::contentTypes['playingNowForUser'][0])
     {
@@ -2219,11 +2219,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PlayingNowForUser' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\PlayingNowForUser' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PlayingNowForUser' !== 'string') {
+                        if ('\Listenbrainz\Model\PlayingNowForUser' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2241,7 +2241,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PlayingNowForUser', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\PlayingNowForUser', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2260,7 +2260,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\PlayingNowForUser';
+            $returnType = '\Listenbrainz\Model\PlayingNowForUser';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2293,7 +2293,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PlayingNowForUser',
+                        '\Listenbrainz\Model\PlayingNowForUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2337,7 +2337,7 @@ class LbCoreApi
      */
     public function playingNowForUserAsyncWithHttpInfo($user_name, string $contentType = self::contentTypes['playingNowForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PlayingNowForUser';
+        $returnType = '\Listenbrainz\Model\PlayingNowForUser';
         $request = $this->playingNowForUserRequest($user_name, $contentType);
 
         return $this->client
@@ -2476,9 +2476,9 @@ class LbCoreApi
      * @param  string $playlist_user_name playlist_user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendationPlaylistsForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Playlists
+     * @return \Listenbrainz\Model\Playlists
      */
     public function recommendationPlaylistsForUser($playlist_user_name, string $contentType = self::contentTypes['recommendationPlaylistsForUser'][0])
     {
@@ -2494,9 +2494,9 @@ class LbCoreApi
      * @param  string $playlist_user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendationPlaylistsForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
      */
     public function recommendationPlaylistsForUserWithHttpInfo($playlist_user_name, string $contentType = self::contentTypes['recommendationPlaylistsForUser'][0])
     {
@@ -2527,11 +2527,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Playlists' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Playlists' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Playlists' !== 'string') {
+                        if ('\Listenbrainz\Model\Playlists' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2549,7 +2549,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Playlists', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Playlists', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2568,7 +2568,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Playlists';
+            $returnType = '\Listenbrainz\Model\Playlists';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2601,7 +2601,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Playlists',
+                        '\Listenbrainz\Model\Playlists',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2645,7 +2645,7 @@ class LbCoreApi
      */
     public function recommendationPlaylistsForUserAsyncWithHttpInfo($playlist_user_name, string $contentType = self::contentTypes['recommendationPlaylistsForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Playlists';
+        $returnType = '\Listenbrainz\Model\Playlists';
         $request = $this->recommendationPlaylistsForUserRequest($playlist_user_name, $contentType);
 
         return $this->client
@@ -2787,9 +2787,9 @@ class LbCoreApi
      * @param  int|null $offset The offset of into the list of playlists to return (for pagination). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchPlaylistForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Playlists
+     * @return \Listenbrainz\Model\Playlists
      */
     public function searchPlaylistForUser($playlist_user_name, $query, $count = 25, $offset = null, string $contentType = self::contentTypes['searchPlaylistForUser'][0])
     {
@@ -2808,9 +2808,9 @@ class LbCoreApi
      * @param  int|null $offset The offset of into the list of playlists to return (for pagination). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchPlaylistForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchPlaylistForUserWithHttpInfo($playlist_user_name, $query, $count = 25, $offset = null, string $contentType = self::contentTypes['searchPlaylistForUser'][0])
     {
@@ -2841,11 +2841,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Playlists' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Playlists' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Playlists' !== 'string') {
+                        if ('\Listenbrainz\Model\Playlists' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2863,7 +2863,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Playlists', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Playlists', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2882,7 +2882,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Playlists';
+            $returnType = '\Listenbrainz\Model\Playlists';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2915,7 +2915,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Playlists',
+                        '\Listenbrainz\Model\Playlists',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2965,7 +2965,7 @@ class LbCoreApi
      */
     public function searchPlaylistForUserAsyncWithHttpInfo($playlist_user_name, $query, $count = 25, $offset = null, string $contentType = self::contentTypes['searchPlaylistForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Playlists';
+        $returnType = '\Listenbrainz\Model\Playlists';
         $request = $this->searchPlaylistForUserRequest($playlist_user_name, $query, $count, $offset, $contentType);
 
         return $this->client
@@ -3143,9 +3143,9 @@ class LbCoreApi
      * @param  string $search_term Input on which search operation is to be performed. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchUsers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SearchUsers
+     * @return \Listenbrainz\Model\SearchUsers
      */
     public function searchUsers($search_term, string $contentType = self::contentTypes['searchUsers'][0])
     {
@@ -3161,9 +3161,9 @@ class LbCoreApi
      * @param  string $search_term Input on which search operation is to be performed. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchUsers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SearchUsers, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\SearchUsers, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchUsersWithHttpInfo($search_term, string $contentType = self::contentTypes['searchUsers'][0])
     {
@@ -3194,11 +3194,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SearchUsers' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\SearchUsers' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SearchUsers' !== 'string') {
+                        if ('\Listenbrainz\Model\SearchUsers' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3216,7 +3216,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SearchUsers', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\SearchUsers', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3235,7 +3235,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SearchUsers';
+            $returnType = '\Listenbrainz\Model\SearchUsers';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3268,7 +3268,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SearchUsers',
+                        '\Listenbrainz\Model\SearchUsers',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3312,7 +3312,7 @@ class LbCoreApi
      */
     public function searchUsersAsyncWithHttpInfo($search_term, string $contentType = self::contentTypes['searchUsers'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SearchUsers';
+        $returnType = '\Listenbrainz\Model\SearchUsers';
         $request = $this->searchUsersRequest($search_term, $contentType);
 
         return $this->client
@@ -3452,9 +3452,9 @@ class LbCoreApi
      * @param  string $user_name user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['servicesForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ServicesForUser
+     * @return \Listenbrainz\Model\ServicesForUser
      */
     public function servicesForUser($user_name, string $contentType = self::contentTypes['servicesForUser'][0])
     {
@@ -3470,9 +3470,9 @@ class LbCoreApi
      * @param  string $user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['servicesForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ServicesForUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\ServicesForUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function servicesForUserWithHttpInfo($user_name, string $contentType = self::contentTypes['servicesForUser'][0])
     {
@@ -3503,11 +3503,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ServicesForUser' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\ServicesForUser' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ServicesForUser' !== 'string') {
+                        if ('\Listenbrainz\Model\ServicesForUser' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3525,7 +3525,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ServicesForUser', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\ServicesForUser', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3544,7 +3544,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ServicesForUser';
+            $returnType = '\Listenbrainz\Model\ServicesForUser';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3577,7 +3577,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ServicesForUser',
+                        '\Listenbrainz\Model\ServicesForUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3621,7 +3621,7 @@ class LbCoreApi
      */
     public function servicesForUserAsyncWithHttpInfo($user_name, string $contentType = self::contentTypes['servicesForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ServicesForUser';
+        $returnType = '\Listenbrainz\Model\ServicesForUser';
         $request = $this->servicesForUserRequest($user_name, $contentType);
 
         return $this->client
@@ -3765,9 +3765,9 @@ class LbCoreApi
      * @param  string $user_name user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['similarUsersForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SimilarUsersForUser
+     * @return \Listenbrainz\Model\SimilarUsersForUser
      */
     public function similarUsersForUser($user_name, string $contentType = self::contentTypes['similarUsersForUser'][0])
     {
@@ -3783,9 +3783,9 @@ class LbCoreApi
      * @param  string $user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['similarUsersForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SimilarUsersForUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\SimilarUsersForUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function similarUsersForUserWithHttpInfo($user_name, string $contentType = self::contentTypes['similarUsersForUser'][0])
     {
@@ -3816,11 +3816,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SimilarUsersForUser' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\SimilarUsersForUser' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SimilarUsersForUser' !== 'string') {
+                        if ('\Listenbrainz\Model\SimilarUsersForUser' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3838,7 +3838,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SimilarUsersForUser', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\SimilarUsersForUser', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3857,7 +3857,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SimilarUsersForUser';
+            $returnType = '\Listenbrainz\Model\SimilarUsersForUser';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3890,7 +3890,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SimilarUsersForUser',
+                        '\Listenbrainz\Model\SimilarUsersForUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3934,7 +3934,7 @@ class LbCoreApi
      */
     public function similarUsersForUserAsyncWithHttpInfo($user_name, string $contentType = self::contentTypes['similarUsersForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SimilarUsersForUser';
+        $returnType = '\Listenbrainz\Model\SimilarUsersForUser';
         $request = $this->similarUsersForUserRequest($user_name, $contentType);
 
         return $this->client
@@ -4074,9 +4074,9 @@ class LbCoreApi
      * @param  string $other_user_name other_user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['similarityOfUserForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SimilarityOfUserForUser
+     * @return \Listenbrainz\Model\SimilarityOfUserForUser
      */
     public function similarityOfUserForUser($user_name, $other_user_name, string $contentType = self::contentTypes['similarityOfUserForUser'][0])
     {
@@ -4093,9 +4093,9 @@ class LbCoreApi
      * @param  string $other_user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['similarityOfUserForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SimilarityOfUserForUser, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\SimilarityOfUserForUser, HTTP status code, HTTP response headers (array of strings)
      */
     public function similarityOfUserForUserWithHttpInfo($user_name, $other_user_name, string $contentType = self::contentTypes['similarityOfUserForUser'][0])
     {
@@ -4126,11 +4126,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SimilarityOfUserForUser' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\SimilarityOfUserForUser' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SimilarityOfUserForUser' !== 'string') {
+                        if ('\Listenbrainz\Model\SimilarityOfUserForUser' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4148,7 +4148,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SimilarityOfUserForUser', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\SimilarityOfUserForUser', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4167,7 +4167,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\SimilarityOfUserForUser';
+            $returnType = '\Listenbrainz\Model\SimilarityOfUserForUser';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4200,7 +4200,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SimilarityOfUserForUser',
+                        '\Listenbrainz\Model\SimilarityOfUserForUser',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4246,7 +4246,7 @@ class LbCoreApi
      */
     public function similarityOfUserForUserAsyncWithHttpInfo($user_name, $other_user_name, string $contentType = self::contentTypes['similarityOfUserForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SimilarityOfUserForUser';
+        $returnType = '\Listenbrainz\Model\SimilarityOfUserForUser';
         $request = $this->similarityOfUserForUserRequest($user_name, $other_user_name, $contentType);
 
         return $this->client
@@ -4398,10 +4398,10 @@ class LbCoreApi
      *
      * Submit listens to the server.
      *
-     * @param  \OpenAPI\Client\Model\SubmitListens $submit_listens submit_listens (required)
+     * @param  \Listenbrainz\Model\SubmitListens $submit_listens submit_listens (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitListens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -4415,10 +4415,10 @@ class LbCoreApi
      *
      * Submit listens to the server.
      *
-     * @param  \OpenAPI\Client\Model\SubmitListens $submit_listens (required)
+     * @param  \Listenbrainz\Model\SubmitListens $submit_listens (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitListens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4463,7 +4463,7 @@ class LbCoreApi
      *
      * Submit listens to the server.
      *
-     * @param  \OpenAPI\Client\Model\SubmitListens $submit_listens (required)
+     * @param  \Listenbrainz\Model\SubmitListens $submit_listens (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitListens'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4484,7 +4484,7 @@ class LbCoreApi
      *
      * Submit listens to the server.
      *
-     * @param  \OpenAPI\Client\Model\SubmitListens $submit_listens (required)
+     * @param  \Listenbrainz\Model\SubmitListens $submit_listens (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitListens'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4521,7 +4521,7 @@ class LbCoreApi
     /**
      * Create request for operation 'submitListens'
      *
-     * @param  \OpenAPI\Client\Model\SubmitListens $submit_listens (required)
+     * @param  \Listenbrainz\Model\SubmitListens $submit_listens (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitListens'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4621,9 +4621,9 @@ class LbCoreApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['validateToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ValidateToken
+     * @return \Listenbrainz\Model\ValidateToken
      */
     public function validateToken(string $contentType = self::contentTypes['validateToken'][0])
     {
@@ -4638,9 +4638,9 @@ class LbCoreApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['validateToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ValidateToken, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\ValidateToken, HTTP status code, HTTP response headers (array of strings)
      */
     public function validateTokenWithHttpInfo(string $contentType = self::contentTypes['validateToken'][0])
     {
@@ -4671,11 +4671,11 @@ class LbCoreApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ValidateToken' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\ValidateToken' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ValidateToken' !== 'string') {
+                        if ('\Listenbrainz\Model\ValidateToken' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4693,7 +4693,7 @@ class LbCoreApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidateToken', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\ValidateToken', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -4712,7 +4712,7 @@ class LbCoreApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ValidateToken';
+            $returnType = '\Listenbrainz\Model\ValidateToken';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4745,7 +4745,7 @@ class LbCoreApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidateToken',
+                        '\Listenbrainz\Model\ValidateToken',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4787,7 +4787,7 @@ class LbCoreApi
      */
     public function validateTokenAsyncWithHttpInfo(string $contentType = self::contentTypes['validateToken'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ValidateToken';
+        $returnType = '\Listenbrainz\Model\ValidateToken';
         $request = $this->validateTokenRequest($contentType);
 
         return $this->client

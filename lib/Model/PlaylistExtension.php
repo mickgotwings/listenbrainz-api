@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * PlaylistExtension Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PlaylistExtension implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'https___musicbrainz_org_doc_jspfplaylist' => '\OpenAPI\Client\Model\PlaylistExtensionPayload'
+        'https___musicbrainz_org_doc_jspfplaylist' => '\Listenbrainz\Model\PlaylistExtensionPayload'
     ];
 
     /**
@@ -292,7 +292,7 @@ class PlaylistExtension implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets https___musicbrainz_org_doc_jspfplaylist
      *
-     * @return \OpenAPI\Client\Model\PlaylistExtensionPayload|null
+     * @return \Listenbrainz\Model\PlaylistExtensionPayload|null
      */
     public function getHttpsMusicbrainzOrgDocJspfplaylist()
     {
@@ -302,7 +302,7 @@ class PlaylistExtension implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets https___musicbrainz_org_doc_jspfplaylist
      *
-     * @param \OpenAPI\Client\Model\PlaylistExtensionPayload|null $https___musicbrainz_org_doc_jspfplaylist https___musicbrainz_org_doc_jspfplaylist
+     * @param \Listenbrainz\Model\PlaylistExtensionPayload|null $https___musicbrainz_org_doc_jspfplaylist https___musicbrainz_org_doc_jspfplaylist
      *
      * @return self
      */

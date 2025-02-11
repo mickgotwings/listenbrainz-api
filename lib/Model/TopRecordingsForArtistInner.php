@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopRecordingsForArtistInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,13 +59,13 @@ class TopRecordingsForArtistInner implements ModelInterface, ArrayAccess, \JsonS
     protected static $openAPITypes = [
         'artist_mbids' => 'string[]',
         'artist_name' => 'string',
-        'artists' => '\OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]',
+        'artists' => '\Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]',
         'caa_id' => 'int',
         'caa_release_mbid' => 'string',
         'length' => 'int',
         'recording_mbid' => 'string',
         'recording_name' => 'string',
-        'release_color' => '\OpenAPI\Client\Model\TopRecordingsForArtistInnerReleaseColor',
+        'release_color' => '\Listenbrainz\Model\TopRecordingsForArtistInnerReleaseColor',
         'release_mbid' => 'string',
         'release_name' => 'string',
         'total_listen_count' => 'int',
@@ -430,7 +430,7 @@ class TopRecordingsForArtistInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets artists
      *
-     * @return \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null
+     * @return \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null
      */
     public function getArtists()
     {
@@ -440,7 +440,7 @@ class TopRecordingsForArtistInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets artists
      *
-     * @param \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null $artists artists
+     * @param \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null $artists artists
      *
      * @return self
      */
@@ -592,7 +592,7 @@ class TopRecordingsForArtistInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets release_color
      *
-     * @return \OpenAPI\Client\Model\TopRecordingsForArtistInnerReleaseColor|null
+     * @return \Listenbrainz\Model\TopRecordingsForArtistInnerReleaseColor|null
      */
     public function getReleaseColor()
     {
@@ -602,7 +602,7 @@ class TopRecordingsForArtistInner implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets release_color
      *
-     * @param \OpenAPI\Client\Model\TopRecordingsForArtistInnerReleaseColor|null $release_color release_color
+     * @param \Listenbrainz\Model\TopRecordingsForArtistInnerReleaseColor|null $release_color release_color
      *
      * @return self
      */

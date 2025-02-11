@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * MusicBrainzArtist Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class MusicBrainzArtist implements ModelInterface, ArrayAccess, \JsonSerializabl
         'gender' => 'string',
         'join_phrase' => 'string',
         'name' => 'string',
-        'rels' => '\OpenAPI\Client\Model\Rels1',
+        'rels' => '\Listenbrainz\Model\Rels1',
         'type' => 'string'
     ];
 
@@ -537,7 +537,7 @@ class MusicBrainzArtist implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets rels
      *
-     * @return \OpenAPI\Client\Model\Rels1|null
+     * @return \Listenbrainz\Model\Rels1|null
      */
     public function getRels()
     {
@@ -547,7 +547,7 @@ class MusicBrainzArtist implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets rels
      *
-     * @param \OpenAPI\Client\Model\Rels1|null $rels rels
+     * @param \Listenbrainz\Model\Rels1|null $rels rels
      *
      * @return self
      */

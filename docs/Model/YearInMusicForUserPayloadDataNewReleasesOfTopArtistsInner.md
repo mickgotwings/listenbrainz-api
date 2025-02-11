@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **artist_credit_mbids** | **string[]** |  | [optional]
 **artist_credit_name** | **string** |  | [optional]
-**artists** | [**\OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]**](TopReleasesForUserPayloadReleasesInnerArtistsInner.md) |  | [optional]
+**artists** | [**\Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]**](TopReleasesForUserPayloadReleasesInnerArtistsInner.md) |  | [optional]
 **caa_id** | **int** |  | [optional]
 **caa_release_mbid** | **string** |  | [optional]
 **release_group_mbid** | **string** |  | [optional]

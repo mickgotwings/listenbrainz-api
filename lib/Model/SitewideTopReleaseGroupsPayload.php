@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SitewideTopReleaseGroupsPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class SitewideTopReleaseGroupsPayload implements ModelInterface, ArrayAccess, \J
         'last_updated' => 'int',
         'offset' => 'int',
         'range' => 'string',
-        'release_groups' => '\OpenAPI\Client\Model\ReleaseGroupsInner[]',
+        'release_groups' => '\Listenbrainz\Model\ReleaseGroupsInner[]',
         'to_ts' => 'int'
     ];
 
@@ -490,7 +490,7 @@ class SitewideTopReleaseGroupsPayload implements ModelInterface, ArrayAccess, \J
     /**
      * Gets release_groups
      *
-     * @return \OpenAPI\Client\Model\ReleaseGroupsInner[]
+     * @return \Listenbrainz\Model\ReleaseGroupsInner[]
      */
     public function getReleaseGroups()
     {
@@ -500,7 +500,7 @@ class SitewideTopReleaseGroupsPayload implements ModelInterface, ArrayAccess, \J
     /**
      * Sets release_groups
      *
-     * @param \OpenAPI\Client\Model\ReleaseGroupsInner[] $release_groups release_groups
+     * @param \Listenbrainz\Model\ReleaseGroupsInner[] $release_groups release_groups
      *
      * @return self
      */

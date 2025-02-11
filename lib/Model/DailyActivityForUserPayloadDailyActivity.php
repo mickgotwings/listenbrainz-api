@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * DailyActivityForUserPayloadDailyActivity Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,13 +57,13 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'friday' => '\OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
-        'monday' => '\OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
-        'saturday' => '\OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
-        'sunday' => '\OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
-        'thursday' => '\OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
-        'tuesday' => '\OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
-        'wednesday' => '\OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]'
+        'friday' => '\Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
+        'monday' => '\Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
+        'saturday' => '\Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
+        'sunday' => '\Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
+        'thursday' => '\Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
+        'tuesday' => '\Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]',
+        'wednesday' => '\Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]'
     ];
 
     /**
@@ -355,7 +355,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Gets friday
      *
-     * @return \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
+     * @return \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
      */
     public function getFriday()
     {
@@ -365,7 +365,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Sets friday
      *
-     * @param \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $friday friday
+     * @param \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $friday friday
      *
      * @return self
      */
@@ -382,7 +382,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Gets monday
      *
-     * @return \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
+     * @return \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
      */
     public function getMonday()
     {
@@ -392,7 +392,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Sets monday
      *
-     * @param \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $monday monday
+     * @param \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $monday monday
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Gets saturday
      *
-     * @return \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
+     * @return \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
      */
     public function getSaturday()
     {
@@ -419,7 +419,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Sets saturday
      *
-     * @param \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $saturday saturday
+     * @param \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $saturday saturday
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Gets sunday
      *
-     * @return \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
+     * @return \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
      */
     public function getSunday()
     {
@@ -446,7 +446,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Sets sunday
      *
-     * @param \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $sunday sunday
+     * @param \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $sunday sunday
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Gets thursday
      *
-     * @return \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
+     * @return \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
      */
     public function getThursday()
     {
@@ -473,7 +473,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Sets thursday
      *
-     * @param \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $thursday thursday
+     * @param \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $thursday thursday
      *
      * @return self
      */
@@ -490,7 +490,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Gets tuesday
      *
-     * @return \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
+     * @return \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
      */
     public function getTuesday()
     {
@@ -500,7 +500,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Sets tuesday
      *
-     * @param \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $tuesday tuesday
+     * @param \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $tuesday tuesday
      *
      * @return self
      */
@@ -517,7 +517,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Gets wednesday
      *
-     * @return \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
+     * @return \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[]
      */
     public function getWednesday()
     {
@@ -527,7 +527,7 @@ class DailyActivityForUserPayloadDailyActivity implements ModelInterface, ArrayA
     /**
      * Sets wednesday
      *
-     * @param \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $wednesday wednesday
+     * @param \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivityFridayInner[] $wednesday wednesday
      *
      * @return self
      */

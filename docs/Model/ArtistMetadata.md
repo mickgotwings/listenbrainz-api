@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **gender** | **string** |  | [optional]
 **mbid** | **string** |  | [optional]
 **name** | **string** |  | [optional]
-**rels** | [**\OpenAPI\Client\Model\Rels1**](Rels1.md) |  | [optional]
-**tag** | [**\OpenAPI\Client\Model\ArtistMetadataTag**](ArtistMetadataTag.md) |  | [optional]
+**rels** | [**\Listenbrainz\Model\Rels1**](Rels1.md) |  | [optional]
+**tag** | [**\Listenbrainz\Model\ArtistMetadataTag**](ArtistMetadataTag.md) |  | [optional]
 **type** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

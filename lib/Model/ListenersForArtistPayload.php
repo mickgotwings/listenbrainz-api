@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ListenersForArtistPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ListenersForArtistPayload implements ModelInterface, ArrayAccess, \JsonSer
         'artist_name' => 'string',
         'from_ts' => 'int',
         'last_updated' => 'int',
-        'listeners' => '\OpenAPI\Client\Model\ListenersForArtistPayloadListenersInner[]',
+        'listeners' => '\Listenbrainz\Model\ListenersForArtistPayloadListenersInner[]',
         'stats_range' => 'string',
         'to_ts' => 'int',
         'total_listen_count' => 'int',
@@ -483,7 +483,7 @@ class ListenersForArtistPayload implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets listeners
      *
-     * @return \OpenAPI\Client\Model\ListenersForArtistPayloadListenersInner[]
+     * @return \Listenbrainz\Model\ListenersForArtistPayloadListenersInner[]
      */
     public function getListeners()
     {
@@ -493,7 +493,7 @@ class ListenersForArtistPayload implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets listeners
      *
-     * @param \OpenAPI\Client\Model\ListenersForArtistPayloadListenersInner[] $listeners listeners
+     * @param \Listenbrainz\Model\ListenersForArtistPayloadListenersInner[] $listeners listeners
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * RecommendPersonalRecordingRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class RecommendPersonalRecordingRequest implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'metadata' => '\OpenAPI\Client\Model\RecommendPersonalRecordingRequestMetadata'
+        'metadata' => '\Listenbrainz\Model\RecommendPersonalRecordingRequestMetadata'
     ];
 
     /**
@@ -292,7 +292,7 @@ class RecommendPersonalRecordingRequest implements ModelInterface, ArrayAccess, 
     /**
      * Gets metadata
      *
-     * @return \OpenAPI\Client\Model\RecommendPersonalRecordingRequestMetadata|null
+     * @return \Listenbrainz\Model\RecommendPersonalRecordingRequestMetadata|null
      */
     public function getMetadata()
     {
@@ -302,7 +302,7 @@ class RecommendPersonalRecordingRequest implements ModelInterface, ArrayAccess, 
     /**
      * Sets metadata
      *
-     * @param \OpenAPI\Client\Model\RecommendPersonalRecordingRequestMetadata|null $metadata metadata
+     * @param \Listenbrainz\Model\RecommendPersonalRecordingRequestMetadata|null $metadata metadata
      *
      * @return self
      */

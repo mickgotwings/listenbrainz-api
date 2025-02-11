@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * LookupMetadataRecording Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class LookupMetadataRecording implements ModelInterface, ArrayAccess, \JsonSeria
     protected static $openAPITypes = [
         'length' => 'int',
         'name' => 'string',
-        'rels' => '\OpenAPI\Client\Model\LookupMetadataRecordingRelsInner[]'
+        'rels' => '\Listenbrainz\Model\LookupMetadataRecordingRelsInner[]'
     ];
 
     /**
@@ -360,7 +360,7 @@ class LookupMetadataRecording implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets rels
      *
-     * @return \OpenAPI\Client\Model\LookupMetadataRecordingRelsInner[]|null
+     * @return \Listenbrainz\Model\LookupMetadataRecordingRelsInner[]|null
      */
     public function getRels()
     {
@@ -370,7 +370,7 @@ class LookupMetadataRecording implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets rels
      *
-     * @param \OpenAPI\Client\Model\LookupMetadataRecordingRelsInner[]|null $rels rels
+     * @param \Listenbrainz\Model\LookupMetadataRecordingRelsInner[]|null $rels rels
      *
      * @return self
      */

@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**artist** | [**\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerArtist**](TopReleaseGroupsForArtistInnerArtist.md) |  | [optional]
-**release** | [**\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerRelease**](TopReleaseGroupsForArtistInnerRelease.md) |  | [optional]
-**release_color** | [**\OpenAPI\Client\Model\TopRecordingsForArtistInnerReleaseColor**](TopRecordingsForArtistInnerReleaseColor.md) |  | [optional]
-**release_group** | [**\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerReleaseGroup**](TopReleaseGroupsForArtistInnerReleaseGroup.md) |  | [optional]
+**artist** | [**\Listenbrainz\Model\TopReleaseGroupsForArtistInnerArtist**](TopReleaseGroupsForArtistInnerArtist.md) |  | [optional]
+**release** | [**\Listenbrainz\Model\TopReleaseGroupsForArtistInnerRelease**](TopReleaseGroupsForArtistInnerRelease.md) |  | [optional]
+**release_color** | [**\Listenbrainz\Model\TopRecordingsForArtistInnerReleaseColor**](TopRecordingsForArtistInnerReleaseColor.md) |  | [optional]
+**release_group** | [**\Listenbrainz\Model\TopReleaseGroupsForArtistInnerReleaseGroup**](TopReleaseGroupsForArtistInnerReleaseGroup.md) |  | [optional]
 **release_group_mbid** | **string** |  | [optional]
-**tag** | [**\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTag**](TopReleaseGroupsForArtistInnerTag.md) |  | [optional]
+**tag** | [**\Listenbrainz\Model\TopReleaseGroupsForArtistInnerTag**](TopReleaseGroupsForArtistInnerTag.md) |  | [optional]
 **total_listen_count** | **int** |  | [optional]
 **total_user_count** | **int** |  | [optional]
 

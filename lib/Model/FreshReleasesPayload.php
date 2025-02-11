@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * FreshReleasesPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class FreshReleasesPayload implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'releases' => '\OpenAPI\Client\Model\FreshReleasesPayloadReleasesInner[]',
+        'releases' => '\Listenbrainz\Model\FreshReleasesPayloadReleasesInner[]',
         'total_count' => 'int'
     ];
 
@@ -305,7 +305,7 @@ class FreshReleasesPayload implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets releases
      *
-     * @return \OpenAPI\Client\Model\FreshReleasesPayloadReleasesInner[]
+     * @return \Listenbrainz\Model\FreshReleasesPayloadReleasesInner[]
      */
     public function getReleases()
     {
@@ -315,7 +315,7 @@ class FreshReleasesPayload implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets releases
      *
-     * @param \OpenAPI\Client\Model\FreshReleasesPayloadReleasesInner[] $releases releases
+     * @param \Listenbrainz\Model\FreshReleasesPayloadReleasesInner[] $releases releases
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * RecordingMetadata Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class RecordingMetadata implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'artist' => '\OpenAPI\Client\Model\RecordingMetadataArtist',
-        'recording' => '\OpenAPI\Client\Model\RecordingMetadataRecording',
-        'tag' => '\OpenAPI\Client\Model\RecordingMetadataTag'
+        'artist' => '\Listenbrainz\Model\RecordingMetadataArtist',
+        'recording' => '\Listenbrainz\Model\RecordingMetadataRecording',
+        'tag' => '\Listenbrainz\Model\RecordingMetadataTag'
     ];
 
     /**
@@ -306,7 +306,7 @@ class RecordingMetadata implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets artist
      *
-     * @return \OpenAPI\Client\Model\RecordingMetadataArtist|null
+     * @return \Listenbrainz\Model\RecordingMetadataArtist|null
      */
     public function getArtist()
     {
@@ -316,7 +316,7 @@ class RecordingMetadata implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets artist
      *
-     * @param \OpenAPI\Client\Model\RecordingMetadataArtist|null $artist artist
+     * @param \Listenbrainz\Model\RecordingMetadataArtist|null $artist artist
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class RecordingMetadata implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets recording
      *
-     * @return \OpenAPI\Client\Model\RecordingMetadataRecording|null
+     * @return \Listenbrainz\Model\RecordingMetadataRecording|null
      */
     public function getRecording()
     {
@@ -343,7 +343,7 @@ class RecordingMetadata implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets recording
      *
-     * @param \OpenAPI\Client\Model\RecordingMetadataRecording|null $recording recording
+     * @param \Listenbrainz\Model\RecordingMetadataRecording|null $recording recording
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class RecordingMetadata implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets tag
      *
-     * @return \OpenAPI\Client\Model\RecordingMetadataTag|null
+     * @return \Listenbrainz\Model\RecordingMetadataTag|null
      */
     public function getTag()
     {
@@ -370,7 +370,7 @@ class RecordingMetadata implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets tag
      *
-     * @param \OpenAPI\Client\Model\RecordingMetadataTag|null $tag tag
+     * @param \Listenbrainz\Model\RecordingMetadataTag|null $tag tag
      *
      * @return self
      */

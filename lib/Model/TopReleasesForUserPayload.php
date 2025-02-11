@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopReleasesForUserPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class TopReleasesForUserPayload implements ModelInterface, ArrayAccess, \JsonSer
         'last_updated' => 'int',
         'offset' => 'int',
         'range' => 'string',
-        'releases' => '\OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInner[]',
+        'releases' => '\Listenbrainz\Model\TopReleasesForUserPayloadReleasesInner[]',
         'to_ts' => 'int',
         'total_release_count' => 'int',
         'user_id' => 'string'
@@ -510,7 +510,7 @@ class TopReleasesForUserPayload implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets releases
      *
-     * @return \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInner[]
+     * @return \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInner[]
      */
     public function getReleases()
     {
@@ -520,7 +520,7 @@ class TopReleasesForUserPayload implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets releases
      *
-     * @param \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInner[] $releases releases
+     * @param \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInner[] $releases releases
      *
      * @return self
      */

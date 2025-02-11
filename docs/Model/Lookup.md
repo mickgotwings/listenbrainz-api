@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **artist_credit_name** | **string** |  | [optional]
 **artist_mbids** | **string[]** |  | [optional]
-**metadata** | [**\OpenAPI\Client\Model\LookupMetadata**](LookupMetadata.md) |  | [optional]
+**metadata** | [**\Listenbrainz\Model\LookupMetadata**](LookupMetadata.md) |  | [optional]
 **recording_mbid** | **string** |  | [optional]
 **recording_name** | **string** |  | [optional]
 **release_mbid** | **string** |  | [optional]

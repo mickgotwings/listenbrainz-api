@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SubmitListens Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class SubmitListens implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'listen_type' => '\OpenAPI\Client\Model\ListenType',
-        'payload' => '\OpenAPI\Client\Model\SubmitListensPayloadInner[]'
+        'listen_type' => '\Listenbrainz\Model\ListenType',
+        'payload' => '\Listenbrainz\Model\SubmitListensPayloadInner[]'
     ];
 
     /**
@@ -305,7 +305,7 @@ class SubmitListens implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets listen_type
      *
-     * @return \OpenAPI\Client\Model\ListenType
+     * @return \Listenbrainz\Model\ListenType
      */
     public function getListenType()
     {
@@ -315,7 +315,7 @@ class SubmitListens implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets listen_type
      *
-     * @param \OpenAPI\Client\Model\ListenType $listen_type listen_type
+     * @param \Listenbrainz\Model\ListenType $listen_type listen_type
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class SubmitListens implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\SubmitListensPayloadInner[]
+     * @return \Listenbrainz\Model\SubmitListensPayloadInner[]
      */
     public function getPayload()
     {
@@ -342,7 +342,7 @@ class SubmitListens implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\SubmitListensPayloadInner[] $payload payload
+     * @param \Listenbrainz\Model\SubmitListensPayloadInner[] $payload payload
      *
      * @return self
      */

@@ -50,12 +50,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbArtApi(
+$apiInstance = new Listenbrainz\Api\LbArtApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$create_cover_art_grid = new \OpenAPI\Client\Model\CreateCoverArtGrid(); // \OpenAPI\Client\Model\CreateCoverArtGrid
+$create_cover_art_grid = new \Listenbrainz\Model\CreateCoverArtGrid(); // \Listenbrainz\Model\CreateCoverArtGrid
 
 try {
     $result = $apiInstance->createCoverArtGrid($create_cover_art_grid);

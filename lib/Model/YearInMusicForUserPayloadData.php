@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * YearInMusicForUserPayloadData Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,18 +57,18 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'artist_map' => '\OpenAPI\Client\Model\ArtistMapForUserPayloadArtistMapInner[]',
+        'artist_map' => '\Listenbrainz\Model\ArtistMapForUserPayloadArtistMapInner[]',
         'day_of_week' => 'string',
-        'listens_per_day' => '\OpenAPI\Client\Model\ListeningActivityForUserPayloadListeningActivityInner[]',
+        'listens_per_day' => '\Listenbrainz\Model\ListeningActivityForUserPayloadListeningActivityInner[]',
         'most_listened_year' => 'array<string,int>',
-        'new_releases_of_top_artists' => '\OpenAPI\Client\Model\YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner[]',
-        'playlist_top_discoveries_for_year' => '\OpenAPI\Client\Model\Playlist',
-        'playlist_top_missed_recordings_for_year' => '\OpenAPI\Client\Model\Playlist',
+        'new_releases_of_top_artists' => '\Listenbrainz\Model\YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner[]',
+        'playlist_top_discoveries_for_year' => '\Listenbrainz\Model\Playlist',
+        'playlist_top_missed_recordings_for_year' => '\Listenbrainz\Model\Playlist',
         'similar_users' => 'array<string,int>',
-        'top_artists' => '\OpenAPI\Client\Model\TopArtistsForUserPayloadArtistsInner[]',
-        'top_genres' => '\OpenAPI\Client\Model\YearInMusicForUserPayloadDataTopGenresInner[]',
-        'top_recordings' => '\OpenAPI\Client\Model\TopRecordingsForUserPayloadRecordingsInner[]',
-        'top_release_groups' => '\OpenAPI\Client\Model\ReleaseGroupsInner[]',
+        'top_artists' => '\Listenbrainz\Model\TopArtistsForUserPayloadArtistsInner[]',
+        'top_genres' => '\Listenbrainz\Model\YearInMusicForUserPayloadDataTopGenresInner[]',
+        'top_recordings' => '\Listenbrainz\Model\TopRecordingsForUserPayloadRecordingsInner[]',
+        'top_release_groups' => '\Listenbrainz\Model\ReleaseGroupsInner[]',
         'total_artists_count' => 'int',
         'total_listen_count' => 'int',
         'total_listening_time' => 'int',
@@ -465,7 +465,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets artist_map
      *
-     * @return \OpenAPI\Client\Model\ArtistMapForUserPayloadArtistMapInner[]
+     * @return \Listenbrainz\Model\ArtistMapForUserPayloadArtistMapInner[]
      */
     public function getArtistMap()
     {
@@ -475,7 +475,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets artist_map
      *
-     * @param \OpenAPI\Client\Model\ArtistMapForUserPayloadArtistMapInner[] $artist_map artist_map
+     * @param \Listenbrainz\Model\ArtistMapForUserPayloadArtistMapInner[] $artist_map artist_map
      *
      * @return self
      */
@@ -519,7 +519,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets listens_per_day
      *
-     * @return \OpenAPI\Client\Model\ListeningActivityForUserPayloadListeningActivityInner[]
+     * @return \Listenbrainz\Model\ListeningActivityForUserPayloadListeningActivityInner[]
      */
     public function getListensPerDay()
     {
@@ -529,7 +529,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets listens_per_day
      *
-     * @param \OpenAPI\Client\Model\ListeningActivityForUserPayloadListeningActivityInner[] $listens_per_day listens_per_day
+     * @param \Listenbrainz\Model\ListeningActivityForUserPayloadListeningActivityInner[] $listens_per_day listens_per_day
      *
      * @return self
      */
@@ -573,7 +573,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets new_releases_of_top_artists
      *
-     * @return \OpenAPI\Client\Model\YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner[]
+     * @return \Listenbrainz\Model\YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner[]
      */
     public function getNewReleasesOfTopArtists()
     {
@@ -583,7 +583,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets new_releases_of_top_artists
      *
-     * @param \OpenAPI\Client\Model\YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner[] $new_releases_of_top_artists new_releases_of_top_artists
+     * @param \Listenbrainz\Model\YearInMusicForUserPayloadDataNewReleasesOfTopArtistsInner[] $new_releases_of_top_artists new_releases_of_top_artists
      *
      * @return self
      */
@@ -600,7 +600,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets playlist_top_discoveries_for_year
      *
-     * @return \OpenAPI\Client\Model\Playlist
+     * @return \Listenbrainz\Model\Playlist
      */
     public function getPlaylistTopDiscoveriesForYear()
     {
@@ -610,7 +610,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets playlist_top_discoveries_for_year
      *
-     * @param \OpenAPI\Client\Model\Playlist $playlist_top_discoveries_for_year playlist_top_discoveries_for_year
+     * @param \Listenbrainz\Model\Playlist $playlist_top_discoveries_for_year playlist_top_discoveries_for_year
      *
      * @return self
      */
@@ -627,7 +627,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets playlist_top_missed_recordings_for_year
      *
-     * @return \OpenAPI\Client\Model\Playlist
+     * @return \Listenbrainz\Model\Playlist
      */
     public function getPlaylistTopMissedRecordingsForYear()
     {
@@ -637,7 +637,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets playlist_top_missed_recordings_for_year
      *
-     * @param \OpenAPI\Client\Model\Playlist $playlist_top_missed_recordings_for_year playlist_top_missed_recordings_for_year
+     * @param \Listenbrainz\Model\Playlist $playlist_top_missed_recordings_for_year playlist_top_missed_recordings_for_year
      *
      * @return self
      */
@@ -681,7 +681,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets top_artists
      *
-     * @return \OpenAPI\Client\Model\TopArtistsForUserPayloadArtistsInner[]
+     * @return \Listenbrainz\Model\TopArtistsForUserPayloadArtistsInner[]
      */
     public function getTopArtists()
     {
@@ -691,7 +691,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets top_artists
      *
-     * @param \OpenAPI\Client\Model\TopArtistsForUserPayloadArtistsInner[] $top_artists top_artists
+     * @param \Listenbrainz\Model\TopArtistsForUserPayloadArtistsInner[] $top_artists top_artists
      *
      * @return self
      */
@@ -708,7 +708,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets top_genres
      *
-     * @return \OpenAPI\Client\Model\YearInMusicForUserPayloadDataTopGenresInner[]
+     * @return \Listenbrainz\Model\YearInMusicForUserPayloadDataTopGenresInner[]
      */
     public function getTopGenres()
     {
@@ -718,7 +718,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets top_genres
      *
-     * @param \OpenAPI\Client\Model\YearInMusicForUserPayloadDataTopGenresInner[] $top_genres top_genres
+     * @param \Listenbrainz\Model\YearInMusicForUserPayloadDataTopGenresInner[] $top_genres top_genres
      *
      * @return self
      */
@@ -735,7 +735,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets top_recordings
      *
-     * @return \OpenAPI\Client\Model\TopRecordingsForUserPayloadRecordingsInner[]
+     * @return \Listenbrainz\Model\TopRecordingsForUserPayloadRecordingsInner[]
      */
     public function getTopRecordings()
     {
@@ -745,7 +745,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets top_recordings
      *
-     * @param \OpenAPI\Client\Model\TopRecordingsForUserPayloadRecordingsInner[] $top_recordings top_recordings
+     * @param \Listenbrainz\Model\TopRecordingsForUserPayloadRecordingsInner[] $top_recordings top_recordings
      *
      * @return self
      */
@@ -762,7 +762,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets top_release_groups
      *
-     * @return \OpenAPI\Client\Model\ReleaseGroupsInner[]
+     * @return \Listenbrainz\Model\ReleaseGroupsInner[]
      */
     public function getTopReleaseGroups()
     {
@@ -772,7 +772,7 @@ class YearInMusicForUserPayloadData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets top_release_groups
      *
-     * @param \OpenAPI\Client\Model\ReleaseGroupsInner[] $top_release_groups top_release_groups
+     * @param \Listenbrainz\Model\ReleaseGroupsInner[] $top_release_groups top_release_groups
      *
      * @return self
      */

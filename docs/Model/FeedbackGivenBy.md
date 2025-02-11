@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **int** |  |
-**feedback** | [**\OpenAPI\Client\Model\FeedbackGivenByFeedbackInner[]**](FeedbackGivenByFeedbackInner.md) |  |
+**feedback** | [**\Listenbrainz\Model\FeedbackGivenByFeedbackInner[]**](FeedbackGivenByFeedbackInner.md) |  |
 **offset** | **int** |  |
 **total_count** | **int** |  |
 **user_name** | **string** |  |

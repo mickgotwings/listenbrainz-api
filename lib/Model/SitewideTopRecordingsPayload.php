@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SitewideTopRecordingsPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class SitewideTopRecordingsPayload implements ModelInterface, ArrayAccess, \Json
         'last_updated' => 'int',
         'offset' => 'int',
         'range' => 'string',
-        'recordings' => '\OpenAPI\Client\Model\SitewideTopRecordingsPayloadRecordingsInner[]',
+        'recordings' => '\Listenbrainz\Model\SitewideTopRecordingsPayloadRecordingsInner[]',
         'to_ts' => 'int'
     ];
 
@@ -490,7 +490,7 @@ class SitewideTopRecordingsPayload implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets recordings
      *
-     * @return \OpenAPI\Client\Model\SitewideTopRecordingsPayloadRecordingsInner[]
+     * @return \Listenbrainz\Model\SitewideTopRecordingsPayloadRecordingsInner[]
      */
     public function getRecordings()
     {
@@ -500,7 +500,7 @@ class SitewideTopRecordingsPayload implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets recordings
      *
-     * @param \OpenAPI\Client\Model\SitewideTopRecordingsPayloadRecordingsInner[] $recordings recordings
+     * @param \Listenbrainz\Model\SitewideTopRecordingsPayloadRecordingsInner[] $recordings recordings
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * PlaylistExtensionPayloadAdditionalMetadata Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PlaylistExtensionPayloadAdditionalMetadata implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'algorithm_metadata' => '\OpenAPI\Client\Model\PlaylistExtensionPayloadAdditionalMetadataAlgorithmMetadata'
+        'algorithm_metadata' => '\Listenbrainz\Model\PlaylistExtensionPayloadAdditionalMetadataAlgorithmMetadata'
     ];
 
     /**
@@ -292,7 +292,7 @@ class PlaylistExtensionPayloadAdditionalMetadata implements ModelInterface, Arra
     /**
      * Gets algorithm_metadata
      *
-     * @return \OpenAPI\Client\Model\PlaylistExtensionPayloadAdditionalMetadataAlgorithmMetadata|null
+     * @return \Listenbrainz\Model\PlaylistExtensionPayloadAdditionalMetadataAlgorithmMetadata|null
      */
     public function getAlgorithmMetadata()
     {
@@ -302,7 +302,7 @@ class PlaylistExtensionPayloadAdditionalMetadata implements ModelInterface, Arra
     /**
      * Sets algorithm_metadata
      *
-     * @param \OpenAPI\Client\Model\PlaylistExtensionPayloadAdditionalMetadataAlgorithmMetadata|null $algorithm_metadata algorithm_metadata
+     * @param \Listenbrainz\Model\PlaylistExtensionPayloadAdditionalMetadataAlgorithmMetadata|null $algorithm_metadata algorithm_metadata
      *
      * @return self
      */

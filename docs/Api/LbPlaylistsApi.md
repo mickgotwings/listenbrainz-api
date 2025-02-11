@@ -1,4 +1,4 @@
-# OpenAPI\Client\LbPlaylistsApi
+# Listenbrainz\LbPlaylistsApi
 
 All URIs are relative to https://api.listenbrainz.org, except if the operation defines another base path.
 
@@ -34,12 +34,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -47,7 +47,7 @@ $apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
 );
 $playlist_mbid = 'playlist_mbid_example'; // string | The playlist mbid to append to.
 $offset = 56; // int | Offset.
-$playlist = new \OpenAPI\Client\Model\Playlist(); // \OpenAPI\Client\Model\Playlist
+$playlist = new \Listenbrainz\Model\Playlist(); // \Listenbrainz\Model\Playlist
 
 try {
     $apiInstance->appendRecordings($playlist_mbid, $offset, $playlist);
@@ -62,7 +62,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **playlist_mbid** | **string**| The playlist mbid to append to. | |
 | **offset** | **int**| Offset. | |
-| **playlist** | [**\OpenAPI\Client\Model\Playlist**](../Model/Playlist.md)|  | |
+| **playlist** | [**\Listenbrainz\Model\Playlist**](../Model/Playlist.md)|  | |
 
 ### Return type
 
@@ -97,12 +97,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -143,7 +143,7 @@ void (empty response body)
 ## `createPlaylist()`
 
 ```php
-createPlaylist($create_playlist_request): \OpenAPI\Client\Model\CreatePlaylist200Response
+createPlaylist($create_playlist_request): \Listenbrainz\Model\CreatePlaylist200Response
 ```
 
 Create a playlist
@@ -158,18 +158,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_playlist_request = new \OpenAPI\Client\Model\CreatePlaylistRequest(); // \OpenAPI\Client\Model\CreatePlaylistRequest
+$create_playlist_request = new \Listenbrainz\Model\CreatePlaylistRequest(); // \Listenbrainz\Model\CreatePlaylistRequest
 
 try {
     $result = $apiInstance->createPlaylist($create_playlist_request);
@@ -183,11 +183,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_playlist_request** | [**\OpenAPI\Client\Model\CreatePlaylistRequest**](../Model/CreatePlaylistRequest.md)|  | |
+| **create_playlist_request** | [**\Listenbrainz\Model\CreatePlaylistRequest**](../Model/CreatePlaylistRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePlaylist200Response**](../Model/CreatePlaylist200Response.md)
+[**\Listenbrainz\Model\CreatePlaylist200Response**](../Model/CreatePlaylist200Response.md)
 
 ### Authorization
 
@@ -220,12 +220,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -279,19 +279,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $playlist_mbid = 'playlist_mbid_example'; // string | The playlist mbid to edit.
-$create_playlist_request = new \OpenAPI\Client\Model\CreatePlaylistRequest(); // \OpenAPI\Client\Model\CreatePlaylistRequest
+$create_playlist_request = new \Listenbrainz\Model\CreatePlaylistRequest(); // \Listenbrainz\Model\CreatePlaylistRequest
 
 try {
     $apiInstance->editPlaylist($playlist_mbid, $create_playlist_request);
@@ -305,7 +305,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **playlist_mbid** | **string**| The playlist mbid to edit. | |
-| **create_playlist_request** | [**\OpenAPI\Client\Model\CreatePlaylistRequest**](../Model/CreatePlaylistRequest.md)|  | |
+| **create_playlist_request** | [**\Listenbrainz\Model\CreatePlaylistRequest**](../Model/CreatePlaylistRequest.md)|  | |
 
 ### Return type
 
@@ -327,7 +327,7 @@ void (empty response body)
 ## `fetchPlaylist()`
 
 ```php
-fetchPlaylist($playlist_mbid, $fetch_metadata): \OpenAPI\Client\Model\CreatePlaylistRequest
+fetchPlaylist($playlist_mbid, $fetch_metadata): \Listenbrainz\Model\CreatePlaylistRequest
 ```
 
 Fetch the given playlist.
@@ -340,7 +340,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -365,7 +365,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreatePlaylistRequest**](../Model/CreatePlaylistRequest.md)
+[**\Listenbrainz\Model\CreatePlaylistRequest**](../Model/CreatePlaylistRequest.md)
 
 ### Authorization
 
@@ -398,19 +398,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $playlist_mbid = 'playlist_mbid_example'; // string | The playlist mbid to fetch.
-$item_delete_request = new \OpenAPI\Client\Model\ItemDeleteRequest(); // \OpenAPI\Client\Model\ItemDeleteRequest
+$item_delete_request = new \Listenbrainz\Model\ItemDeleteRequest(); // \Listenbrainz\Model\ItemDeleteRequest
 
 try {
     $apiInstance->itemDelete($playlist_mbid, $item_delete_request);
@@ -424,7 +424,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **playlist_mbid** | **string**| The playlist mbid to fetch. | |
-| **item_delete_request** | [**\OpenAPI\Client\Model\ItemDeleteRequest**](../Model/ItemDeleteRequest.md)|  | |
+| **item_delete_request** | [**\Listenbrainz\Model\ItemDeleteRequest**](../Model/ItemDeleteRequest.md)|  | |
 
 ### Return type
 
@@ -459,19 +459,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $playlist_mbid = 'playlist_mbid_example'; // string | The playlist mbid to append to.
-$move_item_request = new \OpenAPI\Client\Model\MoveItemRequest(); // \OpenAPI\Client\Model\MoveItemRequest
+$move_item_request = new \Listenbrainz\Model\MoveItemRequest(); // \Listenbrainz\Model\MoveItemRequest
 
 try {
     $apiInstance->moveItem($playlist_mbid, $move_item_request);
@@ -485,7 +485,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **playlist_mbid** | **string**| The playlist mbid to append to. | |
-| **move_item_request** | [**\OpenAPI\Client\Model\MoveItemRequest**](../Model/MoveItemRequest.md)|  | |
+| **move_item_request** | [**\Listenbrainz\Model\MoveItemRequest**](../Model/MoveItemRequest.md)|  | |
 
 ### Return type
 
@@ -507,7 +507,7 @@ void (empty response body)
 ## `playlistsCreatedForUser()`
 
 ```php
-playlistsCreatedForUser($playlist_user_name, $count, $offset): \OpenAPI\Client\Model\Playlists
+playlistsCreatedForUser($playlist_user_name, $count, $offset): \Listenbrainz\Model\Playlists
 ```
 
 Fetch playlist metadata in JSPF format without recordings that have been created for the user.
@@ -520,7 +520,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -547,7 +547,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Playlists**](../Model/Playlists.md)
+[**\Listenbrainz\Model\Playlists**](../Model/Playlists.md)
 
 ### Authorization
 
@@ -565,7 +565,7 @@ No authorization required
 ## `playlistsForUser()`
 
 ```php
-playlistsForUser($playlist_user_name, $count, $offset): \OpenAPI\Client\Model\Playlists
+playlistsForUser($playlist_user_name, $count, $offset): \Listenbrainz\Model\Playlists
 ```
 
 Fetch playlist metadata in JSPF format without recordings for the given user.
@@ -578,7 +578,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -605,7 +605,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Playlists**](../Model/Playlists.md)
+[**\Listenbrainz\Model\Playlists**](../Model/Playlists.md)
 
 ### Authorization
 
@@ -623,7 +623,7 @@ No authorization required
 ## `playlistsForUserCollaborator()`
 
 ```php
-playlistsForUserCollaborator($playlist_user_name, $count, $offset): \OpenAPI\Client\Model\Playlists
+playlistsForUserCollaborator($playlist_user_name, $count, $offset): \Listenbrainz\Model\Playlists
 ```
 
 Fetch playlist metadata in JSPF format without recordings for which a user is a collaborator. If a playlist is private, it will only be returned if the caller is authorized to edit that playlist.
@@ -636,7 +636,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -663,7 +663,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Playlists**](../Model/Playlists.md)
+[**\Listenbrainz\Model\Playlists**](../Model/Playlists.md)
 
 ### Authorization
 
@@ -681,7 +681,7 @@ No authorization required
 ## `searchPlaylists()`
 
 ```php
-searchPlaylists($query): \OpenAPI\Client\Model\Playlists
+searchPlaylists($query): \Listenbrainz\Model\Playlists
 ```
 
 Search for playlists by name or description. The search query must be at least 3 characters long.
@@ -694,7 +694,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbPlaylistsApi(
+$apiInstance = new Listenbrainz\Api\LbPlaylistsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -717,7 +717,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Playlists**](../Model/Playlists.md)
+[**\Listenbrainz\Model\Playlists**](../Model/Playlists.md)
 
 ### Authorization
 

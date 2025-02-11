@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * Playlists Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class Playlists implements ModelInterface, ArrayAccess, \JsonSerializable
         'count' => 'int',
         'offset' => 'int',
         'playlist_count' => 'int',
-        'playlists' => '\OpenAPI\Client\Model\CreatePlaylistRequest[]'
+        'playlists' => '\Listenbrainz\Model\CreatePlaylistRequest[]'
     ];
 
     /**
@@ -394,7 +394,7 @@ class Playlists implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets playlists
      *
-     * @return \OpenAPI\Client\Model\CreatePlaylistRequest[]|null
+     * @return \Listenbrainz\Model\CreatePlaylistRequest[]|null
      */
     public function getPlaylists()
     {
@@ -404,7 +404,7 @@ class Playlists implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets playlists
      *
-     * @param \OpenAPI\Client\Model\CreatePlaylistRequest[]|null $playlists playlists
+     * @param \Listenbrainz\Model\CreatePlaylistRequest[]|null $playlists playlists
      *
      * @return self
      */

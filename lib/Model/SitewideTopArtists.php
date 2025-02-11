@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SitewideTopArtists Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class SitewideTopArtists implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\OpenAPI\Client\Model\SitewideTopArtistsPayload'
+        'payload' => '\Listenbrainz\Model\SitewideTopArtistsPayload'
     ];
 
     /**
@@ -295,7 +295,7 @@ class SitewideTopArtists implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\SitewideTopArtistsPayload
+     * @return \Listenbrainz\Model\SitewideTopArtistsPayload
      */
     public function getPayload()
     {
@@ -305,7 +305,7 @@ class SitewideTopArtists implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\SitewideTopArtistsPayload $payload payload
+     * @param \Listenbrainz\Model\SitewideTopArtistsPayload $payload payload
      *
      * @return self
      */

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **int** |  | [optional]
 **latest_listen_ts** | **int** |  | [optional]
-**listens** | [**\OpenAPI\Client\Model\ListensForUserPayloadListensInner[]**](ListensForUserPayloadListensInner.md) |  | [optional]
+**listens** | [**\Listenbrainz\Model\ListensForUserPayloadListensInner[]**](ListensForUserPayloadListensInner.md) |  | [optional]
 **oldest_listen_ts** | **int** |  | [optional]
 **user_id** | **string** |  | [optional]
 

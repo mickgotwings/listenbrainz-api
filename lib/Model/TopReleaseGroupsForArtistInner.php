@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopReleaseGroupsForArtistInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,12 +57,12 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'artist' => '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerArtist',
-        'release' => '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerRelease',
-        'release_color' => '\OpenAPI\Client\Model\TopRecordingsForArtistInnerReleaseColor',
-        'release_group' => '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerReleaseGroup',
+        'artist' => '\Listenbrainz\Model\TopReleaseGroupsForArtistInnerArtist',
+        'release' => '\Listenbrainz\Model\TopReleaseGroupsForArtistInnerRelease',
+        'release_color' => '\Listenbrainz\Model\TopRecordingsForArtistInnerReleaseColor',
+        'release_group' => '\Listenbrainz\Model\TopReleaseGroupsForArtistInnerReleaseGroup',
         'release_group_mbid' => 'string',
-        'tag' => '\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTag',
+        'tag' => '\Listenbrainz\Model\TopReleaseGroupsForArtistInnerTag',
         'total_listen_count' => 'int',
         'total_user_count' => 'int'
     ];
@@ -341,7 +341,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets artist
      *
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerArtist|null
+     * @return \Listenbrainz\Model\TopReleaseGroupsForArtistInnerArtist|null
      */
     public function getArtist()
     {
@@ -351,7 +351,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets artist
      *
-     * @param \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerArtist|null $artist artist
+     * @param \Listenbrainz\Model\TopReleaseGroupsForArtistInnerArtist|null $artist artist
      *
      * @return self
      */
@@ -368,7 +368,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets release
      *
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerRelease|null
+     * @return \Listenbrainz\Model\TopReleaseGroupsForArtistInnerRelease|null
      */
     public function getRelease()
     {
@@ -378,7 +378,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets release
      *
-     * @param \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerRelease|null $release release
+     * @param \Listenbrainz\Model\TopReleaseGroupsForArtistInnerRelease|null $release release
      *
      * @return self
      */
@@ -395,7 +395,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets release_color
      *
-     * @return \OpenAPI\Client\Model\TopRecordingsForArtistInnerReleaseColor|null
+     * @return \Listenbrainz\Model\TopRecordingsForArtistInnerReleaseColor|null
      */
     public function getReleaseColor()
     {
@@ -405,7 +405,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets release_color
      *
-     * @param \OpenAPI\Client\Model\TopRecordingsForArtistInnerReleaseColor|null $release_color release_color
+     * @param \Listenbrainz\Model\TopRecordingsForArtistInnerReleaseColor|null $release_color release_color
      *
      * @return self
      */
@@ -422,7 +422,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets release_group
      *
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerReleaseGroup|null
+     * @return \Listenbrainz\Model\TopReleaseGroupsForArtistInnerReleaseGroup|null
      */
     public function getReleaseGroup()
     {
@@ -432,7 +432,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets release_group
      *
-     * @param \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerReleaseGroup|null $release_group release_group
+     * @param \Listenbrainz\Model\TopReleaseGroupsForArtistInnerReleaseGroup|null $release_group release_group
      *
      * @return self
      */
@@ -476,7 +476,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets tag
      *
-     * @return \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTag|null
+     * @return \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTag|null
      */
     public function getTag()
     {
@@ -486,7 +486,7 @@ class TopReleaseGroupsForArtistInner implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets tag
      *
-     * @param \OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTag|null $tag tag
+     * @param \Listenbrainz\Model\TopReleaseGroupsForArtistInnerTag|null $tag tag
      *
      * @return self
      */

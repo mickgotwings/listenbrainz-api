@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * PlaylistTrackInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PlaylistTrackInner implements ModelInterface, ArrayAccess, \JsonSerializab
         'album' => 'string',
         'creator' => 'string',
         'duration' => 'int',
-        'extension' => '\OpenAPI\Client\Model\PlaylistTrackInnerExtension',
+        'extension' => '\Listenbrainz\Model\PlaylistTrackInnerExtension',
         'identifier' => 'string[]',
         'title' => 'string'
     ];
@@ -408,7 +408,7 @@ class PlaylistTrackInner implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets extension
      *
-     * @return \OpenAPI\Client\Model\PlaylistTrackInnerExtension|null
+     * @return \Listenbrainz\Model\PlaylistTrackInnerExtension|null
      */
     public function getExtension()
     {
@@ -418,7 +418,7 @@ class PlaylistTrackInner implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets extension
      *
-     * @param \OpenAPI\Client\Model\PlaylistTrackInnerExtension|null $extension extension
+     * @param \Listenbrainz\Model\PlaylistTrackInnerExtension|null $extension extension
      *
      * @return self
      */

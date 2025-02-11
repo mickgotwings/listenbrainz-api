@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TrackMetadata Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class TrackMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_info' => '\OpenAPI\Client\Model\AdditionalInfo',
+        'additional_info' => '\Listenbrainz\Model\AdditionalInfo',
         'artist_name' => 'string',
-        'mbid_mapping' => '\OpenAPI\Client\Model\MbidMapping',
+        'mbid_mapping' => '\Listenbrainz\Model\MbidMapping',
         'release_name' => 'string',
         'track_name' => 'string'
     ];
@@ -320,7 +320,7 @@ class TrackMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_info
      *
-     * @return \OpenAPI\Client\Model\AdditionalInfo|null
+     * @return \Listenbrainz\Model\AdditionalInfo|null
      */
     public function getAdditionalInfo()
     {
@@ -330,7 +330,7 @@ class TrackMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_info
      *
-     * @param \OpenAPI\Client\Model\AdditionalInfo|null $additional_info additional_info
+     * @param \Listenbrainz\Model\AdditionalInfo|null $additional_info additional_info
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class TrackMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets mbid_mapping
      *
-     * @return \OpenAPI\Client\Model\MbidMapping|null
+     * @return \Listenbrainz\Model\MbidMapping|null
      */
     public function getMbidMapping()
     {
@@ -384,7 +384,7 @@ class TrackMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets mbid_mapping
      *
-     * @param \OpenAPI\Client\Model\MbidMapping|null $mbid_mapping mbid_mapping
+     * @param \Listenbrainz\Model\MbidMapping|null $mbid_mapping mbid_mapping
      *
      * @return self
      */

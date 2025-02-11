@@ -1,4 +1,4 @@
-# OpenAPI\Client\LbStatsApi
+# Listenbrainz\LbStatsApi
 
 All URIs are relative to https://api.listenbrainz.org, except if the operation defines another base path.
 
@@ -25,7 +25,7 @@ All URIs are relative to https://api.listenbrainz.org, except if the operation d
 ## `artistMapForUser()`
 
 ```php
-artistMapForUser($user_name, $range, $force_recalculate): \OpenAPI\Client\Model\ArtistMapForUser
+artistMapForUser($user_name, $range, $force_recalculate): \Listenbrainz\Model\ArtistMapForUser
 ```
 
 Get the artist map for user 'user_name'.
@@ -38,13 +38,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_name = 'user_name_example'; // string
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 $force_recalculate = false; // bool | Optional, recalculate the data instead of returning the cached result.
 
 try {
@@ -60,12 +60,12 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 | **force_recalculate** | **bool**| Optional, recalculate the data instead of returning the cached result. | [optional] [default to false] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ArtistMapForUser**](../Model/ArtistMapForUser.md)
+[**\Listenbrainz\Model\ArtistMapForUser**](../Model/ArtistMapForUser.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ No authorization required
 ## `dailyActivityForUser()`
 
 ```php
-dailyActivityForUser($user_name, $range): \OpenAPI\Client\Model\DailyActivityForUser
+dailyActivityForUser($user_name, $range): \Listenbrainz\Model\DailyActivityForUser
 ```
 
 Get the daily activity for user 'user_name'.
@@ -96,13 +96,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_name = 'user_name_example'; // string
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->dailyActivityForUser($user_name, $range);
@@ -117,11 +117,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DailyActivityForUser**](../Model/DailyActivityForUser.md)
+[**\Listenbrainz\Model\DailyActivityForUser**](../Model/DailyActivityForUser.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ No authorization required
 ## `listenersForArtist()`
 
 ```php
-listenersForArtist($artist_mbid, $range): \OpenAPI\Client\Model\ListenersForArtist
+listenersForArtist($artist_mbid, $range): \Listenbrainz\Model\ListenersForArtist
 ```
 
 Get top listeners for artist 'artist_mbid'.
@@ -152,13 +152,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $artist_mbid = 'artist_mbid_example'; // string
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->listenersForArtist($artist_mbid, $range);
@@ -173,11 +173,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **artist_mbid** | **string**|  | |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListenersForArtist**](../Model/ListenersForArtist.md)
+[**\Listenbrainz\Model\ListenersForArtist**](../Model/ListenersForArtist.md)
 
 ### Authorization
 
@@ -195,7 +195,7 @@ No authorization required
 ## `listenersForReleaseGroup()`
 
 ```php
-listenersForReleaseGroup($release_group_mbid, $range): \OpenAPI\Client\Model\ListenersForReleaseGroup
+listenersForReleaseGroup($release_group_mbid, $range): \Listenbrainz\Model\ListenersForReleaseGroup
 ```
 
 Get top listeners for release group 'release_group_mbid'.
@@ -208,13 +208,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $release_group_mbid = 'release_group_mbid_example'; // string
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->listenersForReleaseGroup($release_group_mbid, $range);
@@ -229,11 +229,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **release_group_mbid** | **string**|  | |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListenersForReleaseGroup**](../Model/ListenersForReleaseGroup.md)
+[**\Listenbrainz\Model\ListenersForReleaseGroup**](../Model/ListenersForReleaseGroup.md)
 
 ### Authorization
 
@@ -251,7 +251,7 @@ No authorization required
 ## `listeningActivityForUser()`
 
 ```php
-listeningActivityForUser($user_name, $range): \OpenAPI\Client\Model\ListeningActivityForUser
+listeningActivityForUser($user_name, $range): \Listenbrainz\Model\ListeningActivityForUser
 ```
 
 Get the listening activity for user 'user_name'.
@@ -264,13 +264,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_name = 'user_name_example'; // string
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->listeningActivityForUser($user_name, $range);
@@ -285,11 +285,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListeningActivityForUser**](../Model/ListeningActivityForUser.md)
+[**\Listenbrainz\Model\ListeningActivityForUser**](../Model/ListeningActivityForUser.md)
 
 ### Authorization
 
@@ -307,7 +307,7 @@ No authorization required
 ## `sitewideArtistMap()`
 
 ```php
-sitewideArtistMap($range, $force_recalculate): \OpenAPI\Client\Model\SitewideArtistMap
+sitewideArtistMap($range, $force_recalculate): \Listenbrainz\Model\SitewideArtistMap
 ```
 
 Get sitewide top recordings.
@@ -320,12 +320,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 $force_recalculate = false; // bool | Optional, recalculate the data instead of returning the cached result.
 
 try {
@@ -340,12 +340,12 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 | **force_recalculate** | **bool**| Optional, recalculate the data instead of returning the cached result. | [optional] [default to false] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SitewideArtistMap**](../Model/SitewideArtistMap.md)
+[**\Listenbrainz\Model\SitewideArtistMap**](../Model/SitewideArtistMap.md)
 
 ### Authorization
 
@@ -363,7 +363,7 @@ No authorization required
 ## `sitewideListeningActivity()`
 
 ```php
-sitewideListeningActivity($range): \OpenAPI\Client\Model\SitewideListeningActivity
+sitewideListeningActivity($range): \Listenbrainz\Model\SitewideListeningActivity
 ```
 
 Get sitewide top recordings.
@@ -376,12 +376,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->sitewideListeningActivity($range);
@@ -395,11 +395,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SitewideListeningActivity**](../Model/SitewideListeningActivity.md)
+[**\Listenbrainz\Model\SitewideListeningActivity**](../Model/SitewideListeningActivity.md)
 
 ### Authorization
 
@@ -417,7 +417,7 @@ No authorization required
 ## `sitewideTopArtists()`
 
 ```php
-sitewideTopArtists($count, $offset, $range): \OpenAPI\Client\Model\SitewideTopArtists
+sitewideTopArtists($count, $offset, $range): \Listenbrainz\Model\SitewideTopArtists
 ```
 
 Get sitewide top artists.
@@ -430,14 +430,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $count = 25; // int
 $offset = 0; // int
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->sitewideTopArtists($count, $offset, $range);
@@ -453,11 +453,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **count** | **int**|  | [optional] [default to 25] |
 | **offset** | **int**|  | [optional] [default to 0] |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SitewideTopArtists**](../Model/SitewideTopArtists.md)
+[**\Listenbrainz\Model\SitewideTopArtists**](../Model/SitewideTopArtists.md)
 
 ### Authorization
 
@@ -475,7 +475,7 @@ No authorization required
 ## `sitewideTopRecordings()`
 
 ```php
-sitewideTopRecordings($count, $offset, $range): \OpenAPI\Client\Model\SitewideTopRecordings
+sitewideTopRecordings($count, $offset, $range): \Listenbrainz\Model\SitewideTopRecordings
 ```
 
 Get sitewide top recordings.
@@ -488,14 +488,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $count = 25; // int
 $offset = 0; // int
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->sitewideTopRecordings($count, $offset, $range);
@@ -511,11 +511,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **count** | **int**|  | [optional] [default to 25] |
 | **offset** | **int**|  | [optional] [default to 0] |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SitewideTopRecordings**](../Model/SitewideTopRecordings.md)
+[**\Listenbrainz\Model\SitewideTopRecordings**](../Model/SitewideTopRecordings.md)
 
 ### Authorization
 
@@ -533,7 +533,7 @@ No authorization required
 ## `sitewideTopReleaseGroups()`
 
 ```php
-sitewideTopReleaseGroups($count, $offset, $range): \OpenAPI\Client\Model\SitewideTopReleaseGroups
+sitewideTopReleaseGroups($count, $offset, $range): \Listenbrainz\Model\SitewideTopReleaseGroups
 ```
 
 Get sitewide top release groups.
@@ -546,14 +546,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $count = 25; // int
 $offset = 0; // int
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->sitewideTopReleaseGroups($count, $offset, $range);
@@ -569,11 +569,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **count** | **int**|  | [optional] [default to 25] |
 | **offset** | **int**|  | [optional] [default to 0] |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SitewideTopReleaseGroups**](../Model/SitewideTopReleaseGroups.md)
+[**\Listenbrainz\Model\SitewideTopReleaseGroups**](../Model/SitewideTopReleaseGroups.md)
 
 ### Authorization
 
@@ -591,7 +591,7 @@ No authorization required
 ## `sitewideTopReleases()`
 
 ```php
-sitewideTopReleases($count, $offset, $range): \OpenAPI\Client\Model\SitewideTopReleases
+sitewideTopReleases($count, $offset, $range): \Listenbrainz\Model\SitewideTopReleases
 ```
 
 Get sitewide top releases.
@@ -604,14 +604,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $count = 25; // int
 $offset = 0; // int
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->sitewideTopReleases($count, $offset, $range);
@@ -627,11 +627,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **count** | **int**|  | [optional] [default to 25] |
 | **offset** | **int**|  | [optional] [default to 0] |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SitewideTopReleases**](../Model/SitewideTopReleases.md)
+[**\Listenbrainz\Model\SitewideTopReleases**](../Model/SitewideTopReleases.md)
 
 ### Authorization
 
@@ -649,7 +649,7 @@ No authorization required
 ## `topArtistsForUser()`
 
 ```php
-topArtistsForUser($user_name, $count, $offset, $range): \OpenAPI\Client\Model\TopArtistsForUser
+topArtistsForUser($user_name, $count, $offset, $range): \Listenbrainz\Model\TopArtistsForUser
 ```
 
 Get top artists for user 'user_name'.
@@ -662,7 +662,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -670,7 +670,7 @@ $apiInstance = new OpenAPI\Client\Api\LbStatsApi(
 $user_name = 'user_name_example'; // string
 $count = 25; // int
 $offset = 0; // int
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->topArtistsForUser($user_name, $count, $offset, $range);
@@ -687,11 +687,11 @@ try {
 | **user_name** | **string**|  | |
 | **count** | **int**|  | [optional] [default to 25] |
 | **offset** | **int**|  | [optional] [default to 0] |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TopArtistsForUser**](../Model/TopArtistsForUser.md)
+[**\Listenbrainz\Model\TopArtistsForUser**](../Model/TopArtistsForUser.md)
 
 ### Authorization
 
@@ -709,7 +709,7 @@ No authorization required
 ## `topRecordingsForUser()`
 
 ```php
-topRecordingsForUser($user_name, $count, $offset, $range): \OpenAPI\Client\Model\TopRecordingsForUser
+topRecordingsForUser($user_name, $count, $offset, $range): \Listenbrainz\Model\TopRecordingsForUser
 ```
 
 Get top recordings for user 'user_name'.
@@ -722,7 +722,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -730,7 +730,7 @@ $apiInstance = new OpenAPI\Client\Api\LbStatsApi(
 $user_name = 'user_name_example'; // string
 $count = 25; // int
 $offset = 0; // int
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->topRecordingsForUser($user_name, $count, $offset, $range);
@@ -747,11 +747,11 @@ try {
 | **user_name** | **string**|  | |
 | **count** | **int**|  | [optional] [default to 25] |
 | **offset** | **int**|  | [optional] [default to 0] |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TopRecordingsForUser**](../Model/TopRecordingsForUser.md)
+[**\Listenbrainz\Model\TopRecordingsForUser**](../Model/TopRecordingsForUser.md)
 
 ### Authorization
 
@@ -769,7 +769,7 @@ No authorization required
 ## `topReleaseGroupsForUser()`
 
 ```php
-topReleaseGroupsForUser($user_name, $count, $offset, $range): \OpenAPI\Client\Model\TopReleaseGroupsForUser
+topReleaseGroupsForUser($user_name, $count, $offset, $range): \Listenbrainz\Model\TopReleaseGroupsForUser
 ```
 
 Get top release groups for user 'user_name'.
@@ -782,7 +782,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -790,7 +790,7 @@ $apiInstance = new OpenAPI\Client\Api\LbStatsApi(
 $user_name = 'user_name_example'; // string
 $count = 25; // int
 $offset = 0; // int
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->topReleaseGroupsForUser($user_name, $count, $offset, $range);
@@ -807,11 +807,11 @@ try {
 | **user_name** | **string**|  | |
 | **count** | **int**|  | [optional] [default to 25] |
 | **offset** | **int**|  | [optional] [default to 0] |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TopReleaseGroupsForUser**](../Model/TopReleaseGroupsForUser.md)
+[**\Listenbrainz\Model\TopReleaseGroupsForUser**](../Model/TopReleaseGroupsForUser.md)
 
 ### Authorization
 
@@ -829,7 +829,7 @@ No authorization required
 ## `topReleasesForUser()`
 
 ```php
-topReleasesForUser($user_name, $count, $offset, $range): \OpenAPI\Client\Model\TopReleasesForUser
+topReleasesForUser($user_name, $count, $offset, $range): \Listenbrainz\Model\TopReleasesForUser
 ```
 
 Get top releases for user 'user_name'.
@@ -842,7 +842,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -850,7 +850,7 @@ $apiInstance = new OpenAPI\Client\Api\LbStatsApi(
 $user_name = 'user_name_example'; // string
 $count = 25; // int
 $offset = 0; // int
-$range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange
+$range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange
 
 try {
     $result = $apiInstance->topReleasesForUser($user_name, $count, $offset, $range);
@@ -867,11 +867,11 @@ try {
 | **user_name** | **string**|  | |
 | **count** | **int**|  | [optional] [default to 25] |
 | **offset** | **int**|  | [optional] [default to 0] |
-| **range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
+| **range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TopReleasesForUser**](../Model/TopReleasesForUser.md)
+[**\Listenbrainz\Model\TopReleasesForUser**](../Model/TopReleasesForUser.md)
 
 ### Authorization
 
@@ -889,7 +889,7 @@ No authorization required
 ## `yearInMusicForUser()`
 
 ```php
-yearInMusicForUser($user_name, $year): \OpenAPI\Client\Model\YearInMusicForUser
+yearInMusicForUser($user_name, $year): \Listenbrainz\Model\YearInMusicForUser
 ```
 
 Get sitewide top recordings.
@@ -902,7 +902,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbStatsApi(
+$apiInstance = new Listenbrainz\Api\LbStatsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -927,7 +927,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\YearInMusicForUser**](../Model/YearInMusicForUser.md)
+[**\Listenbrainz\Model\YearInMusicForUser**](../Model/YearInMusicForUser.md)
 
 ### Authorization
 

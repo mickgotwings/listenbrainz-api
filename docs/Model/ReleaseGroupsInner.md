@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**artists** | [**\OpenAPI\Client\Model\ReleaseGroupsInnerArtistsInner[]**](ReleaseGroupsInnerArtistsInner.md) |  | [optional]
+**artists** | [**\Listenbrainz\Model\ReleaseGroupsInnerArtistsInner[]**](ReleaseGroupsInnerArtistsInner.md) |  | [optional]
 **artist_mbids** | **string[]** |  | [optional]
 **artist_name** | **string** |  | [optional]
 **caa_id** | **int** |  | [optional]

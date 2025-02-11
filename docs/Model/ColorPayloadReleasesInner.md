@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **caa_id** | **int** |  | [optional]
 **color** | **int[]** |  | [optional]
 **dist** | **int** |  | [optional]
-**recordings** | [**\OpenAPI\Client\Model\ColorPayloadReleasesInnerRecordingsInner[]**](ColorPayloadReleasesInnerRecordingsInner.md) |  | [optional]
+**recordings** | [**\Listenbrainz\Model\ColorPayloadReleasesInnerRecordingsInner[]**](ColorPayloadReleasesInnerRecordingsInner.md) |  | [optional]
 **release_mbid** | **string** |  | [optional]
 **release_name** | **string** |  | [optional]
 

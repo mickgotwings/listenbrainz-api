@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SubmitListensPayloadInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class SubmitListensPayloadInner implements ModelInterface, ArrayAccess, \JsonSer
       */
     protected static $openAPITypes = [
         'listened_at' => 'int',
-        'track_metadata' => '\OpenAPI\Client\Model\TrackMetadata'
+        'track_metadata' => '\Listenbrainz\Model\TrackMetadata'
     ];
 
     /**
@@ -335,7 +335,7 @@ class SubmitListensPayloadInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets track_metadata
      *
-     * @return \OpenAPI\Client\Model\TrackMetadata|null
+     * @return \Listenbrainz\Model\TrackMetadata|null
      */
     public function getTrackMetadata()
     {
@@ -345,7 +345,7 @@ class SubmitListensPayloadInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets track_metadata
      *
-     * @param \OpenAPI\Client\Model\TrackMetadata|null $track_metadata track_metadata
+     * @param \Listenbrainz\Model\TrackMetadata|null $track_metadata track_metadata
      *
      * @return self
      */

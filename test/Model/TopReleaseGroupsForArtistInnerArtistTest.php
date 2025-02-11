@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description TopReleaseGroupsForArtistInnerArtist
- * @package     OpenAPI\Client
+ * @package     Listenbrainz
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

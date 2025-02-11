@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**track_metadata** | [**\OpenAPI\Client\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadata**](ColorPayloadReleasesInnerRecordingsInnerTrackMetadata.md) |  | [optional]
+**track_metadata** | [**\Listenbrainz\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadata**](ColorPayloadReleasesInnerRecordingsInnerTrackMetadata.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

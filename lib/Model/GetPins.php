@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * GetPins Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetPins implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'count' => 'int',
         'offset' => 'int',
-        'pinned_recordings' => '\OpenAPI\Client\Model\GetPinsPinnedRecordingsInner[]',
+        'pinned_recordings' => '\Listenbrainz\Model\GetPinsPinnedRecordingsInner[]',
         'total_count' => 'int',
         'user_name' => 'string'
     ];
@@ -386,7 +386,7 @@ class GetPins implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets pinned_recordings
      *
-     * @return \OpenAPI\Client\Model\GetPinsPinnedRecordingsInner[]
+     * @return \Listenbrainz\Model\GetPinsPinnedRecordingsInner[]
      */
     public function getPinnedRecordings()
     {
@@ -396,7 +396,7 @@ class GetPins implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets pinned_recordings
      *
-     * @param \OpenAPI\Client\Model\GetPinsPinnedRecordingsInner[] $pinned_recordings pinned_recordings
+     * @param \Listenbrainz\Model\GetPinsPinnedRecordingsInner[] $pinned_recordings pinned_recordings
      *
      * @return self
      */

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **count** | **int** |  |
 **entity** | **string** |  |
 **last_updated** | **int** |  |
-**mbids** | [**\OpenAPI\Client\Model\RecordingRecommendationsPayloadMbidsInner[]**](RecordingRecommendationsPayloadMbidsInner.md) |  |
+**mbids** | [**\Listenbrainz\Model\RecordingRecommendationsPayloadMbidsInner[]**](RecordingRecommendationsPayloadMbidsInner.md) |  |
 **model_id** | **string** |  |
 **model_url** | **string** |  |
 **offset** | **int** |  |

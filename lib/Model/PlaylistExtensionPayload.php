@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * PlaylistExtensionPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class PlaylistExtensionPayload implements ModelInterface, ArrayAccess, \JsonSeri
         'copied_from_deleted' => 'bool',
         'public' => 'bool',
         'last_modified_at' => 'string',
-        'additional_metadata' => '\OpenAPI\Client\Model\PlaylistExtensionPayloadAdditionalMetadata'
+        'additional_metadata' => '\Listenbrainz\Model\PlaylistExtensionPayloadAdditionalMetadata'
     ];
 
     /**
@@ -530,7 +530,7 @@ class PlaylistExtensionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets additional_metadata
      *
-     * @return \OpenAPI\Client\Model\PlaylistExtensionPayloadAdditionalMetadata|null
+     * @return \Listenbrainz\Model\PlaylistExtensionPayloadAdditionalMetadata|null
      */
     public function getAdditionalMetadata()
     {
@@ -540,7 +540,7 @@ class PlaylistExtensionPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets additional_metadata
      *
-     * @param \OpenAPI\Client\Model\PlaylistExtensionPayloadAdditionalMetadata|null $additional_metadata additional_metadata
+     * @param \Listenbrainz\Model\PlaylistExtensionPayloadAdditionalMetadata|null $additional_metadata additional_metadata
      *
      * @return self
      */

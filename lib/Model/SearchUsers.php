@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SearchUsers Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class SearchUsers implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'users' => '\OpenAPI\Client\Model\SearchUsersUsersInner[]'
+        'users' => '\Listenbrainz\Model\SearchUsersUsersInner[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class SearchUsers implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets users
      *
-     * @return \OpenAPI\Client\Model\SearchUsersUsersInner[]
+     * @return \Listenbrainz\Model\SearchUsersUsersInner[]
      */
     public function getUsers()
     {
@@ -305,7 +305,7 @@ class SearchUsers implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets users
      *
-     * @param \OpenAPI\Client\Model\SearchUsersUsersInner[] $users users
+     * @param \Listenbrainz\Model\SearchUsersUsersInner[] $users users
      *
      * @return self
      */

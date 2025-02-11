@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **artist_count** | **int** |  | [optional]
-**artists** | [**\OpenAPI\Client\Model\TopArtistsForUserPayloadArtistsInner[]**](TopArtistsForUserPayloadArtistsInner.md) |  | [optional]
+**artists** | [**\Listenbrainz\Model\TopArtistsForUserPayloadArtistsInner[]**](TopArtistsForUserPayloadArtistsInner.md) |  | [optional]
 **country** | **string** |  | [optional]
 **listen_count** | **int** |  | [optional]
 

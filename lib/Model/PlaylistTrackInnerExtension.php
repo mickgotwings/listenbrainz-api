@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * PlaylistTrackInnerExtension Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PlaylistTrackInnerExtension implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'https___musicbrainz_org_doc_jspftrack' => '\OpenAPI\Client\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack'
+        'https___musicbrainz_org_doc_jspftrack' => '\Listenbrainz\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack'
     ];
 
     /**
@@ -295,7 +295,7 @@ class PlaylistTrackInnerExtension implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets https___musicbrainz_org_doc_jspftrack
      *
-     * @return \OpenAPI\Client\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack
+     * @return \Listenbrainz\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack
      */
     public function getHttpsMusicbrainzOrgDocJspftrack()
     {
@@ -305,7 +305,7 @@ class PlaylistTrackInnerExtension implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets https___musicbrainz_org_doc_jspftrack
      *
-     * @param \OpenAPI\Client\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack $https___musicbrainz_org_doc_jspftrack https___musicbrainz_org_doc_jspftrack
+     * @param \Listenbrainz\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack $https___musicbrainz_org_doc_jspftrack https___musicbrainz_org_doc_jspftrack
      *
      * @return self
      */

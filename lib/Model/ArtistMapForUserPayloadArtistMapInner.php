@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ArtistMapForUserPayloadArtistMapInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ArtistMapForUserPayloadArtistMapInner implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'artist_count' => 'int',
-        'artists' => '\OpenAPI\Client\Model\TopArtistsForUserPayloadArtistsInner[]',
+        'artists' => '\Listenbrainz\Model\TopArtistsForUserPayloadArtistsInner[]',
         'country' => 'string',
         'listen_count' => 'int'
     ];
@@ -340,7 +340,7 @@ class ArtistMapForUserPayloadArtistMapInner implements ModelInterface, ArrayAcce
     /**
      * Gets artists
      *
-     * @return \OpenAPI\Client\Model\TopArtistsForUserPayloadArtistsInner[]|null
+     * @return \Listenbrainz\Model\TopArtistsForUserPayloadArtistsInner[]|null
      */
     public function getArtists()
     {
@@ -350,7 +350,7 @@ class ArtistMapForUserPayloadArtistMapInner implements ModelInterface, ArrayAcce
     /**
      * Sets artists
      *
-     * @param \OpenAPI\Client\Model\TopArtistsForUserPayloadArtistsInner[]|null $artists artists
+     * @param \Listenbrainz\Model\TopArtistsForUserPayloadArtistsInner[]|null $artists artists
      *
      * @return self
      */

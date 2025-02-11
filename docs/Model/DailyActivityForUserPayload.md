@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**daily_activity** | [**\OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivity**](DailyActivityForUserPayloadDailyActivity.md) |  |
+**daily_activity** | [**\Listenbrainz\Model\DailyActivityForUserPayloadDailyActivity**](DailyActivityForUserPayloadDailyActivity.md) |  |
 **from_ts** | **int** |  |
 **last_updated** | **int** |  |
 **range** | **string** |  |

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * FeedEventsPayloadEventsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class FeedEventsPayloadEventsInner implements ModelInterface, ArrayAccess, \Json
         'hidden' => 'bool',
         'id' => 'int',
         'message' => 'string',
-        'metadata' => '\OpenAPI\Client\Model\Metadata',
+        'metadata' => '\Listenbrainz\Model\Metadata',
         'user_name' => 'string'
     ];
 
@@ -469,7 +469,7 @@ class FeedEventsPayloadEventsInner implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets metadata
      *
-     * @return \OpenAPI\Client\Model\Metadata|null
+     * @return \Listenbrainz\Model\Metadata|null
      */
     public function getMetadata()
     {
@@ -479,7 +479,7 @@ class FeedEventsPayloadEventsInner implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets metadata
      *
-     * @param \OpenAPI\Client\Model\Metadata|null $metadata metadata
+     * @param \Listenbrainz\Model\Metadata|null $metadata metadata
      *
      * @return self
      */

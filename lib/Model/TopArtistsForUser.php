@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopArtistsForUser Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class TopArtistsForUser implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\OpenAPI\Client\Model\TopArtistsForUserPayload'
+        'payload' => '\Listenbrainz\Model\TopArtistsForUserPayload'
     ];
 
     /**
@@ -295,7 +295,7 @@ class TopArtistsForUser implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\TopArtistsForUserPayload
+     * @return \Listenbrainz\Model\TopArtistsForUserPayload
      */
     public function getPayload()
     {
@@ -305,7 +305,7 @@ class TopArtistsForUser implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\TopArtistsForUserPayload $payload payload
+     * @param \Listenbrainz\Model\TopArtistsForUserPayload $payload payload
      *
      * @return self
      */

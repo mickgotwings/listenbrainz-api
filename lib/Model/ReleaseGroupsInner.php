@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ReleaseGroupsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ReleaseGroupsInner implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'artists' => '\OpenAPI\Client\Model\ReleaseGroupsInnerArtistsInner[]',
+        'artists' => '\Listenbrainz\Model\ReleaseGroupsInnerArtistsInner[]',
         'artist_mbids' => 'string[]',
         'artist_name' => 'string',
         'caa_id' => 'int',
@@ -341,7 +341,7 @@ class ReleaseGroupsInner implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets artists
      *
-     * @return \OpenAPI\Client\Model\ReleaseGroupsInnerArtistsInner[]|null
+     * @return \Listenbrainz\Model\ReleaseGroupsInnerArtistsInner[]|null
      */
     public function getArtists()
     {
@@ -351,7 +351,7 @@ class ReleaseGroupsInner implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets artists
      *
-     * @param \OpenAPI\Client\Model\ReleaseGroupsInnerArtistsInner[]|null $artists artists
+     * @param \Listenbrainz\Model\ReleaseGroupsInnerArtistsInner[]|null $artists artists
      *
      * @return self
      */

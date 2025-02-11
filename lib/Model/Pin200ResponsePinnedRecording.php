@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * Pin200ResponsePinnedRecording Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class Pin200ResponsePinnedRecording implements ModelInterface, ArrayAccess, \Jso
         'recording_msid' => 'string',
         'row_id' => 'int',
         'blurb_content' => 'string',
-        'track_metadata' => '\OpenAPI\Client\Model\TrackMetadata'
+        'track_metadata' => '\Listenbrainz\Model\TrackMetadata'
     ];
 
     /**
@@ -496,7 +496,7 @@ class Pin200ResponsePinnedRecording implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets track_metadata
      *
-     * @return \OpenAPI\Client\Model\TrackMetadata|null
+     * @return \Listenbrainz\Model\TrackMetadata|null
      */
     public function getTrackMetadata()
     {
@@ -506,7 +506,7 @@ class Pin200ResponsePinnedRecording implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets track_metadata
      *
-     * @param \OpenAPI\Client\Model\TrackMetadata|null $track_metadata track_metadata
+     * @param \Listenbrainz\Model\TrackMetadata|null $track_metadata track_metadata
      *
      * @return self
      */

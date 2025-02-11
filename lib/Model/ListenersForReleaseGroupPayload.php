@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ListenersForReleaseGroupPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class ListenersForReleaseGroupPayload implements ModelInterface, ArrayAccess, \J
         'caa_release_mbid' => 'string',
         'from_ts' => 'int',
         'last_updated' => 'int',
-        'listeners' => '\OpenAPI\Client\Model\ListenersForArtistPayloadListenersInner[]',
+        'listeners' => '\Listenbrainz\Model\ListenersForArtistPayloadListenersInner[]',
         'release_group_mbid' => 'string',
         'release_group_name' => 'string',
         'stats_range' => 'string',
@@ -577,7 +577,7 @@ class ListenersForReleaseGroupPayload implements ModelInterface, ArrayAccess, \J
     /**
      * Gets listeners
      *
-     * @return \OpenAPI\Client\Model\ListenersForArtistPayloadListenersInner[]
+     * @return \Listenbrainz\Model\ListenersForArtistPayloadListenersInner[]
      */
     public function getListeners()
     {
@@ -587,7 +587,7 @@ class ListenersForReleaseGroupPayload implements ModelInterface, ArrayAccess, \J
     /**
      * Sets listeners
      *
-     * @param \OpenAPI\Client\Model\ListenersForArtistPayloadListenersInner[] $listeners listeners
+     * @param \Listenbrainz\Model\ListenersForArtistPayloadListenersInner[] $listeners listeners
      *
      * @return self
      */

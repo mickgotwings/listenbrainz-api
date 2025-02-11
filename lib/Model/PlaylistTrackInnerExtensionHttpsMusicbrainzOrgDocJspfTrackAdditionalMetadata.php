@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetadata Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetada
     protected static $openAPITypes = [
         'caa_release_mbid' => 'string',
         'caa_id' => 'int',
-        'artists' => '\OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]'
+        'artists' => '\Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]'
     ];
 
     /**
@@ -360,7 +360,7 @@ class PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetada
     /**
      * Gets artists
      *
-     * @return \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null
+     * @return \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null
      */
     public function getArtists()
     {
@@ -370,7 +370,7 @@ class PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetada
     /**
      * Sets artists
      *
-     * @param \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null $artists artists
+     * @param \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null $artists artists
      *
      * @return self
      */

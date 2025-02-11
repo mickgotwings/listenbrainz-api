@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * GetManualMapping Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetManualMapping implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'mapping' => '\OpenAPI\Client\Model\GetManualMappingMapping',
+        'mapping' => '\Listenbrainz\Model\GetManualMappingMapping',
         'status' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class GetManualMapping implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets mapping
      *
-     * @return \OpenAPI\Client\Model\GetManualMappingMapping
+     * @return \Listenbrainz\Model\GetManualMappingMapping
      */
     public function getMapping()
     {
@@ -315,7 +315,7 @@ class GetManualMapping implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets mapping
      *
-     * @param \OpenAPI\Client\Model\GetManualMappingMapping $mapping mapping
+     * @param \Listenbrainz\Model\GetManualMappingMapping $mapping mapping
      *
      * @return self
      */

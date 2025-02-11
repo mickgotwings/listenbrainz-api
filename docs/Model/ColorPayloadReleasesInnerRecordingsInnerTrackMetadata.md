@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**additional_info** | [**\OpenAPI\Client\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadataAdditionalInfo**](ColorPayloadReleasesInnerRecordingsInnerTrackMetadataAdditionalInfo.md) |  |
+**additional_info** | [**\Listenbrainz\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadataAdditionalInfo**](ColorPayloadReleasesInnerRecordingsInnerTrackMetadataAdditionalInfo.md) |  |
 **artist_name** | **string** |  |
 **release_name** | **string** |  |
 **track_name** | **string** |  |

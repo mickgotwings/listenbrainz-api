@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * DailyActivityForUserPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class DailyActivityForUserPayload implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'daily_activity' => '\OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivity',
+        'daily_activity' => '\Listenbrainz\Model\DailyActivityForUserPayloadDailyActivity',
         'from_ts' => 'int',
         'last_updated' => 'int',
         'range' => 'string',
@@ -345,7 +345,7 @@ class DailyActivityForUserPayload implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets daily_activity
      *
-     * @return \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivity
+     * @return \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivity
      */
     public function getDailyActivity()
     {
@@ -355,7 +355,7 @@ class DailyActivityForUserPayload implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets daily_activity
      *
-     * @param \OpenAPI\Client\Model\DailyActivityForUserPayloadDailyActivity $daily_activity daily_activity
+     * @param \Listenbrainz\Model\DailyActivityForUserPayloadDailyActivity $daily_activity daily_activity
      *
      * @return self
      */

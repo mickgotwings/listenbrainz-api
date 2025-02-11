@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Listenbrainz\ApiException;
+use Listenbrainz\Configuration;
+use Listenbrainz\HeaderSelector;
+use Listenbrainz\ObjectSerializer;
 
 /**
  * LbMiscApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,9 +139,9 @@ class LbMiscApi
      * @param  string $color Color must be a 6 digit hex color code. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['color'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Color
+     * @return \Listenbrainz\Model\Color
      */
     public function color($color, string $contentType = self::contentTypes['color'][0])
     {
@@ -157,9 +157,9 @@ class LbMiscApi
      * @param  string $color Color must be a 6 digit hex color code. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['color'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Color, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Color, HTTP status code, HTTP response headers (array of strings)
      */
     public function colorWithHttpInfo($color, string $contentType = self::contentTypes['color'][0])
     {
@@ -190,11 +190,11 @@ class LbMiscApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Color' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Color' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Color' !== 'string') {
+                        if ('\Listenbrainz\Model\Color' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -212,7 +212,7 @@ class LbMiscApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Color', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Color', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -231,7 +231,7 @@ class LbMiscApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Color';
+            $returnType = '\Listenbrainz\Model\Color';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -264,7 +264,7 @@ class LbMiscApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Color',
+                        '\Listenbrainz\Model\Color',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -308,7 +308,7 @@ class LbMiscApi
      */
     public function colorAsyncWithHttpInfo($color, string $contentType = self::contentTypes['color'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Color';
+        $returnType = '\Listenbrainz\Model\Color';
         $request = $this->colorRequest($color, $contentType);
 
         return $this->client
@@ -451,9 +451,9 @@ class LbMiscApi
      * @param  bool|null $future Whether to show releases in the future. (optional, default to true)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['freshReleases'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FreshReleases
+     * @return \Listenbrainz\Model\FreshReleases
      */
     public function freshReleases($release_date = null, $days = null, $sort = 'release_name', $past = true, $future = true, string $contentType = self::contentTypes['freshReleases'][0])
     {
@@ -473,9 +473,9 @@ class LbMiscApi
      * @param  bool|null $future Whether to show releases in the future. (optional, default to true)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['freshReleases'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FreshReleases, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\FreshReleases, HTTP status code, HTTP response headers (array of strings)
      */
     public function freshReleasesWithHttpInfo($release_date = null, $days = null, $sort = 'release_name', $past = true, $future = true, string $contentType = self::contentTypes['freshReleases'][0])
     {
@@ -506,11 +506,11 @@ class LbMiscApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FreshReleases' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\FreshReleases' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FreshReleases' !== 'string') {
+                        if ('\Listenbrainz\Model\FreshReleases' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -528,7 +528,7 @@ class LbMiscApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FreshReleases', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\FreshReleases', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -547,7 +547,7 @@ class LbMiscApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FreshReleases';
+            $returnType = '\Listenbrainz\Model\FreshReleases';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -580,7 +580,7 @@ class LbMiscApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FreshReleases',
+                        '\Listenbrainz\Model\FreshReleases',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -632,7 +632,7 @@ class LbMiscApi
      */
     public function freshReleasesAsyncWithHttpInfo($release_date = null, $days = null, $sort = 'release_name', $past = true, $future = true, string $contentType = self::contentTypes['freshReleases'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FreshReleases';
+        $returnType = '\Listenbrainz\Model\FreshReleases';
         $request = $this->freshReleasesRequest($release_date, $days, $sort, $past, $future, $contentType);
 
         return $this->client
@@ -810,9 +810,9 @@ class LbMiscApi
      * @param  int|null $id Integer specifying the ID of the dump, if not provided, the endpoint returns information about the latest data dump. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDumpInfo'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetDumpInfo
+     * @return \Listenbrainz\Model\GetDumpInfo
      */
     public function getDumpInfo($id = null, string $contentType = self::contentTypes['getDumpInfo'][0])
     {
@@ -828,9 +828,9 @@ class LbMiscApi
      * @param  int|null $id Integer specifying the ID of the dump, if not provided, the endpoint returns information about the latest data dump. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDumpInfo'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetDumpInfo, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\GetDumpInfo, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDumpInfoWithHttpInfo($id = null, string $contentType = self::contentTypes['getDumpInfo'][0])
     {
@@ -861,11 +861,11 @@ class LbMiscApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetDumpInfo' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\GetDumpInfo' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDumpInfo' !== 'string') {
+                        if ('\Listenbrainz\Model\GetDumpInfo' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -883,7 +883,7 @@ class LbMiscApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDumpInfo', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\GetDumpInfo', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -902,7 +902,7 @@ class LbMiscApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetDumpInfo';
+            $returnType = '\Listenbrainz\Model\GetDumpInfo';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -935,7 +935,7 @@ class LbMiscApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDumpInfo',
+                        '\Listenbrainz\Model\GetDumpInfo',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -979,7 +979,7 @@ class LbMiscApi
      */
     public function getDumpInfoAsyncWithHttpInfo($id = null, string $contentType = self::contentTypes['getDumpInfo'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetDumpInfo';
+        $returnType = '\Listenbrainz\Model\GetDumpInfo';
         $request = $this->getDumpInfoRequest($id, $contentType);
 
         return $this->client
@@ -1111,12 +1111,12 @@ class LbMiscApi
      * Generate a playlist with LB Radio.
      *
      * @param  string $prompt The LB Radio prompt from which to generate playlists. (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadio'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\LbRadio
+     * @return \Listenbrainz\Model\LbRadio
      */
     public function lbRadio($prompt, $mode, string $contentType = self::contentTypes['lbRadio'][0])
     {
@@ -1130,12 +1130,12 @@ class LbMiscApi
      * Generate a playlist with LB Radio.
      *
      * @param  string $prompt The LB Radio prompt from which to generate playlists. (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadio'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\LbRadio, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\LbRadio, HTTP status code, HTTP response headers (array of strings)
      */
     public function lbRadioWithHttpInfo($prompt, $mode, string $contentType = self::contentTypes['lbRadio'][0])
     {
@@ -1166,11 +1166,11 @@ class LbMiscApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\LbRadio' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\LbRadio' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\LbRadio' !== 'string') {
+                        if ('\Listenbrainz\Model\LbRadio' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1188,7 +1188,7 @@ class LbMiscApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\LbRadio', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\LbRadio', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1207,7 +1207,7 @@ class LbMiscApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\LbRadio';
+            $returnType = '\Listenbrainz\Model\LbRadio';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1240,7 +1240,7 @@ class LbMiscApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\LbRadio',
+                        '\Listenbrainz\Model\LbRadio',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1256,7 +1256,7 @@ class LbMiscApi
      * Generate a playlist with LB Radio.
      *
      * @param  string $prompt The LB Radio prompt from which to generate playlists. (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadio'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1278,7 +1278,7 @@ class LbMiscApi
      * Generate a playlist with LB Radio.
      *
      * @param  string $prompt The LB Radio prompt from which to generate playlists. (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadio'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1286,7 +1286,7 @@ class LbMiscApi
      */
     public function lbRadioAsyncWithHttpInfo($prompt, $mode, string $contentType = self::contentTypes['lbRadio'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\LbRadio';
+        $returnType = '\Listenbrainz\Model\LbRadio';
         $request = $this->lbRadioRequest($prompt, $mode, $contentType);
 
         return $this->client
@@ -1329,7 +1329,7 @@ class LbMiscApi
      * Create request for operation 'lbRadio'
      *
      * @param  string $prompt The LB Radio prompt from which to generate playlists. (required)
-     * @param  \OpenAPI\Client\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
+     * @param  \Listenbrainz\Model\Mode $mode The mode that LB radio should use. Must be easy, medium or hard. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lbRadio'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

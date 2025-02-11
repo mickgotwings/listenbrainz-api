@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ColorPayloadReleasesInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class ColorPayloadReleasesInner implements ModelInterface, ArrayAccess, \JsonSer
         'caa_id' => 'int',
         'color' => 'int[]',
         'dist' => 'int',
-        'recordings' => '\OpenAPI\Client\Model\ColorPayloadReleasesInnerRecordingsInner[]',
+        'recordings' => '\Listenbrainz\Model\ColorPayloadReleasesInnerRecordingsInner[]',
         'release_mbid' => 'string',
         'release_name' => 'string'
     ];
@@ -442,7 +442,7 @@ class ColorPayloadReleasesInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets recordings
      *
-     * @return \OpenAPI\Client\Model\ColorPayloadReleasesInnerRecordingsInner[]|null
+     * @return \Listenbrainz\Model\ColorPayloadReleasesInnerRecordingsInner[]|null
      */
     public function getRecordings()
     {
@@ -452,7 +452,7 @@ class ColorPayloadReleasesInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets recordings
      *
-     * @param \OpenAPI\Client\Model\ColorPayloadReleasesInnerRecordingsInner[]|null $recordings recordings
+     * @param \Listenbrainz\Model\ColorPayloadReleasesInnerRecordingsInner[]|null $recordings recordings
      *
      * @return self
      */

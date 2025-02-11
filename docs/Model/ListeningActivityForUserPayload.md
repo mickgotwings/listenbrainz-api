@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **from_ts** | **int** |  |
 **last_updated** | **int** |  |
-**listening_activity** | [**\OpenAPI\Client\Model\ListeningActivityForUserPayloadListeningActivityInner[]**](ListeningActivityForUserPayloadListeningActivityInner.md) |  |
+**listening_activity** | [**\Listenbrainz\Model\ListeningActivityForUserPayloadListeningActivityInner[]**](ListeningActivityForUserPayloadListeningActivityInner.md) |  |
 **range** | **string** |  |
 **to_ts** | **int** |  |
 **user_id** | **string** |  |

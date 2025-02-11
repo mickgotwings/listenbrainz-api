@@ -1,4 +1,4 @@
-# OpenAPI\Client\LbMiscApi
+# Listenbrainz\LbMiscApi
 
 All URIs are relative to https://api.listenbrainz.org, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://api.listenbrainz.org, except if the operation d
 ## `color()`
 
 ```php
-color($color): \OpenAPI\Client\Model\Color
+color($color): \Listenbrainz\Model\Color
 ```
 
 Fetch a list of releases that have cover art that has a predominant color that is close to the given color.
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMiscApi(
+$apiInstance = new Listenbrainz\Api\LbMiscApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Color**](../Model/Color.md)
+[**\Listenbrainz\Model\Color**](../Model/Color.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ No authorization required
 ## `freshReleases()`
 
 ```php
-freshReleases($release_date, $days, $sort, $past, $future): \OpenAPI\Client\Model\FreshReleases
+freshReleases($release_date, $days, $sort, $past, $future): \Listenbrainz\Model\FreshReleases
 ```
 
 This endpoint fetches upcoming and recently released (fresh) releases.
@@ -80,7 +80,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMiscApi(
+$apiInstance = new Listenbrainz\Api\LbMiscApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -111,7 +111,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FreshReleases**](../Model/FreshReleases.md)
+[**\Listenbrainz\Model\FreshReleases**](../Model/FreshReleases.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ No authorization required
 ## `getDumpInfo()`
 
 ```php
-getDumpInfo($id): \OpenAPI\Client\Model\GetDumpInfo
+getDumpInfo($id): \Listenbrainz\Model\GetDumpInfo
 ```
 
 Get information about ListenBrainz data dumps. You need to pass the id parameter in a GET request to get data about that particular dump.
@@ -142,7 +142,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMiscApi(
+$apiInstance = new Listenbrainz\Api\LbMiscApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -165,7 +165,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetDumpInfo**](../Model/GetDumpInfo.md)
+[**\Listenbrainz\Model\GetDumpInfo**](../Model/GetDumpInfo.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ No authorization required
 ## `lbRadio()`
 
 ```php
-lbRadio($prompt, $mode): \OpenAPI\Client\Model\LbRadio
+lbRadio($prompt, $mode): \Listenbrainz\Model\LbRadio
 ```
 
 Generate a playlist with LB Radio.
@@ -196,13 +196,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbMiscApi(
+$apiInstance = new Listenbrainz\Api\LbMiscApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $prompt = 'prompt_example'; // string | The LB Radio prompt from which to generate playlists.
-$mode = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\Mode(); // \OpenAPI\Client\Model\Mode | The mode that LB radio should use. Must be easy, medium or hard.
+$mode = new \Listenbrainz\Model\\Listenbrainz\Model\Mode(); // \Listenbrainz\Model\Mode | The mode that LB radio should use. Must be easy, medium or hard.
 
 try {
     $result = $apiInstance->lbRadio($prompt, $mode);
@@ -217,11 +217,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **prompt** | **string**| The LB Radio prompt from which to generate playlists. | |
-| **mode** | [**\OpenAPI\Client\Model\Mode**](../Model/.md)| The mode that LB radio should use. Must be easy, medium or hard. | |
+| **mode** | [**\Listenbrainz\Model\Mode**](../Model/.md)| The mode that LB radio should use. Must be easy, medium or hard. | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\LbRadio**](../Model/LbRadio.md)
+[**\Listenbrainz\Model\LbRadio**](../Model/LbRadio.md)
 
 ### Authorization
 

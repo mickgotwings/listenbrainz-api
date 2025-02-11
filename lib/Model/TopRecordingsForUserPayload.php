@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopRecordingsForUserPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class TopRecordingsForUserPayload implements ModelInterface, ArrayAccess, \JsonS
         'last_updated' => 'int',
         'offset' => 'int',
         'range' => 'string',
-        'recordings' => '\OpenAPI\Client\Model\TopRecordingsForUserPayloadRecordingsInner[]',
+        'recordings' => '\Listenbrainz\Model\TopRecordingsForUserPayloadRecordingsInner[]',
         'to_ts' => 'int',
         'total_recording_count' => 'int',
         'user_id' => 'string'
@@ -510,7 +510,7 @@ class TopRecordingsForUserPayload implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets recordings
      *
-     * @return \OpenAPI\Client\Model\TopRecordingsForUserPayloadRecordingsInner[]
+     * @return \Listenbrainz\Model\TopRecordingsForUserPayloadRecordingsInner[]
      */
     public function getRecordings()
     {
@@ -520,7 +520,7 @@ class TopRecordingsForUserPayload implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets recordings
      *
-     * @param \OpenAPI\Client\Model\TopRecordingsForUserPayloadRecordingsInner[] $recordings recordings
+     * @param \Listenbrainz\Model\TopRecordingsForUserPayloadRecordingsInner[] $recordings recordings
      *
      * @return self
      */

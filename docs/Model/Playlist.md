@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 **creator** | **string** |  | [optional]
 **date** | **string** |  | [optional]
 **duration** | **int** |  | [optional]
-**extension** | [**\OpenAPI\Client\Model\PlaylistExtension**](PlaylistExtension.md) |  | [optional]
+**extension** | [**\Listenbrainz\Model\PlaylistExtension**](PlaylistExtension.md) |  | [optional]
 **identifier** | **string** |  | [optional]
 **title** | **string** |  | [optional]
-**track** | [**\OpenAPI\Client\Model\PlaylistTrackInner[]**](PlaylistTrackInner.md) |  | [optional]
+**track** | [**\Listenbrainz\Model\PlaylistTrackInner[]**](PlaylistTrackInner.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

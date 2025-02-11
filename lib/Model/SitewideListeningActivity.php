@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SitewideListeningActivity Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class SitewideListeningActivity implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\OpenAPI\Client\Model\SitewideListeningActivityPayload'
+        'payload' => '\Listenbrainz\Model\SitewideListeningActivityPayload'
     ];
 
     /**
@@ -295,7 +295,7 @@ class SitewideListeningActivity implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\SitewideListeningActivityPayload
+     * @return \Listenbrainz\Model\SitewideListeningActivityPayload
      */
     public function getPayload()
     {
@@ -305,7 +305,7 @@ class SitewideListeningActivity implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\SitewideListeningActivityPayload $payload payload
+     * @param \Listenbrainz\Model\SitewideListeningActivityPayload $payload payload
      *
      * @return self
      */

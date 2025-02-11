@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * FeedbackGivenBy Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class FeedbackGivenBy implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'count' => 'int',
-        'feedback' => '\OpenAPI\Client\Model\FeedbackGivenByFeedbackInner[]',
+        'feedback' => '\Listenbrainz\Model\FeedbackGivenByFeedbackInner[]',
         'offset' => 'int',
         'total_count' => 'int',
         'user_name' => 'string'
@@ -362,7 +362,7 @@ class FeedbackGivenBy implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets feedback
      *
-     * @return \OpenAPI\Client\Model\FeedbackGivenByFeedbackInner[]
+     * @return \Listenbrainz\Model\FeedbackGivenByFeedbackInner[]
      */
     public function getFeedback()
     {
@@ -372,7 +372,7 @@ class FeedbackGivenBy implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets feedback
      *
-     * @param \OpenAPI\Client\Model\FeedbackGivenByFeedbackInner[] $feedback feedback
+     * @param \Listenbrainz\Model\FeedbackGivenByFeedbackInner[] $feedback feedback
      *
      * @return self
      */

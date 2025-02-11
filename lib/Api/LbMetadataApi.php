@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Listenbrainz\ApiException;
+use Listenbrainz\Configuration;
+use Listenbrainz\HeaderSelector;
+use Listenbrainz\ObjectSerializer;
 
 /**
  * LbMetadataApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -146,9 +146,9 @@ class LbMetadataApi
      * @param  string $inc A space separated list of “artist”, “tag” and/or “release” to indicate which portions of metadata you&#39;re interested in fetching. We encourage users to only fetch the data they plan to consume. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['artistMetadata'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ArtistMetadata[]
+     * @return \Listenbrainz\Model\ArtistMetadata[]
      */
     public function artistMetadata($artist_mbids, $inc, string $contentType = self::contentTypes['artistMetadata'][0])
     {
@@ -165,9 +165,9 @@ class LbMetadataApi
      * @param  string $inc A space separated list of “artist”, “tag” and/or “release” to indicate which portions of metadata you&#39;re interested in fetching. We encourage users to only fetch the data they plan to consume. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['artistMetadata'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ArtistMetadata[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\ArtistMetadata[], HTTP status code, HTTP response headers (array of strings)
      */
     public function artistMetadataWithHttpInfo($artist_mbids, $inc, string $contentType = self::contentTypes['artistMetadata'][0])
     {
@@ -198,11 +198,11 @@ class LbMetadataApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ArtistMetadata[]' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\ArtistMetadata[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ArtistMetadata[]' !== 'string') {
+                        if ('\Listenbrainz\Model\ArtistMetadata[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -220,7 +220,7 @@ class LbMetadataApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ArtistMetadata[]', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\ArtistMetadata[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -239,7 +239,7 @@ class LbMetadataApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\ArtistMetadata[]';
+            $returnType = '\Listenbrainz\Model\ArtistMetadata[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -272,7 +272,7 @@ class LbMetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ArtistMetadata[]',
+                        '\Listenbrainz\Model\ArtistMetadata[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -318,7 +318,7 @@ class LbMetadataApi
      */
     public function artistMetadataAsyncWithHttpInfo($artist_mbids, $inc, string $contentType = self::contentTypes['artistMetadata'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ArtistMetadata[]';
+        $returnType = '\Listenbrainz\Model\ArtistMetadata[]';
         $request = $this->artistMetadataRequest($artist_mbids, $inc, $contentType);
 
         return $this->client
@@ -475,9 +475,9 @@ class LbMetadataApi
      * @param  string $recording_msid recording_msid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManualMapping'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetManualMapping
+     * @return \Listenbrainz\Model\GetManualMapping
      */
     public function getManualMapping($recording_msid, string $contentType = self::contentTypes['getManualMapping'][0])
     {
@@ -493,9 +493,9 @@ class LbMetadataApi
      * @param  string $recording_msid (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getManualMapping'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetManualMapping, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\GetManualMapping, HTTP status code, HTTP response headers (array of strings)
      */
     public function getManualMappingWithHttpInfo($recording_msid, string $contentType = self::contentTypes['getManualMapping'][0])
     {
@@ -526,11 +526,11 @@ class LbMetadataApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetManualMapping' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\GetManualMapping' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetManualMapping' !== 'string') {
+                        if ('\Listenbrainz\Model\GetManualMapping' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -548,7 +548,7 @@ class LbMetadataApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetManualMapping', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\GetManualMapping', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -567,7 +567,7 @@ class LbMetadataApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetManualMapping';
+            $returnType = '\Listenbrainz\Model\GetManualMapping';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -600,7 +600,7 @@ class LbMetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetManualMapping',
+                        '\Listenbrainz\Model\GetManualMapping',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class LbMetadataApi
      */
     public function getManualMappingAsyncWithHttpInfo($recording_msid, string $contentType = self::contentTypes['getManualMapping'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetManualMapping';
+        $returnType = '\Listenbrainz\Model\GetManualMapping';
         $request = $this->getManualMappingRequest($recording_msid, $contentType);
 
         return $this->client
@@ -793,9 +793,9 @@ class LbMetadataApi
      * @param  string|null $release_name Release name of the listen. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lookup'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Lookup
+     * @return \Listenbrainz\Model\Lookup
      */
     public function lookup($artist_name, $recording_name, $metadata, $inc, $release_name = null, string $contentType = self::contentTypes['lookup'][0])
     {
@@ -815,9 +815,9 @@ class LbMetadataApi
      * @param  string|null $release_name Release name of the listen. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['lookup'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Lookup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Lookup, HTTP status code, HTTP response headers (array of strings)
      */
     public function lookupWithHttpInfo($artist_name, $recording_name, $metadata, $inc, $release_name = null, string $contentType = self::contentTypes['lookup'][0])
     {
@@ -848,11 +848,11 @@ class LbMetadataApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Lookup' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Lookup' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Lookup' !== 'string') {
+                        if ('\Listenbrainz\Model\Lookup' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -870,7 +870,7 @@ class LbMetadataApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Lookup', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Lookup', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -889,7 +889,7 @@ class LbMetadataApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Lookup';
+            $returnType = '\Listenbrainz\Model\Lookup';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -922,7 +922,7 @@ class LbMetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Lookup',
+                        '\Listenbrainz\Model\Lookup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -974,7 +974,7 @@ class LbMetadataApi
      */
     public function lookupAsyncWithHttpInfo($artist_name, $recording_name, $metadata, $inc, $release_name = null, string $contentType = self::contentTypes['lookup'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Lookup';
+        $returnType = '\Listenbrainz\Model\Lookup';
         $request = $this->lookupRequest($artist_name, $recording_name, $metadata, $inc, $release_name, $contentType);
 
         return $this->client
@@ -1177,9 +1177,9 @@ class LbMetadataApi
      * @param  string $inc A space separated list of “artist”, “tag” and/or “release” to indicate which portions of metadata you&#39;re interested in fetching. We encourage users to only fetch the data they plan to consume. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingMetadata'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array<string,\OpenAPI\Client\Model\RecordingMetadata>
+     * @return array<string,\Listenbrainz\Model\RecordingMetadata>
      */
     public function recordingMetadata($recording_mbids, $inc, string $contentType = self::contentTypes['recordingMetadata'][0])
     {
@@ -1196,9 +1196,9 @@ class LbMetadataApi
      * @param  string $inc A space separated list of “artist”, “tag” and/or “release” to indicate which portions of metadata you&#39;re interested in fetching. We encourage users to only fetch the data they plan to consume. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recordingMetadata'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of array<string,\OpenAPI\Client\Model\RecordingMetadata>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of array<string,\Listenbrainz\Model\RecordingMetadata>, HTTP status code, HTTP response headers (array of strings)
      */
     public function recordingMetadataWithHttpInfo($recording_mbids, $inc, string $contentType = self::contentTypes['recordingMetadata'][0])
     {
@@ -1229,11 +1229,11 @@ class LbMetadataApi
 
             switch($statusCode) {
                 case 200:
-                    if ('array<string,\OpenAPI\Client\Model\RecordingMetadata>' === '\SplFileObject') {
+                    if ('array<string,\Listenbrainz\Model\RecordingMetadata>' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('array<string,\OpenAPI\Client\Model\RecordingMetadata>' !== 'string') {
+                        if ('array<string,\Listenbrainz\Model\RecordingMetadata>' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1251,7 +1251,7 @@ class LbMetadataApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, 'array<string,\OpenAPI\Client\Model\RecordingMetadata>', []),
+                        ObjectSerializer::deserialize($content, 'array<string,\Listenbrainz\Model\RecordingMetadata>', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1270,7 +1270,7 @@ class LbMetadataApi
                 );
             }
 
-            $returnType = 'array<string,\OpenAPI\Client\Model\RecordingMetadata>';
+            $returnType = 'array<string,\Listenbrainz\Model\RecordingMetadata>';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1303,7 +1303,7 @@ class LbMetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        'array<string,\OpenAPI\Client\Model\RecordingMetadata>',
+                        'array<string,\Listenbrainz\Model\RecordingMetadata>',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1349,7 +1349,7 @@ class LbMetadataApi
      */
     public function recordingMetadataAsyncWithHttpInfo($recording_mbids, $inc, string $contentType = self::contentTypes['recordingMetadata'][0])
     {
-        $returnType = 'array<string,\OpenAPI\Client\Model\RecordingMetadata>';
+        $returnType = 'array<string,\Listenbrainz\Model\RecordingMetadata>';
         $request = $this->recordingMetadataRequest($recording_mbids, $inc, $contentType);
 
         return $this->client
@@ -1507,9 +1507,9 @@ class LbMetadataApi
      * @param  string $inc A space separated list of “artist”, “tag” and/or “release” to indicate which portions of metadata you&#39;re interested in fetching. We encourage users to only fetch the data they plan to consume. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['releaseGroupMetadata'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>
+     * @return array<string,\Listenbrainz\Model\ReleaseGroupMetadata>
      */
     public function releaseGroupMetadata($release_group_mbids, $inc, string $contentType = self::contentTypes['releaseGroupMetadata'][0])
     {
@@ -1526,9 +1526,9 @@ class LbMetadataApi
      * @param  string $inc A space separated list of “artist”, “tag” and/or “release” to indicate which portions of metadata you&#39;re interested in fetching. We encourage users to only fetch the data they plan to consume. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['releaseGroupMetadata'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of array<string,\Listenbrainz\Model\ReleaseGroupMetadata>, HTTP status code, HTTP response headers (array of strings)
      */
     public function releaseGroupMetadataWithHttpInfo($release_group_mbids, $inc, string $contentType = self::contentTypes['releaseGroupMetadata'][0])
     {
@@ -1559,11 +1559,11 @@ class LbMetadataApi
 
             switch($statusCode) {
                 case 200:
-                    if ('array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>' === '\SplFileObject') {
+                    if ('array<string,\Listenbrainz\Model\ReleaseGroupMetadata>' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>' !== 'string') {
+                        if ('array<string,\Listenbrainz\Model\ReleaseGroupMetadata>' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1581,7 +1581,7 @@ class LbMetadataApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, 'array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>', []),
+                        ObjectSerializer::deserialize($content, 'array<string,\Listenbrainz\Model\ReleaseGroupMetadata>', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1600,7 +1600,7 @@ class LbMetadataApi
                 );
             }
 
-            $returnType = 'array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>';
+            $returnType = 'array<string,\Listenbrainz\Model\ReleaseGroupMetadata>';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1633,7 +1633,7 @@ class LbMetadataApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        'array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>',
+                        'array<string,\Listenbrainz\Model\ReleaseGroupMetadata>',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1679,7 +1679,7 @@ class LbMetadataApi
      */
     public function releaseGroupMetadataAsyncWithHttpInfo($release_group_mbids, $inc, string $contentType = self::contentTypes['releaseGroupMetadata'][0])
     {
-        $returnType = 'array<string,\OpenAPI\Client\Model\ReleaseGroupMetadata>';
+        $returnType = 'array<string,\Listenbrainz\Model\ReleaseGroupMetadata>';
         $request = $this->releaseGroupMetadataRequest($release_group_mbids, $inc, $contentType);
 
         return $this->client
@@ -1833,10 +1833,10 @@ class LbMetadataApi
      *
      * Submit a manual mapping of a recording messybrainz ID to a musicbrainz recording id.
      *
-     * @param  \OpenAPI\Client\Model\SubmitManualMapping $submit_manual_mapping submit_manual_mapping (required)
+     * @param  \Listenbrainz\Model\SubmitManualMapping $submit_manual_mapping submit_manual_mapping (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitManualMapping'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1850,10 +1850,10 @@ class LbMetadataApi
      *
      * Submit a manual mapping of a recording messybrainz ID to a musicbrainz recording id.
      *
-     * @param  \OpenAPI\Client\Model\SubmitManualMapping $submit_manual_mapping (required)
+     * @param  \Listenbrainz\Model\SubmitManualMapping $submit_manual_mapping (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitManualMapping'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1898,7 +1898,7 @@ class LbMetadataApi
      *
      * Submit a manual mapping of a recording messybrainz ID to a musicbrainz recording id.
      *
-     * @param  \OpenAPI\Client\Model\SubmitManualMapping $submit_manual_mapping (required)
+     * @param  \Listenbrainz\Model\SubmitManualMapping $submit_manual_mapping (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitManualMapping'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1919,7 +1919,7 @@ class LbMetadataApi
      *
      * Submit a manual mapping of a recording messybrainz ID to a musicbrainz recording id.
      *
-     * @param  \OpenAPI\Client\Model\SubmitManualMapping $submit_manual_mapping (required)
+     * @param  \Listenbrainz\Model\SubmitManualMapping $submit_manual_mapping (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitManualMapping'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1956,7 +1956,7 @@ class LbMetadataApi
     /**
      * Create request for operation 'submitManualMapping'
      *
-     * @param  \OpenAPI\Client\Model\SubmitManualMapping $submit_manual_mapping (required)
+     * @param  \Listenbrainz\Model\SubmitManualMapping $submit_manual_mapping (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['submitManualMapping'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

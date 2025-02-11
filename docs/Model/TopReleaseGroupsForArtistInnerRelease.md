@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **caa_id** | **int** |  | [optional]
 **caa_release_mbid** | **string** |  | [optional]
-**rels** | [**\OpenAPI\Client\Model\Rels[]**](Rels.md) |  | [optional]
+**rels** | [**\Listenbrainz\Model\Rels[]**](Rels.md) |  | [optional]
 **date** | **string** |  | [optional]
 **name** | **string** |  | [optional]
 **type** | **string** |  | [optional]

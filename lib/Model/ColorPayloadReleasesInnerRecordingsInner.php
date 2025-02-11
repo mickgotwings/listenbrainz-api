@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ColorPayloadReleasesInnerRecordingsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ColorPayloadReleasesInnerRecordingsInner implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'track_metadata' => '\OpenAPI\Client\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadata'
+        'track_metadata' => '\Listenbrainz\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadata'
     ];
 
     /**
@@ -292,7 +292,7 @@ class ColorPayloadReleasesInnerRecordingsInner implements ModelInterface, ArrayA
     /**
      * Gets track_metadata
      *
-     * @return \OpenAPI\Client\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadata|null
+     * @return \Listenbrainz\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadata|null
      */
     public function getTrackMetadata()
     {
@@ -302,7 +302,7 @@ class ColorPayloadReleasesInnerRecordingsInner implements ModelInterface, ArrayA
     /**
      * Sets track_metadata
      *
-     * @param \OpenAPI\Client\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadata|null $track_metadata track_metadata
+     * @param \Listenbrainz\Model\ColorPayloadReleasesInnerRecordingsInnerTrackMetadata|null $track_metadata track_metadata
      *
      * @return self
      */

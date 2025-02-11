@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * CreateNotificationRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CreateNotificationRequest implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'metadata' => '\OpenAPI\Client\Model\CreateNotificationRequestMetadata'
+        'metadata' => '\Listenbrainz\Model\CreateNotificationRequestMetadata'
     ];
 
     /**
@@ -292,7 +292,7 @@ class CreateNotificationRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets metadata
      *
-     * @return \OpenAPI\Client\Model\CreateNotificationRequestMetadata|null
+     * @return \Listenbrainz\Model\CreateNotificationRequestMetadata|null
      */
     public function getMetadata()
     {
@@ -302,7 +302,7 @@ class CreateNotificationRequest implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets metadata
      *
-     * @param \OpenAPI\Client\Model\CreateNotificationRequestMetadata|null $metadata metadata
+     * @param \Listenbrainz\Model\CreateNotificationRequestMetadata|null $metadata metadata
      *
      * @return self
      */

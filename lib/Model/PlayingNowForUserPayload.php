@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * PlayingNowForUserPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PlayingNowForUserPayload implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'count' => 'int',
-        'listens' => '\OpenAPI\Client\Model\PlayingNowForUserPayloadListensInner[]',
+        'listens' => '\Listenbrainz\Model\PlayingNowForUserPayloadListensInner[]',
         'playing_now' => 'bool',
         'user_id' => 'string'
     ];
@@ -352,7 +352,7 @@ class PlayingNowForUserPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets listens
      *
-     * @return \OpenAPI\Client\Model\PlayingNowForUserPayloadListensInner[]
+     * @return \Listenbrainz\Model\PlayingNowForUserPayloadListensInner[]
      */
     public function getListens()
     {
@@ -362,7 +362,7 @@ class PlayingNowForUserPayload implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets listens
      *
-     * @param \OpenAPI\Client\Model\PlayingNowForUserPayloadListensInner[] $listens listens
+     * @param \Listenbrainz\Model\PlayingNowForUserPayloadListensInner[] $listens listens
      *
      * @return self
      */

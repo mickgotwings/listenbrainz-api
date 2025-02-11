@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **artist_name** | **string** |  |
 **from_ts** | **int** |  |
 **last_updated** | **int** |  |
-**listeners** | [**\OpenAPI\Client\Model\ListenersForArtistPayloadListenersInner[]**](ListenersForArtistPayloadListenersInner.md) |  |
+**listeners** | [**\Listenbrainz\Model\ListenersForArtistPayloadListenersInner[]**](ListenersForArtistPayloadListenersInner.md) |  |
 **stats_range** | **string** |  |
 **to_ts** | **int** |  |
 **total_listen_count** | **int** |  |

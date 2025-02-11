@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **created** | **int** |  | [optional]
 **event_type** | **string** |  | [optional]
 **hidden** | **bool** |  | [optional]
-**metadata** | [**\OpenAPI\Client\Model\Metadata**](Metadata.md) |  | [optional]
+**metadata** | [**\Listenbrainz\Model\Metadata**](Metadata.md) |  | [optional]
 **similarity** | **int** |  | [optional]
 **user_name** | **string** |  | [optional]
 

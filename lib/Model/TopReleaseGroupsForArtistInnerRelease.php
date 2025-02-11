@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopReleaseGroupsForArtistInnerRelease Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class TopReleaseGroupsForArtistInnerRelease implements ModelInterface, ArrayAcce
     protected static $openAPITypes = [
         'caa_id' => 'int',
         'caa_release_mbid' => 'string',
-        'rels' => '\OpenAPI\Client\Model\Rels[]',
+        'rels' => '\Listenbrainz\Model\Rels[]',
         'date' => 'string',
         'name' => 'string',
         'type' => 'string'
@@ -381,7 +381,7 @@ class TopReleaseGroupsForArtistInnerRelease implements ModelInterface, ArrayAcce
     /**
      * Gets rels
      *
-     * @return \OpenAPI\Client\Model\Rels[]|null
+     * @return \Listenbrainz\Model\Rels[]|null
      */
     public function getRels()
     {
@@ -391,7 +391,7 @@ class TopReleaseGroupsForArtistInnerRelease implements ModelInterface, ArrayAcce
     /**
      * Sets rels
      *
-     * @param \OpenAPI\Client\Model\Rels[]|null $rels rels
+     * @param \Listenbrainz\Model\Rels[]|null $rels rels
      *
      * @return self
      */

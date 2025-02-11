@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**artist** | [**\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]**](TopReleaseGroupsForArtistInnerTagArtistInner.md) |  | [optional]
-**recording** | [**\OpenAPI\Client\Model\LookupMetadataTagRecordingInner[]**](LookupMetadataTagRecordingInner.md) |  | [optional]
-**release_group** | [**\OpenAPI\Client\Model\TopReleaseGroupsForArtistInnerTagReleaseGroupInner[]**](TopReleaseGroupsForArtistInnerTagReleaseGroupInner.md) |  | [optional]
+**artist** | [**\Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagArtistInner[]**](TopReleaseGroupsForArtistInnerTagArtistInner.md) |  | [optional]
+**recording** | [**\Listenbrainz\Model\LookupMetadataTagRecordingInner[]**](LookupMetadataTagRecordingInner.md) |  | [optional]
+**release_group** | [**\Listenbrainz\Model\TopReleaseGroupsForArtistInnerTagReleaseGroupInner[]**](TopReleaseGroupsForArtistInnerTagReleaseGroupInner.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

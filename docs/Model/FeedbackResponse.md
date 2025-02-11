@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **int** |  | [optional]
-**feedback** | [**\OpenAPI\Client\Model\Feedback[]**](Feedback.md) |  | [optional]
+**feedback** | [**\Listenbrainz\Model\Feedback[]**](Feedback.md) |  | [optional]
 **offset** | **int** |  | [optional]
 **total_count** | **int** |  | [optional]
 

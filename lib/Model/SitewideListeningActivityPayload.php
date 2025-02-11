@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SitewideListeningActivityPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class SitewideListeningActivityPayload implements ModelInterface, ArrayAccess, \
     protected static $openAPITypes = [
         'from_ts' => 'int',
         'last_updated' => 'int',
-        'listening_activity' => '\OpenAPI\Client\Model\ListeningActivityForUserPayloadListeningActivityInner[]',
+        'listening_activity' => '\Listenbrainz\Model\ListeningActivityForUserPayloadListeningActivityInner[]',
         'range' => 'string',
         'to_ts' => 'int'
     ];
@@ -389,7 +389,7 @@ class SitewideListeningActivityPayload implements ModelInterface, ArrayAccess, \
     /**
      * Gets listening_activity
      *
-     * @return \OpenAPI\Client\Model\ListeningActivityForUserPayloadListeningActivityInner[]
+     * @return \Listenbrainz\Model\ListeningActivityForUserPayloadListeningActivityInner[]
      */
     public function getListeningActivity()
     {
@@ -399,7 +399,7 @@ class SitewideListeningActivityPayload implements ModelInterface, ArrayAccess, \
     /**
      * Sets listening_activity
      *
-     * @param \OpenAPI\Client\Model\ListeningActivityForUserPayloadListeningActivityInner[] $listening_activity listening_activity
+     * @param \Listenbrainz\Model\ListeningActivityForUserPayloadListeningActivityInner[] $listening_activity listening_activity
      *
      * @return self
      */

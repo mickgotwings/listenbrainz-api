@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **artist_credit_id** | **int** |  | [optional]
-**artists** | [**\OpenAPI\Client\Model\RecordingMetadataArtistArtistsInner[]**](RecordingMetadataArtistArtistsInner.md) |  | [optional]
+**artists** | [**\Listenbrainz\Model\RecordingMetadataArtistArtistsInner[]**](RecordingMetadataArtistArtistsInner.md) |  | [optional]
 **name** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

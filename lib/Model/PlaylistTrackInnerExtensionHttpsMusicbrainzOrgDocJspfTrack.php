@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack implements Mode
         'release_identifier' => 'string',
         'added_at' => 'string',
         'added_by' => 'string',
-        'additional_metadata' => '\OpenAPI\Client\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetadata'
+        'additional_metadata' => '\Listenbrainz\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetadata'
     ];
 
     /**
@@ -428,7 +428,7 @@ class PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack implements Mode
     /**
      * Gets additional_metadata
      *
-     * @return \OpenAPI\Client\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetadata|null
+     * @return \Listenbrainz\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetadata|null
      */
     public function getAdditionalMetadata()
     {
@@ -438,7 +438,7 @@ class PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrack implements Mode
     /**
      * Sets additional_metadata
      *
-     * @param \OpenAPI\Client\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetadata|null $additional_metadata additional_metadata
+     * @param \Listenbrainz\Model\PlaylistTrackInnerExtensionHttpsMusicbrainzOrgDocJspfTrackAdditionalMetadata|null $additional_metadata additional_metadata
      *
      * @return self
      */

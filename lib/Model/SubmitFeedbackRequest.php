@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * SubmitFeedbackRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class SubmitFeedbackRequest implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'recording_mbid' => 'string',
-        'rating' => '\OpenAPI\Client\Model\AllowedRatings'
+        'rating' => '\Listenbrainz\Model\AllowedRatings'
     ];
 
     /**
@@ -326,7 +326,7 @@ class SubmitFeedbackRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets rating
      *
-     * @return \OpenAPI\Client\Model\AllowedRatings|null
+     * @return \Listenbrainz\Model\AllowedRatings|null
      */
     public function getRating()
     {
@@ -336,7 +336,7 @@ class SubmitFeedbackRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets rating
      *
-     * @param \OpenAPI\Client\Model\AllowedRatings|null $rating rating
+     * @param \Listenbrainz\Model\AllowedRatings|null $rating rating
      *
      * @return self
      */

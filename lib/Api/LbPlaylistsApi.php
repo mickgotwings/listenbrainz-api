@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Listenbrainz\ApiException;
+use Listenbrainz\Configuration;
+use Listenbrainz\HeaderSelector;
+use Listenbrainz\ObjectSerializer;
 
 /**
  * LbPlaylistsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -162,10 +162,10 @@ class LbPlaylistsApi
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
      * @param  int $offset Offset. (required)
-     * @param  \OpenAPI\Client\Model\Playlist $playlist playlist (required)
+     * @param  \Listenbrainz\Model\Playlist $playlist playlist (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['appendRecordings'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -181,10 +181,10 @@ class LbPlaylistsApi
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
      * @param  int $offset Offset. (required)
-     * @param  \OpenAPI\Client\Model\Playlist $playlist (required)
+     * @param  \Listenbrainz\Model\Playlist $playlist (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['appendRecordings'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -231,7 +231,7 @@ class LbPlaylistsApi
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
      * @param  int $offset Offset. (required)
-     * @param  \OpenAPI\Client\Model\Playlist $playlist (required)
+     * @param  \Listenbrainz\Model\Playlist $playlist (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['appendRecordings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -254,7 +254,7 @@ class LbPlaylistsApi
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
      * @param  int $offset Offset. (required)
-     * @param  \OpenAPI\Client\Model\Playlist $playlist (required)
+     * @param  \Listenbrainz\Model\Playlist $playlist (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['appendRecordings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -293,7 +293,7 @@ class LbPlaylistsApi
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
      * @param  int $offset Offset. (required)
-     * @param  \OpenAPI\Client\Model\Playlist $playlist (required)
+     * @param  \Listenbrainz\Model\Playlist $playlist (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['appendRecordings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -424,7 +424,7 @@ class LbPlaylistsApi
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyPlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -441,7 +441,7 @@ class LbPlaylistsApi
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['copyPlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -643,12 +643,12 @@ class LbPlaylistsApi
      *
      * Create a playlist
      *
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreatePlaylist200Response
+     * @return \Listenbrainz\Model\CreatePlaylist200Response
      */
     public function createPlaylist($create_playlist_request, string $contentType = self::contentTypes['createPlaylist'][0])
     {
@@ -661,12 +661,12 @@ class LbPlaylistsApi
      *
      * Create a playlist
      *
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreatePlaylist200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\CreatePlaylist200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function createPlaylistWithHttpInfo($create_playlist_request, string $contentType = self::contentTypes['createPlaylist'][0])
     {
@@ -697,11 +697,11 @@ class LbPlaylistsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreatePlaylist200Response' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\CreatePlaylist200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreatePlaylist200Response' !== 'string') {
+                        if ('\Listenbrainz\Model\CreatePlaylist200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -719,7 +719,7 @@ class LbPlaylistsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreatePlaylist200Response', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\CreatePlaylist200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -738,7 +738,7 @@ class LbPlaylistsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreatePlaylist200Response';
+            $returnType = '\Listenbrainz\Model\CreatePlaylist200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -771,7 +771,7 @@ class LbPlaylistsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreatePlaylist200Response',
+                        '\Listenbrainz\Model\CreatePlaylist200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -786,7 +786,7 @@ class LbPlaylistsApi
      *
      * Create a playlist
      *
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPlaylist'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -807,7 +807,7 @@ class LbPlaylistsApi
      *
      * Create a playlist
      *
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPlaylist'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -815,7 +815,7 @@ class LbPlaylistsApi
      */
     public function createPlaylistAsyncWithHttpInfo($create_playlist_request, string $contentType = self::contentTypes['createPlaylist'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreatePlaylist200Response';
+        $returnType = '\Listenbrainz\Model\CreatePlaylist200Response';
         $request = $this->createPlaylistRequest($create_playlist_request, $contentType);
 
         return $this->client
@@ -857,7 +857,7 @@ class LbPlaylistsApi
     /**
      * Create request for operation 'createPlaylist'
      *
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createPlaylist'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -958,7 +958,7 @@ class LbPlaylistsApi
      * @param  string $playlist_mbid The playlist mbid to fetch. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deletePlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -975,7 +975,7 @@ class LbPlaylistsApi
      * @param  string $playlist_mbid The playlist mbid to fetch. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deletePlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1178,10 +1178,10 @@ class LbPlaylistsApi
      * Create a playlist. The playlist must be in JSPF format with MusicBrainz extensions, which is defined here: https://musicbrainz.org/doc/jspf . To create an empty playlist, you can send an empty playlist with only the title field filled out. If you would like to create a playlist populated with recordings, each of the track items in the playlist must have an identifier element that contains the MusicBrainz recording that includes the recording MBID.  When creating a playlist, only the playlist title and the track identifier elements will be used - all other elements in the posted JSPF wil be ignored.  If a created_for field is found and the user is not an approved playlist bot, then a 403 forbidden will be raised.
      *
      * @param  string $playlist_mbid The playlist mbid to edit. (required)
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editPlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1196,10 +1196,10 @@ class LbPlaylistsApi
      * Create a playlist. The playlist must be in JSPF format with MusicBrainz extensions, which is defined here: https://musicbrainz.org/doc/jspf . To create an empty playlist, you can send an empty playlist with only the title field filled out. If you would like to create a playlist populated with recordings, each of the track items in the playlist must have an identifier element that contains the MusicBrainz recording that includes the recording MBID.  When creating a playlist, only the playlist title and the track identifier elements will be used - all other elements in the posted JSPF wil be ignored.  If a created_for field is found and the user is not an approved playlist bot, then a 403 forbidden will be raised.
      *
      * @param  string $playlist_mbid The playlist mbid to edit. (required)
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editPlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1245,7 +1245,7 @@ class LbPlaylistsApi
      * Create a playlist. The playlist must be in JSPF format with MusicBrainz extensions, which is defined here: https://musicbrainz.org/doc/jspf . To create an empty playlist, you can send an empty playlist with only the title field filled out. If you would like to create a playlist populated with recordings, each of the track items in the playlist must have an identifier element that contains the MusicBrainz recording that includes the recording MBID.  When creating a playlist, only the playlist title and the track identifier elements will be used - all other elements in the posted JSPF wil be ignored.  If a created_for field is found and the user is not an approved playlist bot, then a 403 forbidden will be raised.
      *
      * @param  string $playlist_mbid The playlist mbid to edit. (required)
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editPlaylist'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1267,7 +1267,7 @@ class LbPlaylistsApi
      * Create a playlist. The playlist must be in JSPF format with MusicBrainz extensions, which is defined here: https://musicbrainz.org/doc/jspf . To create an empty playlist, you can send an empty playlist with only the title field filled out. If you would like to create a playlist populated with recordings, each of the track items in the playlist must have an identifier element that contains the MusicBrainz recording that includes the recording MBID.  When creating a playlist, only the playlist title and the track identifier elements will be used - all other elements in the posted JSPF wil be ignored.  If a created_for field is found and the user is not an approved playlist bot, then a 403 forbidden will be raised.
      *
      * @param  string $playlist_mbid The playlist mbid to edit. (required)
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editPlaylist'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1305,7 +1305,7 @@ class LbPlaylistsApi
      * Create request for operation 'editPlaylist'
      *
      * @param  string $playlist_mbid The playlist mbid to edit. (required)
-     * @param  \OpenAPI\Client\Model\CreatePlaylistRequest $create_playlist_request (required)
+     * @param  \Listenbrainz\Model\CreatePlaylistRequest $create_playlist_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editPlaylist'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1422,9 +1422,9 @@ class LbPlaylistsApi
      * @param  bool|null $fetch_metadata Optional, pass value ‘false&#39; to skip lookup up recording metadata. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fetchPlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreatePlaylistRequest
+     * @return \Listenbrainz\Model\CreatePlaylistRequest
      */
     public function fetchPlaylist($playlist_mbid, $fetch_metadata = null, string $contentType = self::contentTypes['fetchPlaylist'][0])
     {
@@ -1441,9 +1441,9 @@ class LbPlaylistsApi
      * @param  bool|null $fetch_metadata Optional, pass value ‘false&#39; to skip lookup up recording metadata. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['fetchPlaylist'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreatePlaylistRequest, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\CreatePlaylistRequest, HTTP status code, HTTP response headers (array of strings)
      */
     public function fetchPlaylistWithHttpInfo($playlist_mbid, $fetch_metadata = null, string $contentType = self::contentTypes['fetchPlaylist'][0])
     {
@@ -1474,11 +1474,11 @@ class LbPlaylistsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreatePlaylistRequest' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\CreatePlaylistRequest' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreatePlaylistRequest' !== 'string') {
+                        if ('\Listenbrainz\Model\CreatePlaylistRequest' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1496,7 +1496,7 @@ class LbPlaylistsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreatePlaylistRequest', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\CreatePlaylistRequest', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1515,7 +1515,7 @@ class LbPlaylistsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreatePlaylistRequest';
+            $returnType = '\Listenbrainz\Model\CreatePlaylistRequest';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1548,7 +1548,7 @@ class LbPlaylistsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreatePlaylistRequest',
+                        '\Listenbrainz\Model\CreatePlaylistRequest',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1594,7 +1594,7 @@ class LbPlaylistsApi
      */
     public function fetchPlaylistAsyncWithHttpInfo($playlist_mbid, $fetch_metadata = null, string $contentType = self::contentTypes['fetchPlaylist'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreatePlaylistRequest';
+        $returnType = '\Listenbrainz\Model\CreatePlaylistRequest';
         $request = $this->fetchPlaylistRequest($playlist_mbid, $fetch_metadata, $contentType);
 
         return $this->client
@@ -1742,10 +1742,10 @@ class LbPlaylistsApi
      * Delete an item in a playlist.
      *
      * @param  string $playlist_mbid The playlist mbid to fetch. (required)
-     * @param  \OpenAPI\Client\Model\ItemDeleteRequest $item_delete_request item_delete_request (required)
+     * @param  \Listenbrainz\Model\ItemDeleteRequest $item_delete_request item_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['itemDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1760,10 +1760,10 @@ class LbPlaylistsApi
      * Delete an item in a playlist.
      *
      * @param  string $playlist_mbid The playlist mbid to fetch. (required)
-     * @param  \OpenAPI\Client\Model\ItemDeleteRequest $item_delete_request (required)
+     * @param  \Listenbrainz\Model\ItemDeleteRequest $item_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['itemDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1809,7 +1809,7 @@ class LbPlaylistsApi
      * Delete an item in a playlist.
      *
      * @param  string $playlist_mbid The playlist mbid to fetch. (required)
-     * @param  \OpenAPI\Client\Model\ItemDeleteRequest $item_delete_request (required)
+     * @param  \Listenbrainz\Model\ItemDeleteRequest $item_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['itemDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1831,7 +1831,7 @@ class LbPlaylistsApi
      * Delete an item in a playlist.
      *
      * @param  string $playlist_mbid The playlist mbid to fetch. (required)
-     * @param  \OpenAPI\Client\Model\ItemDeleteRequest $item_delete_request (required)
+     * @param  \Listenbrainz\Model\ItemDeleteRequest $item_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['itemDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1869,7 +1869,7 @@ class LbPlaylistsApi
      * Create request for operation 'itemDelete'
      *
      * @param  string $playlist_mbid The playlist mbid to fetch. (required)
-     * @param  \OpenAPI\Client\Model\ItemDeleteRequest $item_delete_request (required)
+     * @param  \Listenbrainz\Model\ItemDeleteRequest $item_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['itemDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1983,10 +1983,10 @@ class LbPlaylistsApi
      * To move an item in a playlist, the POST data needs to specify the recording MBID and current index of the track to move (from), where to move it to (to) and how many tracks from that position should be moved (count).
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
-     * @param  \OpenAPI\Client\Model\MoveItemRequest $move_item_request move_item_request (required)
+     * @param  \Listenbrainz\Model\MoveItemRequest $move_item_request move_item_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveItem'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2001,10 +2001,10 @@ class LbPlaylistsApi
      * To move an item in a playlist, the POST data needs to specify the recording MBID and current index of the track to move (from), where to move it to (to) and how many tracks from that position should be moved (count).
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
-     * @param  \OpenAPI\Client\Model\MoveItemRequest $move_item_request (required)
+     * @param  \Listenbrainz\Model\MoveItemRequest $move_item_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveItem'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2050,7 +2050,7 @@ class LbPlaylistsApi
      * To move an item in a playlist, the POST data needs to specify the recording MBID and current index of the track to move (from), where to move it to (to) and how many tracks from that position should be moved (count).
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
-     * @param  \OpenAPI\Client\Model\MoveItemRequest $move_item_request (required)
+     * @param  \Listenbrainz\Model\MoveItemRequest $move_item_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveItem'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2072,7 +2072,7 @@ class LbPlaylistsApi
      * To move an item in a playlist, the POST data needs to specify the recording MBID and current index of the track to move (from), where to move it to (to) and how many tracks from that position should be moved (count).
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
-     * @param  \OpenAPI\Client\Model\MoveItemRequest $move_item_request (required)
+     * @param  \Listenbrainz\Model\MoveItemRequest $move_item_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveItem'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2110,7 +2110,7 @@ class LbPlaylistsApi
      * Create request for operation 'moveItem'
      *
      * @param  string $playlist_mbid The playlist mbid to append to. (required)
-     * @param  \OpenAPI\Client\Model\MoveItemRequest $move_item_request (required)
+     * @param  \Listenbrainz\Model\MoveItemRequest $move_item_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveItem'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2228,9 +2228,9 @@ class LbPlaylistsApi
      * @param  int|null $offset offset (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['playlistsCreatedForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Playlists
+     * @return \Listenbrainz\Model\Playlists
      */
     public function playlistsCreatedForUser($playlist_user_name, $count = 25, $offset = null, string $contentType = self::contentTypes['playlistsCreatedForUser'][0])
     {
@@ -2248,9 +2248,9 @@ class LbPlaylistsApi
      * @param  int|null $offset (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['playlistsCreatedForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
      */
     public function playlistsCreatedForUserWithHttpInfo($playlist_user_name, $count = 25, $offset = null, string $contentType = self::contentTypes['playlistsCreatedForUser'][0])
     {
@@ -2281,11 +2281,11 @@ class LbPlaylistsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Playlists' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Playlists' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Playlists' !== 'string') {
+                        if ('\Listenbrainz\Model\Playlists' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2303,7 +2303,7 @@ class LbPlaylistsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Playlists', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Playlists', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2322,7 +2322,7 @@ class LbPlaylistsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Playlists';
+            $returnType = '\Listenbrainz\Model\Playlists';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2355,7 +2355,7 @@ class LbPlaylistsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Playlists',
+                        '\Listenbrainz\Model\Playlists',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2403,7 +2403,7 @@ class LbPlaylistsApi
      */
     public function playlistsCreatedForUserAsyncWithHttpInfo($playlist_user_name, $count = 25, $offset = null, string $contentType = self::contentTypes['playlistsCreatedForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Playlists';
+        $returnType = '\Listenbrainz\Model\Playlists';
         $request = $this->playlistsCreatedForUserRequest($playlist_user_name, $count, $offset, $contentType);
 
         return $this->client
@@ -2566,9 +2566,9 @@ class LbPlaylistsApi
      * @param  int|null $offset offset (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['playlistsForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Playlists
+     * @return \Listenbrainz\Model\Playlists
      */
     public function playlistsForUser($playlist_user_name, $count = 25, $offset = null, string $contentType = self::contentTypes['playlistsForUser'][0])
     {
@@ -2586,9 +2586,9 @@ class LbPlaylistsApi
      * @param  int|null $offset (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['playlistsForUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
      */
     public function playlistsForUserWithHttpInfo($playlist_user_name, $count = 25, $offset = null, string $contentType = self::contentTypes['playlistsForUser'][0])
     {
@@ -2619,11 +2619,11 @@ class LbPlaylistsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Playlists' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Playlists' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Playlists' !== 'string') {
+                        if ('\Listenbrainz\Model\Playlists' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2641,7 +2641,7 @@ class LbPlaylistsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Playlists', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Playlists', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2660,7 +2660,7 @@ class LbPlaylistsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Playlists';
+            $returnType = '\Listenbrainz\Model\Playlists';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2693,7 +2693,7 @@ class LbPlaylistsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Playlists',
+                        '\Listenbrainz\Model\Playlists',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2741,7 +2741,7 @@ class LbPlaylistsApi
      */
     public function playlistsForUserAsyncWithHttpInfo($playlist_user_name, $count = 25, $offset = null, string $contentType = self::contentTypes['playlistsForUser'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Playlists';
+        $returnType = '\Listenbrainz\Model\Playlists';
         $request = $this->playlistsForUserRequest($playlist_user_name, $count, $offset, $contentType);
 
         return $this->client
@@ -2904,9 +2904,9 @@ class LbPlaylistsApi
      * @param  int|null $offset offset (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['playlistsForUserCollaborator'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Playlists
+     * @return \Listenbrainz\Model\Playlists
      */
     public function playlistsForUserCollaborator($playlist_user_name, $count = 25, $offset = null, string $contentType = self::contentTypes['playlistsForUserCollaborator'][0])
     {
@@ -2924,9 +2924,9 @@ class LbPlaylistsApi
      * @param  int|null $offset (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['playlistsForUserCollaborator'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
      */
     public function playlistsForUserCollaboratorWithHttpInfo($playlist_user_name, $count = 25, $offset = null, string $contentType = self::contentTypes['playlistsForUserCollaborator'][0])
     {
@@ -2957,11 +2957,11 @@ class LbPlaylistsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Playlists' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Playlists' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Playlists' !== 'string') {
+                        if ('\Listenbrainz\Model\Playlists' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2979,7 +2979,7 @@ class LbPlaylistsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Playlists', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Playlists', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2998,7 +2998,7 @@ class LbPlaylistsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Playlists';
+            $returnType = '\Listenbrainz\Model\Playlists';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3031,7 +3031,7 @@ class LbPlaylistsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Playlists',
+                        '\Listenbrainz\Model\Playlists',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3079,7 +3079,7 @@ class LbPlaylistsApi
      */
     public function playlistsForUserCollaboratorAsyncWithHttpInfo($playlist_user_name, $count = 25, $offset = null, string $contentType = self::contentTypes['playlistsForUserCollaborator'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Playlists';
+        $returnType = '\Listenbrainz\Model\Playlists';
         $request = $this->playlistsForUserCollaboratorRequest($playlist_user_name, $count, $offset, $contentType);
 
         return $this->client
@@ -3240,9 +3240,9 @@ class LbPlaylistsApi
      * @param  string $query query (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchPlaylists'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Playlists
+     * @return \Listenbrainz\Model\Playlists
      */
     public function searchPlaylists($query, string $contentType = self::contentTypes['searchPlaylists'][0])
     {
@@ -3258,9 +3258,9 @@ class LbPlaylistsApi
      * @param  string $query (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['searchPlaylists'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Playlists, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchPlaylistsWithHttpInfo($query, string $contentType = self::contentTypes['searchPlaylists'][0])
     {
@@ -3291,11 +3291,11 @@ class LbPlaylistsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Playlists' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Playlists' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Playlists' !== 'string') {
+                        if ('\Listenbrainz\Model\Playlists' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3313,7 +3313,7 @@ class LbPlaylistsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Playlists', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Playlists', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3332,7 +3332,7 @@ class LbPlaylistsApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Playlists';
+            $returnType = '\Listenbrainz\Model\Playlists';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3365,7 +3365,7 @@ class LbPlaylistsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Playlists',
+                        '\Listenbrainz\Model\Playlists',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3409,7 +3409,7 @@ class LbPlaylistsApi
      */
     public function searchPlaylistsAsyncWithHttpInfo($query, string $contentType = self::contentTypes['searchPlaylists'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Playlists';
+        $returnType = '\Listenbrainz\Model\Playlists';
         $request = $this->searchPlaylistsRequest($query, $contentType);
 
         return $this->client

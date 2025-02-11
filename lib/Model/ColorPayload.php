@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * ColorPayload Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ColorPayload implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'releases' => '\OpenAPI\Client\Model\ColorPayloadReleasesInner[]'
+        'releases' => '\Listenbrainz\Model\ColorPayloadReleasesInner[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class ColorPayload implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets releases
      *
-     * @return \OpenAPI\Client\Model\ColorPayloadReleasesInner[]
+     * @return \Listenbrainz\Model\ColorPayloadReleasesInner[]
      */
     public function getReleases()
     {
@@ -305,7 +305,7 @@ class ColorPayload implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets releases
      *
-     * @param \OpenAPI\Client\Model\ColorPayloadReleasesInner[] $releases releases
+     * @param \Listenbrainz\Model\ColorPayloadReleasesInner[] $releases releases
      *
      * @return self
      */

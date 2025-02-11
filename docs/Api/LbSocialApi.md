@@ -1,4 +1,4 @@
-# OpenAPI\Client\LbSocialApi
+# Listenbrainz\LbSocialApi
 
 All URIs are relative to https://api.listenbrainz.org, except if the operation defines another base path.
 
@@ -36,19 +36,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $user_name = 'user_name_example'; // string
-$create_notification_request = new \OpenAPI\Client\Model\CreateNotificationRequest(); // \OpenAPI\Client\Model\CreateNotificationRequest
+$create_notification_request = new \Listenbrainz\Model\CreateNotificationRequest(); // \Listenbrainz\Model\CreateNotificationRequest
 
 try {
     $apiInstance->createNotification($user_name, $create_notification_request);
@@ -62,7 +62,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **create_notification_request** | [**\OpenAPI\Client\Model\CreateNotificationRequest**](../Model/CreateNotificationRequest.md)|  | |
+| **create_notification_request** | [**\Listenbrainz\Model\CreateNotificationRequest**](../Model/CreateNotificationRequest.md)|  | |
 
 ### Return type
 
@@ -97,19 +97,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $user_name = 'user_name_example'; // string
-$create_review_request = new \OpenAPI\Client\Model\CreateReviewRequest(); // \OpenAPI\Client\Model\CreateReviewRequest
+$create_review_request = new \Listenbrainz\Model\CreateReviewRequest(); // \Listenbrainz\Model\CreateReviewRequest
 
 try {
     $apiInstance->createReview($user_name, $create_review_request);
@@ -123,7 +123,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **create_review_request** | [**\OpenAPI\Client\Model\CreateReviewRequest**](../Model/CreateReviewRequest.md)|  | |
+| **create_review_request** | [**\Listenbrainz\Model\CreateReviewRequest**](../Model/CreateReviewRequest.md)|  | |
 
 ### Return type
 
@@ -145,7 +145,7 @@ void (empty response body)
 ## `feedEvents()`
 
 ```php
-feedEvents($user_name, $max_ts, $min_ts, $count): \OpenAPI\Client\Model\FeedEvents
+feedEvents($user_name, $max_ts, $min_ts, $count): \Listenbrainz\Model\FeedEvents
 ```
 
 CreatGet feed events for a user's timeline.
@@ -158,12 +158,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -193,7 +193,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FeedEvents**](../Model/FeedEvents.md)
+[**\Listenbrainz\Model\FeedEvents**](../Model/FeedEvents.md)
 
 ### Authorization
 
@@ -224,19 +224,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $user_name = 'user_name_example'; // string
-$feed_events_delete_request = new \OpenAPI\Client\Model\FeedEventsDeleteRequest(); // \OpenAPI\Client\Model\FeedEventsDeleteRequest
+$feed_events_delete_request = new \Listenbrainz\Model\FeedEventsDeleteRequest(); // \Listenbrainz\Model\FeedEventsDeleteRequest
 
 try {
     $apiInstance->feedEventsDelete($user_name, $feed_events_delete_request);
@@ -250,7 +250,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **feed_events_delete_request** | [**\OpenAPI\Client\Model\FeedEventsDeleteRequest**](../Model/FeedEventsDeleteRequest.md)|  | |
+| **feed_events_delete_request** | [**\Listenbrainz\Model\FeedEventsDeleteRequest**](../Model/FeedEventsDeleteRequest.md)|  | |
 
 ### Return type
 
@@ -285,19 +285,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $user_name = 'user_name_example'; // string
-$feed_events_delete_request = new \OpenAPI\Client\Model\FeedEventsDeleteRequest(); // \OpenAPI\Client\Model\FeedEventsDeleteRequest
+$feed_events_delete_request = new \Listenbrainz\Model\FeedEventsDeleteRequest(); // \Listenbrainz\Model\FeedEventsDeleteRequest
 
 try {
     $apiInstance->feedEventsHide($user_name, $feed_events_delete_request);
@@ -311,7 +311,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **feed_events_delete_request** | [**\OpenAPI\Client\Model\FeedEventsDeleteRequest**](../Model/FeedEventsDeleteRequest.md)|  | |
+| **feed_events_delete_request** | [**\Listenbrainz\Model\FeedEventsDeleteRequest**](../Model/FeedEventsDeleteRequest.md)|  | |
 
 ### Return type
 
@@ -333,7 +333,7 @@ void (empty response body)
 ## `feedEventsListensFollowing()`
 
 ```php
-feedEventsListensFollowing($user_name, $max_ts, $min_ts, $count): \OpenAPI\Client\Model\FeedEvents
+feedEventsListensFollowing($user_name, $max_ts, $min_ts, $count): \Listenbrainz\Model\FeedEvents
 ```
 
 Get feed's listen events for followed users.
@@ -346,12 +346,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -381,7 +381,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FeedEvents**](../Model/FeedEvents.md)
+[**\Listenbrainz\Model\FeedEvents**](../Model/FeedEvents.md)
 
 ### Authorization
 
@@ -399,7 +399,7 @@ try {
 ## `feedEventsListensSimilar()`
 
 ```php
-feedEventsListensSimilar($user_name, $max_ts, $min_ts, $count): \OpenAPI\Client\Model\FeedEventsListensSimilar
+feedEventsListensSimilar($user_name, $max_ts, $min_ts, $count): \Listenbrainz\Model\FeedEventsListensSimilar
 ```
 
 Get feed's listen events for similar users.
@@ -412,12 +412,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -447,7 +447,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FeedEventsListensSimilar**](../Model/FeedEventsListensSimilar.md)
+[**\Listenbrainz\Model\FeedEventsListensSimilar**](../Model/FeedEventsListensSimilar.md)
 
 ### Authorization
 
@@ -478,19 +478,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $user_name = 'user_name_example'; // string
-$feed_events_delete_request = new \OpenAPI\Client\Model\FeedEventsDeleteRequest(); // \OpenAPI\Client\Model\FeedEventsDeleteRequest
+$feed_events_delete_request = new \Listenbrainz\Model\FeedEventsDeleteRequest(); // \Listenbrainz\Model\FeedEventsDeleteRequest
 
 try {
     $apiInstance->feedEventsUnhide($user_name, $feed_events_delete_request);
@@ -504,7 +504,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **feed_events_delete_request** | [**\OpenAPI\Client\Model\FeedEventsDeleteRequest**](../Model/FeedEventsDeleteRequest.md)|  | |
+| **feed_events_delete_request** | [**\Listenbrainz\Model\FeedEventsDeleteRequest**](../Model/FeedEventsDeleteRequest.md)|  | |
 
 ### Return type
 
@@ -539,12 +539,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -585,7 +585,7 @@ void (empty response body)
 ## `followers()`
 
 ```php
-followers($user_name): \OpenAPI\Client\Model\Followers
+followers($user_name): \Listenbrainz\Model\Followers
 ```
 
 Fetch the list of followers of the user 'user_name'.
@@ -598,12 +598,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -627,7 +627,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Followers**](../Model/Followers.md)
+[**\Listenbrainz\Model\Followers**](../Model/Followers.md)
 
 ### Authorization
 
@@ -645,7 +645,7 @@ try {
 ## `following()`
 
 ```php
-following($user_name): \OpenAPI\Client\Model\Following
+following($user_name): \Listenbrainz\Model\Following
 ```
 
 Fetch the list of users followed by the user 'user_name'.
@@ -658,12 +658,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -687,7 +687,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Following**](../Model/Following.md)
+[**\Listenbrainz\Model\Following**](../Model/Following.md)
 
 ### Authorization
 
@@ -718,19 +718,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $user_name = 'user_name_example'; // string
-$recommend_personal_recording_request = new \OpenAPI\Client\Model\RecommendPersonalRecordingRequest(); // \OpenAPI\Client\Model\RecommendPersonalRecordingRequest
+$recommend_personal_recording_request = new \Listenbrainz\Model\RecommendPersonalRecordingRequest(); // \Listenbrainz\Model\RecommendPersonalRecordingRequest
 
 try {
     $apiInstance->recommendPersonalRecording($user_name, $recommend_personal_recording_request);
@@ -744,7 +744,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **recommend_personal_recording_request** | [**\OpenAPI\Client\Model\RecommendPersonalRecordingRequest**](../Model/RecommendPersonalRecordingRequest.md)|  | |
+| **recommend_personal_recording_request** | [**\Listenbrainz\Model\RecommendPersonalRecordingRequest**](../Model/RecommendPersonalRecordingRequest.md)|  | |
 
 ### Return type
 
@@ -779,19 +779,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $user_name = 'user_name_example'; // string
-$recommend_recording_request = new \OpenAPI\Client\Model\RecommendRecordingRequest(); // \OpenAPI\Client\Model\RecommendRecordingRequest
+$recommend_recording_request = new \Listenbrainz\Model\RecommendRecordingRequest(); // \Listenbrainz\Model\RecommendRecordingRequest
 
 try {
     $apiInstance->recommendRecording($user_name, $recommend_recording_request);
@@ -805,7 +805,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**|  | |
-| **recommend_recording_request** | [**\OpenAPI\Client\Model\RecommendRecordingRequest**](../Model/RecommendRecordingRequest.md)|  | |
+| **recommend_recording_request** | [**\Listenbrainz\Model\RecommendRecordingRequest**](../Model/RecommendRecordingRequest.md)|  | |
 
 ### Return type
 
@@ -840,12 +840,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: ApiKeyAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = Listenbrainz\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new OpenAPI\Client\Api\LbSocialApi(
+$apiInstance = new Listenbrainz\Api\LbSocialApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

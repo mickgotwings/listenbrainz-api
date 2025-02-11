@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * Playlist Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,10 +62,10 @@ class Playlist implements ModelInterface, ArrayAccess, \JsonSerializable
         'creator' => 'string',
         'date' => 'string',
         'duration' => 'int',
-        'extension' => '\OpenAPI\Client\Model\PlaylistExtension',
+        'extension' => '\Listenbrainz\Model\PlaylistExtension',
         'identifier' => 'string',
         'title' => 'string',
-        'track' => '\OpenAPI\Client\Model\PlaylistTrackInner[]'
+        'track' => '\Listenbrainz\Model\PlaylistTrackInner[]'
     ];
 
     /**
@@ -483,7 +483,7 @@ class Playlist implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets extension
      *
-     * @return \OpenAPI\Client\Model\PlaylistExtension|null
+     * @return \Listenbrainz\Model\PlaylistExtension|null
      */
     public function getExtension()
     {
@@ -493,7 +493,7 @@ class Playlist implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets extension
      *
-     * @param \OpenAPI\Client\Model\PlaylistExtension|null $extension extension
+     * @param \Listenbrainz\Model\PlaylistExtension|null $extension extension
      *
      * @return self
      */
@@ -564,7 +564,7 @@ class Playlist implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets track
      *
-     * @return \OpenAPI\Client\Model\PlaylistTrackInner[]|null
+     * @return \Listenbrainz\Model\PlaylistTrackInner[]|null
      */
     public function getTrack()
     {
@@ -574,7 +574,7 @@ class Playlist implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets track
      *
-     * @param \OpenAPI\Client\Model\PlaylistTrackInner[]|null $track track
+     * @param \Listenbrainz\Model\PlaylistTrackInner[]|null $track track
      *
      * @return self
      */

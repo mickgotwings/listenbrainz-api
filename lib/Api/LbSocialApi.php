@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Listenbrainz\ApiException;
+use Listenbrainz\Configuration;
+use Listenbrainz\HeaderSelector;
+use Listenbrainz\ObjectSerializer;
 
 /**
  * LbSocialApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -167,10 +167,10 @@ class LbSocialApi
      * Post a message with a link on a user&#39;s timeline. Only approved users are allowed to perform this action.
      *
      * @param  string $user_name user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateNotificationRequest $create_notification_request create_notification_request (required)
+     * @param  \Listenbrainz\Model\CreateNotificationRequest $create_notification_request create_notification_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNotification'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -185,10 +185,10 @@ class LbSocialApi
      * Post a message with a link on a user&#39;s timeline. Only approved users are allowed to perform this action.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateNotificationRequest $create_notification_request (required)
+     * @param  \Listenbrainz\Model\CreateNotificationRequest $create_notification_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNotification'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -234,7 +234,7 @@ class LbSocialApi
      * Post a message with a link on a user&#39;s timeline. Only approved users are allowed to perform this action.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateNotificationRequest $create_notification_request (required)
+     * @param  \Listenbrainz\Model\CreateNotificationRequest $create_notification_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNotification'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -256,7 +256,7 @@ class LbSocialApi
      * Post a message with a link on a user&#39;s timeline. Only approved users are allowed to perform this action.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateNotificationRequest $create_notification_request (required)
+     * @param  \Listenbrainz\Model\CreateNotificationRequest $create_notification_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNotification'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -294,7 +294,7 @@ class LbSocialApi
      * Create request for operation 'createNotification'
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateNotificationRequest $create_notification_request (required)
+     * @param  \Listenbrainz\Model\CreateNotificationRequest $create_notification_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createNotification'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -408,10 +408,10 @@ class LbSocialApi
      * Creates a CritiqueBrainz review event for the user. This also creates a corresponding review in CritiqueBrainz. Users need to have linked their ListenBrainz account with CritiqueBrainz first to use this endpoint successfully.
      *
      * @param  string $user_name user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateReviewRequest $create_review_request create_review_request (required)
+     * @param  \Listenbrainz\Model\CreateReviewRequest $create_review_request create_review_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReview'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -426,10 +426,10 @@ class LbSocialApi
      * Creates a CritiqueBrainz review event for the user. This also creates a corresponding review in CritiqueBrainz. Users need to have linked their ListenBrainz account with CritiqueBrainz first to use this endpoint successfully.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateReviewRequest $create_review_request (required)
+     * @param  \Listenbrainz\Model\CreateReviewRequest $create_review_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReview'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -475,7 +475,7 @@ class LbSocialApi
      * Creates a CritiqueBrainz review event for the user. This also creates a corresponding review in CritiqueBrainz. Users need to have linked their ListenBrainz account with CritiqueBrainz first to use this endpoint successfully.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateReviewRequest $create_review_request (required)
+     * @param  \Listenbrainz\Model\CreateReviewRequest $create_review_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReview'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -497,7 +497,7 @@ class LbSocialApi
      * Creates a CritiqueBrainz review event for the user. This also creates a corresponding review in CritiqueBrainz. Users need to have linked their ListenBrainz account with CritiqueBrainz first to use this endpoint successfully.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateReviewRequest $create_review_request (required)
+     * @param  \Listenbrainz\Model\CreateReviewRequest $create_review_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReview'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -535,7 +535,7 @@ class LbSocialApi
      * Create request for operation 'createReview'
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\CreateReviewRequest $create_review_request (required)
+     * @param  \Listenbrainz\Model\CreateReviewRequest $create_review_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReview'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -654,9 +654,9 @@ class LbSocialApi
      * @param  int|null $count count (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEvents'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FeedEvents
+     * @return \Listenbrainz\Model\FeedEvents
      */
     public function feedEvents($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['feedEvents'][0])
     {
@@ -675,9 +675,9 @@ class LbSocialApi
      * @param  int|null $count (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEvents'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FeedEvents, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\FeedEvents, HTTP status code, HTTP response headers (array of strings)
      */
     public function feedEventsWithHttpInfo($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['feedEvents'][0])
     {
@@ -708,11 +708,11 @@ class LbSocialApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FeedEvents' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\FeedEvents' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FeedEvents' !== 'string') {
+                        if ('\Listenbrainz\Model\FeedEvents' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -730,7 +730,7 @@ class LbSocialApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FeedEvents', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\FeedEvents', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -749,7 +749,7 @@ class LbSocialApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FeedEvents';
+            $returnType = '\Listenbrainz\Model\FeedEvents';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -782,7 +782,7 @@ class LbSocialApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FeedEvents',
+                        '\Listenbrainz\Model\FeedEvents',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -832,7 +832,7 @@ class LbSocialApi
      */
     public function feedEventsAsyncWithHttpInfo($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['feedEvents'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FeedEvents';
+        $returnType = '\Listenbrainz\Model\FeedEvents';
         $request = $this->feedEventsRequest($user_name, $max_ts, $min_ts, $count, $contentType);
 
         return $this->client
@@ -1007,10 +1007,10 @@ class LbSocialApi
      * Delete those events from user&#39;s feed that belong to them. Supports deletion of recommendation and notification. Along with the authorization token, post the event type and event id.
      *
      * @param  string $user_name user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1025,10 +1025,10 @@ class LbSocialApi
      * Delete those events from user&#39;s feed that belong to them. Supports deletion of recommendation and notification. Along with the authorization token, post the event type and event id.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1074,7 +1074,7 @@ class LbSocialApi
      * Delete those events from user&#39;s feed that belong to them. Supports deletion of recommendation and notification. Along with the authorization token, post the event type and event id.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1096,7 +1096,7 @@ class LbSocialApi
      * Delete those events from user&#39;s feed that belong to them. Supports deletion of recommendation and notification. Along with the authorization token, post the event type and event id.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1134,7 +1134,7 @@ class LbSocialApi
      * Create request for operation 'feedEventsDelete'
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1248,10 +1248,10 @@ class LbSocialApi
      * Hide events from the user feed, only recording_recommendation and recording_pin events that have been generated by the people one is following can be deleted via this endpoint.
      *
      * @param  string $user_name user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsHide'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1266,10 +1266,10 @@ class LbSocialApi
      * Hide events from the user feed, only recording_recommendation and recording_pin events that have been generated by the people one is following can be deleted via this endpoint.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsHide'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1315,7 +1315,7 @@ class LbSocialApi
      * Hide events from the user feed, only recording_recommendation and recording_pin events that have been generated by the people one is following can be deleted via this endpoint.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsHide'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1337,7 +1337,7 @@ class LbSocialApi
      * Hide events from the user feed, only recording_recommendation and recording_pin events that have been generated by the people one is following can be deleted via this endpoint.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsHide'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1375,7 +1375,7 @@ class LbSocialApi
      * Create request for operation 'feedEventsHide'
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsHide'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1494,9 +1494,9 @@ class LbSocialApi
      * @param  int|null $count count (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsListensFollowing'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FeedEvents
+     * @return \Listenbrainz\Model\FeedEvents
      */
     public function feedEventsListensFollowing($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['feedEventsListensFollowing'][0])
     {
@@ -1515,9 +1515,9 @@ class LbSocialApi
      * @param  int|null $count (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsListensFollowing'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FeedEvents, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\FeedEvents, HTTP status code, HTTP response headers (array of strings)
      */
     public function feedEventsListensFollowingWithHttpInfo($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['feedEventsListensFollowing'][0])
     {
@@ -1548,11 +1548,11 @@ class LbSocialApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FeedEvents' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\FeedEvents' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FeedEvents' !== 'string') {
+                        if ('\Listenbrainz\Model\FeedEvents' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1570,7 +1570,7 @@ class LbSocialApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FeedEvents', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\FeedEvents', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1589,7 +1589,7 @@ class LbSocialApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FeedEvents';
+            $returnType = '\Listenbrainz\Model\FeedEvents';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1622,7 +1622,7 @@ class LbSocialApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FeedEvents',
+                        '\Listenbrainz\Model\FeedEvents',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1672,7 +1672,7 @@ class LbSocialApi
      */
     public function feedEventsListensFollowingAsyncWithHttpInfo($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['feedEventsListensFollowing'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FeedEvents';
+        $returnType = '\Listenbrainz\Model\FeedEvents';
         $request = $this->feedEventsListensFollowingRequest($user_name, $max_ts, $min_ts, $count, $contentType);
 
         return $this->client
@@ -1852,9 +1852,9 @@ class LbSocialApi
      * @param  int|null $count count (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsListensSimilar'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FeedEventsListensSimilar
+     * @return \Listenbrainz\Model\FeedEventsListensSimilar
      */
     public function feedEventsListensSimilar($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['feedEventsListensSimilar'][0])
     {
@@ -1873,9 +1873,9 @@ class LbSocialApi
      * @param  int|null $count (optional, default to 25)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsListensSimilar'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FeedEventsListensSimilar, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\FeedEventsListensSimilar, HTTP status code, HTTP response headers (array of strings)
      */
     public function feedEventsListensSimilarWithHttpInfo($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['feedEventsListensSimilar'][0])
     {
@@ -1906,11 +1906,11 @@ class LbSocialApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FeedEventsListensSimilar' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\FeedEventsListensSimilar' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FeedEventsListensSimilar' !== 'string') {
+                        if ('\Listenbrainz\Model\FeedEventsListensSimilar' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1928,7 +1928,7 @@ class LbSocialApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FeedEventsListensSimilar', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\FeedEventsListensSimilar', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1947,7 +1947,7 @@ class LbSocialApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\FeedEventsListensSimilar';
+            $returnType = '\Listenbrainz\Model\FeedEventsListensSimilar';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1980,7 +1980,7 @@ class LbSocialApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FeedEventsListensSimilar',
+                        '\Listenbrainz\Model\FeedEventsListensSimilar',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2030,7 +2030,7 @@ class LbSocialApi
      */
     public function feedEventsListensSimilarAsyncWithHttpInfo($user_name, $max_ts = null, $min_ts = null, $count = 25, string $contentType = self::contentTypes['feedEventsListensSimilar'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FeedEventsListensSimilar';
+        $returnType = '\Listenbrainz\Model\FeedEventsListensSimilar';
         $request = $this->feedEventsListensSimilarRequest($user_name, $max_ts, $min_ts, $count, $contentType);
 
         return $this->client
@@ -2205,10 +2205,10 @@ class LbSocialApi
      * Delete hidden events from the user feed, aka unhide events.
      *
      * @param  string $user_name user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsUnhide'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2223,10 +2223,10 @@ class LbSocialApi
      * Delete hidden events from the user feed, aka unhide events.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsUnhide'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2272,7 +2272,7 @@ class LbSocialApi
      * Delete hidden events from the user feed, aka unhide events.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsUnhide'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2294,7 +2294,7 @@ class LbSocialApi
      * Delete hidden events from the user feed, aka unhide events.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsUnhide'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2332,7 +2332,7 @@ class LbSocialApi
      * Create request for operation 'feedEventsUnhide'
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
+     * @param  \Listenbrainz\Model\FeedEventsDeleteRequest $feed_events_delete_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['feedEventsUnhide'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2448,7 +2448,7 @@ class LbSocialApi
      * @param  string $user_name user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['follow'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -2465,7 +2465,7 @@ class LbSocialApi
      * @param  string $user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['follow'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2670,9 +2670,9 @@ class LbSocialApi
      * @param  string $user_name user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['followers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Followers
+     * @return \Listenbrainz\Model\Followers
      */
     public function followers($user_name, string $contentType = self::contentTypes['followers'][0])
     {
@@ -2688,9 +2688,9 @@ class LbSocialApi
      * @param  string $user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['followers'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Followers, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Followers, HTTP status code, HTTP response headers (array of strings)
      */
     public function followersWithHttpInfo($user_name, string $contentType = self::contentTypes['followers'][0])
     {
@@ -2721,11 +2721,11 @@ class LbSocialApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Followers' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Followers' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Followers' !== 'string') {
+                        if ('\Listenbrainz\Model\Followers' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2743,7 +2743,7 @@ class LbSocialApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Followers', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Followers', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2762,7 +2762,7 @@ class LbSocialApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Followers';
+            $returnType = '\Listenbrainz\Model\Followers';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2795,7 +2795,7 @@ class LbSocialApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Followers',
+                        '\Listenbrainz\Model\Followers',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2839,7 +2839,7 @@ class LbSocialApi
      */
     public function followersAsyncWithHttpInfo($user_name, string $contentType = self::contentTypes['followers'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Followers';
+        $returnType = '\Listenbrainz\Model\Followers';
         $request = $this->followersRequest($user_name, $contentType);
 
         return $this->client
@@ -2983,9 +2983,9 @@ class LbSocialApi
      * @param  string $user_name user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['following'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Following
+     * @return \Listenbrainz\Model\Following
      */
     public function following($user_name, string $contentType = self::contentTypes['following'][0])
     {
@@ -3001,9 +3001,9 @@ class LbSocialApi
      * @param  string $user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['following'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Following, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Listenbrainz\Model\Following, HTTP status code, HTTP response headers (array of strings)
      */
     public function followingWithHttpInfo($user_name, string $contentType = self::contentTypes['following'][0])
     {
@@ -3034,11 +3034,11 @@ class LbSocialApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Following' === '\SplFileObject') {
+                    if ('\Listenbrainz\Model\Following' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Following' !== 'string') {
+                        if ('\Listenbrainz\Model\Following' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3056,7 +3056,7 @@ class LbSocialApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Following', []),
+                        ObjectSerializer::deserialize($content, '\Listenbrainz\Model\Following', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -3075,7 +3075,7 @@ class LbSocialApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\Following';
+            $returnType = '\Listenbrainz\Model\Following';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3108,7 +3108,7 @@ class LbSocialApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Following',
+                        '\Listenbrainz\Model\Following',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3152,7 +3152,7 @@ class LbSocialApi
      */
     public function followingAsyncWithHttpInfo($user_name, string $contentType = self::contentTypes['following'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Following';
+        $returnType = '\Listenbrainz\Model\Following';
         $request = $this->followingRequest($user_name, $contentType);
 
         return $this->client
@@ -3294,10 +3294,10 @@ class LbSocialApi
      * Make the user recommend a recording to their followers. The request should post the following data about the recording being recommended (either one of recording_msid or recording_mbid is sufficient), and also the list of followers getting recommended.
      *
      * @param  string $user_name user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request recommend_personal_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request recommend_personal_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendPersonalRecording'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3312,10 +3312,10 @@ class LbSocialApi
      * Make the user recommend a recording to their followers. The request should post the following data about the recording being recommended (either one of recording_msid or recording_mbid is sufficient), and also the list of followers getting recommended.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendPersonalRecording'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3361,7 +3361,7 @@ class LbSocialApi
      * Make the user recommend a recording to their followers. The request should post the following data about the recording being recommended (either one of recording_msid or recording_mbid is sufficient), and also the list of followers getting recommended.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendPersonalRecording'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3383,7 +3383,7 @@ class LbSocialApi
      * Make the user recommend a recording to their followers. The request should post the following data about the recording being recommended (either one of recording_msid or recording_mbid is sufficient), and also the list of followers getting recommended.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendPersonalRecording'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3421,7 +3421,7 @@ class LbSocialApi
      * Create request for operation 'recommendPersonalRecording'
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendPersonalRecordingRequest $recommend_personal_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendPersonalRecording'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3535,10 +3535,10 @@ class LbSocialApi
      * Make the user recommend a recording to their followers.
      *
      * @param  string $user_name user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendRecordingRequest $recommend_recording_request recommend_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendRecordingRequest $recommend_recording_request recommend_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendRecording'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3553,10 +3553,10 @@ class LbSocialApi
      * Make the user recommend a recording to their followers.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendRecordingRequest $recommend_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendRecordingRequest $recommend_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendRecording'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3602,7 +3602,7 @@ class LbSocialApi
      * Make the user recommend a recording to their followers.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendRecordingRequest $recommend_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendRecordingRequest $recommend_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendRecording'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3624,7 +3624,7 @@ class LbSocialApi
      * Make the user recommend a recording to their followers.
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendRecordingRequest $recommend_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendRecordingRequest $recommend_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendRecording'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3662,7 +3662,7 @@ class LbSocialApi
      * Create request for operation 'recommendRecording'
      *
      * @param  string $user_name (required)
-     * @param  \OpenAPI\Client\Model\RecommendRecordingRequest $recommend_recording_request (required)
+     * @param  \Listenbrainz\Model\RecommendRecordingRequest $recommend_recording_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['recommendRecording'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3778,7 +3778,7 @@ class LbSocialApi
      * @param  string $user_name user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unfollow'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3795,7 +3795,7 @@ class LbSocialApi
      * @param  string $user_name (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unfollow'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Listenbrainz\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * CreateReviewRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CreateReviewRequest implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'metadata' => '\OpenAPI\Client\Model\CreateReviewRequestMetadata'
+        'metadata' => '\Listenbrainz\Model\CreateReviewRequestMetadata'
     ];
 
     /**
@@ -292,7 +292,7 @@ class CreateReviewRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets metadata
      *
-     * @return \OpenAPI\Client\Model\CreateReviewRequestMetadata|null
+     * @return \Listenbrainz\Model\CreateReviewRequestMetadata|null
      */
     public function getMetadata()
     {
@@ -302,7 +302,7 @@ class CreateReviewRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets metadata
      *
-     * @param \OpenAPI\Client\Model\CreateReviewRequestMetadata|null $metadata metadata
+     * @param \Listenbrainz\Model\CreateReviewRequestMetadata|null $metadata metadata
      *
      * @return self
      */

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **caa_release_mbid** | **string** |  |
 **from_ts** | **int** |  |
 **last_updated** | **int** |  |
-**listeners** | [**\OpenAPI\Client\Model\ListenersForArtistPayloadListenersInner[]**](ListenersForArtistPayloadListenersInner.md) |  |
+**listeners** | [**\Listenbrainz\Model\ListenersForArtistPayloadListenersInner[]**](ListenersForArtistPayloadListenersInner.md) |  |
 **release_group_mbid** | **string** |  |
 **release_group_name** | **string** |  |
 **stats_range** | **string** |  |

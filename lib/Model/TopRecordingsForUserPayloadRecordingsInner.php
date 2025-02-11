@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * TopRecordingsForUserPayloadRecordingsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class TopRecordingsForUserPayloadRecordingsInner implements ModelInterface, Arra
     protected static $openAPITypes = [
         'artist_mbids' => 'string[]',
         'artist_name' => 'string',
-        'artists' => '\OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]',
+        'artists' => '\Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]',
         'caa_id' => 'int',
         'caa_release_mbid' => 'string',
         'listen_count' => 'int',
@@ -409,7 +409,7 @@ class TopRecordingsForUserPayloadRecordingsInner implements ModelInterface, Arra
     /**
      * Gets artists
      *
-     * @return \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null
+     * @return \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null
      */
     public function getArtists()
     {
@@ -419,7 +419,7 @@ class TopRecordingsForUserPayloadRecordingsInner implements ModelInterface, Arra
     /**
      * Sets artists
      *
-     * @param \OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null $artists artists
+     * @param \Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]|null $artists artists
      *
      * @return self
      */

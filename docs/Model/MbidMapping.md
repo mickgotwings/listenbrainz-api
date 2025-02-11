@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **artist_mbids** | **string[]** |  | [optional]
-**artists** | [**\OpenAPI\Client\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]**](TopReleasesForUserPayloadReleasesInnerArtistsInner.md) |  | [optional]
+**artists** | [**\Listenbrainz\Model\TopReleasesForUserPayloadReleasesInnerArtistsInner[]**](TopReleasesForUserPayloadReleasesInnerArtistsInner.md) |  | [optional]
 **caa_id** | **int** |  | [optional]
 **caa_release_mbid** | **string** |  | [optional]
 **recording_mbid** | **string** |  | [optional]

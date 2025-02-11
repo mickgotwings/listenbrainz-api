@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**artist_map** | [**\OpenAPI\Client\Model\ArtistMapForUserPayloadArtistMapInner[]**](ArtistMapForUserPayloadArtistMapInner.md) |  |
+**artist_map** | [**\Listenbrainz\Model\ArtistMapForUserPayloadArtistMapInner[]**](ArtistMapForUserPayloadArtistMapInner.md) |  |
 **from_ts** | **int** |  |
 **last_updated** | **int** |  |
 **stats_range** | **string** |  | [optional]

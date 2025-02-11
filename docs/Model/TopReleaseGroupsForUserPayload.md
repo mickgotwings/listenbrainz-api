@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **last_updated** | **int** |  |
 **offset** | **int** |  |
 **range** | **string** |  |
-**release_groups** | [**\OpenAPI\Client\Model\ReleaseGroupsInner[]**](ReleaseGroupsInner.md) |  |
+**release_groups** | [**\Listenbrainz\Model\ReleaseGroupsInner[]**](ReleaseGroupsInner.md) |  |
 **to_ts** | **int** |  |
 **total_release_group_count** | **int** |  |
 **user_id** | **string** |  |

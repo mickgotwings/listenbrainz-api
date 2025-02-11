@@ -1,4 +1,4 @@
-# OpenAPI\Client\LbArtApi
+# Listenbrainz\LbArtApi
 
 All URIs are relative to https://api.listenbrainz.org, except if the operation defines another base path.
 
@@ -26,12 +26,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbArtApi(
+$apiInstance = new Listenbrainz\Api\LbArtApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$create_cover_art_grid = new \OpenAPI\Client\Model\CreateCoverArtGrid(); // \OpenAPI\Client\Model\CreateCoverArtGrid
+$create_cover_art_grid = new \Listenbrainz\Model\CreateCoverArtGrid(); // \Listenbrainz\Model\CreateCoverArtGrid
 
 try {
     $result = $apiInstance->createCoverArtGrid($create_cover_art_grid);
@@ -45,7 +45,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_cover_art_grid** | [**\OpenAPI\Client\Model\CreateCoverArtGrid**](../Model/CreateCoverArtGrid.md)|  | |
+| **create_cover_art_grid** | [**\Listenbrainz\Model\CreateCoverArtGrid**](../Model/CreateCoverArtGrid.md)|  | |
 
 ### Return type
 
@@ -80,13 +80,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbArtApi(
+$apiInstance = new Listenbrainz\Api\LbArtApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $user_name = 'user_name_example'; // string | The name of the user for whom to create the cover art.
-$time_range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange | Must be a statistics time range.
+$time_range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange | Must be a statistics time range.
 $dimension = 56; // int | The dimension to use for this grid. A grid of dimension 3 has 3 images across and 3 images down, for a total of 9 images.
 $layout = 56; // int | The layout to be used for this grid. Layout 0 is always a simple grid, but other layouts may have image images be of different sizes. See https://art.listenbrainz.org for examples of the available layouts.
 $image_size = 56; // int | The size of the cover art image.
@@ -104,7 +104,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **user_name** | **string**| The name of the user for whom to create the cover art. | |
-| **time_range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)| Must be a statistics time range. | |
+| **time_range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)| Must be a statistics time range. | |
 | **dimension** | **int**| The dimension to use for this grid. A grid of dimension 3 has 3 images across and 3 images down, for a total of 9 images. | |
 | **layout** | **int**| The layout to be used for this grid. Layout 0 is always a simple grid, but other layouts may have image images be of different sizes. See https://art.listenbrainz.org for examples of the available layouts. | |
 | **image_size** | **int**| The size of the cover art image. | |
@@ -142,14 +142,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbArtApi(
+$apiInstance = new Listenbrainz\Api\LbArtApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$custom_name = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\CoverTypes(); // \OpenAPI\Client\Model\CoverTypes | The name of cover art to be generated.
+$custom_name = new \Listenbrainz\Model\\Listenbrainz\Model\CoverTypes(); // \Listenbrainz\Model\CoverTypes | The name of cover art to be generated.
 $user_name = 'user_name_example'; // string | The name of the user for whom to create the cover art.
-$time_range = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\AllowedStatisticsRange(); // \OpenAPI\Client\Model\AllowedStatisticsRange | Must be a statistics time range.
+$time_range = new \Listenbrainz\Model\\Listenbrainz\Model\AllowedStatisticsRange(); // \Listenbrainz\Model\AllowedStatisticsRange | Must be a statistics time range.
 $image_size = 56; // int | The size of the cover art image.
 
 try {
@@ -164,9 +164,9 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **custom_name** | [**\OpenAPI\Client\Model\CoverTypes**](../Model/.md)| The name of cover art to be generated. | |
+| **custom_name** | [**\Listenbrainz\Model\CoverTypes**](../Model/.md)| The name of cover art to be generated. | |
 | **user_name** | **string**| The name of the user for whom to create the cover art. | |
-| **time_range** | [**\OpenAPI\Client\Model\AllowedStatisticsRange**](../Model/.md)| Must be a statistics time range. | |
+| **time_range** | [**\Listenbrainz\Model\AllowedStatisticsRange**](../Model/.md)| Must be a statistics time range. | |
 | **image_size** | **int**| The size of the cover art image. | |
 
 ### Return type
@@ -202,14 +202,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\LbArtApi(
+$apiInstance = new Listenbrainz\Api\LbArtApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $year = 56; // int
 $user_name = 'user_name_example'; // string | The name of the user for whom to create the cover art.
-$image = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\YearInMusicImage(); // \OpenAPI\Client\Model\YearInMusicImage
+$image = new \Listenbrainz\Model\\Listenbrainz\Model\YearInMusicImage(); // \Listenbrainz\Model\YearInMusicImage
 
 try {
     $result = $apiInstance->yearInMusic($year, $user_name, $image);
@@ -225,7 +225,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **year** | **int**|  | |
 | **user_name** | **string**| The name of the user for whom to create the cover art. | |
-| **image** | [**\OpenAPI\Client\Model\YearInMusicImage**](../Model/.md)|  | |
+| **image** | [**\Listenbrainz\Model\YearInMusicImage**](../Model/.md)|  | |
 
 ### Return type
 

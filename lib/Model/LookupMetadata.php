@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace Listenbrainz\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Listenbrainz\ObjectSerializer;
 
 /**
  * LookupMetadata Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Listenbrainz
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class LookupMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'artist' => '\OpenAPI\Client\Model\RecordingMetadataArtist',
-        'recording' => '\OpenAPI\Client\Model\LookupMetadataRecording',
-        'release' => '\OpenAPI\Client\Model\LookupMetadataRelease',
-        'tag' => '\OpenAPI\Client\Model\LookupMetadataTag'
+        'artist' => '\Listenbrainz\Model\RecordingMetadataArtist',
+        'recording' => '\Listenbrainz\Model\LookupMetadataRecording',
+        'release' => '\Listenbrainz\Model\LookupMetadataRelease',
+        'tag' => '\Listenbrainz\Model\LookupMetadataTag'
     ];
 
     /**
@@ -313,7 +313,7 @@ class LookupMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets artist
      *
-     * @return \OpenAPI\Client\Model\RecordingMetadataArtist|null
+     * @return \Listenbrainz\Model\RecordingMetadataArtist|null
      */
     public function getArtist()
     {
@@ -323,7 +323,7 @@ class LookupMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets artist
      *
-     * @param \OpenAPI\Client\Model\RecordingMetadataArtist|null $artist artist
+     * @param \Listenbrainz\Model\RecordingMetadataArtist|null $artist artist
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class LookupMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets recording
      *
-     * @return \OpenAPI\Client\Model\LookupMetadataRecording|null
+     * @return \Listenbrainz\Model\LookupMetadataRecording|null
      */
     public function getRecording()
     {
@@ -350,7 +350,7 @@ class LookupMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets recording
      *
-     * @param \OpenAPI\Client\Model\LookupMetadataRecording|null $recording recording
+     * @param \Listenbrainz\Model\LookupMetadataRecording|null $recording recording
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class LookupMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets release
      *
-     * @return \OpenAPI\Client\Model\LookupMetadataRelease|null
+     * @return \Listenbrainz\Model\LookupMetadataRelease|null
      */
     public function getRelease()
     {
@@ -377,7 +377,7 @@ class LookupMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets release
      *
-     * @param \OpenAPI\Client\Model\LookupMetadataRelease|null $release release
+     * @param \Listenbrainz\Model\LookupMetadataRelease|null $release release
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class LookupMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tag
      *
-     * @return \OpenAPI\Client\Model\LookupMetadataTag|null
+     * @return \Listenbrainz\Model\LookupMetadataTag|null
      */
     public function getTag()
     {
@@ -404,7 +404,7 @@ class LookupMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tag
      *
-     * @param \OpenAPI\Client\Model\LookupMetadataTag|null $tag tag
+     * @param \Listenbrainz\Model\LookupMetadataTag|null $tag tag
      *
      * @return self
      */

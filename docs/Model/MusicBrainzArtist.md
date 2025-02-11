@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **gender** | **string** |  | [optional]
 **join_phrase** | **string** |  | [optional]
 **name** | **string** |  | [optional]
-**rels** | [**\OpenAPI\Client\Model\Rels1**](Rels1.md) |  | [optional]
+**rels** | [**\Listenbrainz\Model\Rels1**](Rels1.md) |  | [optional]
 **type** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
