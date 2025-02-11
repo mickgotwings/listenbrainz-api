@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Listenbrainz\Model;
 
 use \ArrayAccess;
 use \OpenAPI\Client\ObjectSerializer;
@@ -630,5 +630,3 @@ class SitewideTopReleaseGroupsPayload implements ModelInterface, ArrayAccess, \J
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-

@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client;
+namespace Listenbrainz;
 
 /**
  * HeaderSelector Class Doc Comment

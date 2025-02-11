@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client;
+namespace Listenbrainz;
 
 use GuzzleHttp\Psr7\Utils;
 use OpenAPI\Client\Model\ModelInterface;

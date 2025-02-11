@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Listenbrainz\Model;
 use \OpenAPI\Client\ObjectSerializer;
 
 /**
@@ -73,5 +73,3 @@ class YearInMusicImage
         ];
     }
 }
-
-

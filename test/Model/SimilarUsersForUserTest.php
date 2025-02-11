@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace Listenbrainz\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 

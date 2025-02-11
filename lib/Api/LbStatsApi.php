@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Listenbrainz\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;

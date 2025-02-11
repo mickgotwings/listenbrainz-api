@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Listenbrainz\Model;
 
 /**
  * Interface abstracting model access.

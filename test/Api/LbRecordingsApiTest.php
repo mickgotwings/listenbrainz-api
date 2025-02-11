@@ -25,7 +25,7 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace OpenAPI\Client\Test\Api;
+namespace Listenbrainz\Test\Api;
 
 use \OpenAPI\Client\Configuration;
 use \OpenAPI\Client\ApiException;
